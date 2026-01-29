@@ -1,0 +1,14 @@
+{
+    "version": "2026008",
+    "checkin_comment": "Testing Checkin",
+    "insert_content_ids": [
+        "7a4e3e02-0510-4bfb-9f5e-4a39e72f206d"
+    ],
+    "update_content_ids": [
+        "6ffce35a-542e-439c-97af-3899db7e49b6"
+    ],
+    "delete_content_ids": [],
+    "timestamp": "20260129_143151",
+    "db_host": "10.16.16.64",
+    "db_database": "RELEASE_REPORT"
+}
