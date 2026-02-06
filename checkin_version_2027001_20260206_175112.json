@@ -1,0 +1,12 @@
+{
+    "version": "2027001",
+    "checkin_comment": "Testing",
+    "insert_content_ids": [],
+    "update_content_ids": [
+        "c55828ae-d911-463b-adba-38c9d5614b32"
+    ],
+    "delete_content_ids": [],
+    "timestamp": "20260206_175112",
+    "db_host": "10.16.16.64",
+    "db_database": "RELEASE_REPORT"
+}
