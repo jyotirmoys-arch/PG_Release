@@ -1,0 +1,23 @@
+{
+    "version": "2026001",
+    "last_updated": "20260218_190304",
+    "checkin_history": [
+        {
+            "timestamp": "20260218_190304",
+            "user": "jyotirmoy.s",
+            "comment": "ADO Id : 91714",
+            "insert": [],
+            "update": [
+                "bfcf8b6c-c4e5-448f-ba76-ce42cd41d351"
+            ],
+            "delete": []
+        }
+    ],
+    "consolidated": {
+        "insert": [],
+        "update": [
+            "bfcf8b6c-c4e5-448f-ba76-ce42cd41d351"
+        ],
+        "delete": []
+    }
+}
