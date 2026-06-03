@@ -3,7 +3,7 @@
 -- Name: #Stock Status Register - Stock Point#
 -- Action: INSERT
 -- Version: 2026004
--- Generated on: 2026-06-03 17:10:43
+-- Generated on: 2026-06-03 17:13:22
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -17,7 +17,7 @@ INSERT INTO ginview.ex_content_dev (
 )
 VALUES (
     '2f28175a-e2eb-494b-b7ba-e73563921a8d', 0, 0,
-    NULL, '#Stock Status Register - Stock Point#', 'This report will display Site Point wise Item Stock Qty for a selected date.',
+    NULL, '#Stock Status Register - Stock Point#', 'This report will display Stock Point wise Item Stock Qty for a selected date.',
     '<report>
   <main>
     <id>2f28175a-e2eb-494b-b7ba-e73563921a8d</id>
@@ -37,7 +37,7 @@ VALUES (
     <page_size>Letter</page_size>
     <page_orientation>Portrait</page_orientation>
     <include_setup_info>No</include_setup_info>
-    <description>This report will display Site Point wise Item Stock Qty for a selected date.</description>
+    <description>This report will display Stock Point wise Item Stock Qty for a selected date.</description>
     <filter_description />
     <show_grid>False</show_grid>
     <pdf_template />
@@ -1553,7 +1553,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-05-05 07:24:18.712770', '132560', '2026-06-03 11:34:47.812242',
+    '2026-05-05 07:24:18.712770', '132560', '2026-06-03 11:42:28.385051',
     '132560', '75a16cac-c843-4b39-8259-a06b6f97fea3', 27,
     FALSE, 2, 768,
     NULL, 0, 0,
