@@ -1,7 +1,7 @@
 -- =====================================================
--- INSERT statement for content_id: 2f28175a-e2eb-494b-b7ba-e73563921a8d
--- Name: #Stock Status Register - Stock Point#
--- Action: INSERT
+-- INSERT statement for content_id: 20c31860-3172-48d3-a44b-6222ffa1a6f3
+-- Name: #Stock Status Register#
+-- Action: UPDATE
 -- Version: 2026004
 -- Generated on: 2026-06-11 18:43:18
 -- =====================================================
@@ -16,12 +16,12 @@ INSERT INTO ginview.ex_content_dev (
     is_cache_valid, associated_reports, reportfoldercode, release_version, action
 )
 VALUES (
-    '2f28175a-e2eb-494b-b7ba-e73563921a8d', 0, 0,
-    NULL, '#Stock Status Register - Stock Point#', 'This report will display Stock Point wise Item Stock Qty for a selected date.',
+    '20c31860-3172-48d3-a44b-6222ffa1a6f3', 0, 0,
+    NULL, '#Stock Status Register#', 'This report will display Site wise Item Stock Qty and Amount for a selected date.',
     '<report>
   <main>
-    <id>2f28175a-e2eb-494b-b7ba-e73563921a8d</id>
-    <report_name>#Stock Status Register - Stock Point#</report_name>
+    <id>20c31860-3172-48d3-a44b-6222ffa1a6f3</id>
+    <report_name>#Stock Status Register#</report_name>
     <folder_name>Jyotirmoy</folder_name>
     <folder_id>38ed6b76-fbe3-43e4-bdf1-33ab8b218e28</folder_id>
     <version>1</version>
@@ -33,17 +33,17 @@ VALUES (
     <suppress_formatting>False</suppress_formatting>
     <report_tree_shortcut>0</report_tree_shortcut>
     <output_mode>6</output_mode>
-    <prevent_output />
+    <prevent_output>3</prevent_output>
     <page_size>Letter</page_size>
     <page_orientation>Portrait</page_orientation>
     <include_setup_info>No</include_setup_info>
-    <description>This report will display Stock Point wise Item Stock Qty for a selected date.</description>
+    <description>This report will display Site wise Item Stock Qty and Amount for a selected date.</description>
     <filter_description />
     <show_grid>False</show_grid>
     <pdf_template />
     <embedded_pdf_template />
     <simulate_pdf>False</simulate_pdf>
-    <no_data_render_type>ShowMessage</no_data_render_type>
+    <no_data_render_type>ShowReport</no_data_render_type>
     <show_interactive_sorts>True</show_interactive_sorts>
     <allow_column_hide>True</allow_column_hide>
     <display_report_column_headers>Default</display_report_column_headers>
@@ -69,7 +69,7 @@ VALUES (
     <category>01-Master</category>
   </entity>
   <entity>
-    <entity_name>SQ_ITEMSTOCK_STATUS_STKPT_01</entity_name>
+    <entity_name>ITEMSTOCK_STATUS_01</entity_name>
     <group_by_flag>False</group_by_flag>
     <category>03-Inventory|*{*}*|03-Composite|*{*}*|On-Hand Stock</category>
   </entity>
@@ -78,66 +78,49 @@ VALUES (
     <group_by_flag>False</group_by_flag>
     <category>01-Master</category>
   </entity>
-  <entity>
-    <entity_name>LV_STOCKPOINT_01</entity_name>
-    <group_by_flag>False</group_by_flag>
-    <category>01-Master</category>
-  </entity>
   <cell>
-    <id>770924669</id>
+    <id>1188101944</id>
     <cell_text>=@OrgName@</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>0</cell_row>
     <cell_col>0</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
-    <cell_colspan>12</cell_colspan>
+    <cell_colspan>15</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>13</font_size>
     <font_bold_flag>True</font_bold_flag>
   </cell>
   <cell>
-    <id>1111978494</id>
-    <cell_text>=@reportName@</cell_text>
-    <cell_type>formula</cell_type>
+    <id>457128178</id>
+    <cell_text>  #Stock Status Register#</cell_text>
+    <cell_type>text</cell_type>
     <cell_row>1</cell_row>
     <cell_col>0</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
-    <cell_colspan>12</cell_colspan>
+    <cell_colspan>15</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>11</font_size>
     <font_bold_flag>True</font_bold_flag>
   </cell>
   <cell>
-    <id>259649190</id>
-    <cell_text>=Bold(''Stock Status ASON : '')&amp;GlobalDateFormat(@ASON@)</cell_text>
+    <id>678107018</id>
+    <cell_text>=Bold(''Stock ASON : '')&amp;GlobalDateFormat(@ASON@)&amp;Bold('' | Site Type : '')&amp;@SiteType@&amp;Bold('' | Site Name : '')&amp;@SiteTypeSiteName@&amp;Bold('' | Show Batch Serial : '')&amp;@ShowBatchSerial@</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>2</cell_row>
     <cell_col>0</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
-    <cell_colspan>12</cell_colspan>
+    <cell_colspan>15</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
   </cell>
   <cell>
-    <id>951919287</id>
-    <cell_text>=Bold(''Effective Stock : '')&amp;@EffectiveStockQty@&amp;Bold('' | Show Batch Serial : '')&amp;@ShowBatchSerial@</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>3</cell_row>
-    <cell_col>0</cell_col>
-    <cell_horizontal_align>Center</cell_horizontal_align>
-    <cell_colspan>12</cell_colspan>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-  </cell>
-  <cell>
-    <id>1548950842</id>
+    <id>1565787665</id>
     <cell_text>Site Name</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -146,15 +129,16 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
     <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>220719885</id>
-    <cell_text>Site SHort Name</cell_text>
+    <id>725661080</id>
+    <cell_text> 
+Site Short Name</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>1</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -163,15 +147,16 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
     <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>1871556734</id>
-    <cell_text>Site Type</cell_text>
+    <id>577218728</id>
+    <cell_text> 
+Site Type</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>2</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -180,15 +165,16 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
     <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>1042485323</id>
-    <cell_text>Stock Point</cell_text>
+    <id>2028845538</id>
+    <cell_text> 
+Division</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>3</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -197,15 +183,16 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
     <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>1832601290</id>
-    <cell_text>Division</cell_text>
+    <id>1934470994</id>
+    <cell_text> 
+Section</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>4</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -214,15 +201,16 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
     <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>1703096686</id>
-    <cell_text>Section</cell_text>
+    <id>1560898220</id>
+    <cell_text> 
+Department</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>5</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -231,15 +219,16 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
     <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>779811979</id>
-    <cell_text>Department</cell_text>
+    <id>1452427249</id>
+    <cell_text> 
+Item Name</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>6</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -248,15 +237,16 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
     <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>1952013542</id>
-    <cell_text>Item Name</cell_text>
+    <id>1524886946</id>
+    <cell_text> 
+Barcode</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>7</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -265,15 +255,16 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
     <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>2040124567</id>
-    <cell_text>Barcode</cell_text>
+    <id>1085906585</id>
+    <cell_text> 
+Icode</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>8</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -282,16 +273,18 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
     <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>420337470</id>
-    <cell_text>=If(@ShowBatchSerial@=''No'', '''',''Batch/Serial No'')</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>4</cell_row>
+    <id>1254684735</id>
+    <cell_text> 
+Stock Qty</cell_text>
+    <cell_type>text</cell_type>
+    <cell_row>3</cell_row>
     <cell_col>10</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -299,15 +292,16 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
     <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>1027135187</id>
-    <cell_text>Stock Qty</cell_text>
+    <id>1049148482</id>
+    <cell_text> 
+Stock Amount</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>11</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -317,15 +311,70 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
     <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>1477936791</id>
-    <cell_text>ICODE</cell_text>
+    <id>144107475</id>
+    <cell_text> 
+Unsettled Sale Qty</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
+    <cell_col>14</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <border_top_width>1</border_top_width>
+    <border_bottom_width>1</border_bottom_width>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
+    <background_color>#DFDFDF</background_color>
+  </cell>
+  <cell>
+    <id>216352763</id>
+    <cell_text>Transit Amount</cell_text>
+    <cell_type>text</cell_type>
+    <cell_row>3</cell_row>
+    <cell_col>13</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <border_top_width>1</border_top_width>
+    <border_bottom_width>1</border_bottom_width>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
+    <background_color>#DFDFDF</background_color>
+  </cell>
+  <cell>
+    <id>594485907</id>
+    <cell_text>Transit Qty</cell_text>
+    <cell_type>text</cell_type>
+    <cell_row>3</cell_row>
+    <cell_col>12</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <border_top_width>1</border_top_width>
+    <border_bottom_width>1</border_bottom_width>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
+    <background_color>#DFDFDF</background_color>
+  </cell>
+  <cell>
+    <id>1343368108</id>
+    <cell_text>=If(@ShowBatchSerial@=''No'', '''', ''Batch/Serial No'')</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>3</cell_row>
     <cell_col>9</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -334,253 +383,58 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
+    <border_top_color>#9F9F9F</border_top_color>
+    <border_bottom_color>#9F9F9F</border_bottom_color>
     <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>270117631</id>
+    <id>2010148029</id>
     <cell_text>LV_SITE_01.site_type</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>2</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
-    <background_color>#A3A3A3</background_color>
+    <format_type>Text</format_type>
+    <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>55230061</id>
+    <id>1842199665</id>
     <cell_text>LV_SITE_01.name</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
-    <background_color>#A3A3A3</background_color>
+    <format_type>Text</format_type>
+    <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>1963265011</id>
+    <id>1844971246</id>
     <cell_text>LV_SITE_01.short_code</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>1</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
-    <background_color>#A3A3A3</background_color>
+    <format_type>Text</format_type>
+    <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>89844734</id>
-    <cell_text>=[L12]</cell_text>
+    <id>1807797915</id>
+    <cell_text>=[K9]</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>5</cell_row>
-    <cell_col>11</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <format_type>Number</format_type>
-    <format_decimal_places>3</format_decimal_places>
-    <format_separator_flag>False</format_separator_flag>
-    <format_negative_symbol_flag>True</format_negative_symbol_flag>
-    <format_negative_color>#000000</format_negative_color>
-    <background_color>#A3A3A3</background_color>
-  </cell>
-  <cell>
-    <id>105180569</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>5</cell_row>
-    <cell_col>3</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <background_color>#A3A3A3</background_color>
-  </cell>
-  <cell>
-    <id>1056325520</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>5</cell_row>
-    <cell_col>4</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <background_color>#A3A3A3</background_color>
-  </cell>
-  <cell>
-    <id>1984073352</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>5</cell_row>
-    <cell_col>5</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <background_color>#A3A3A3</background_color>
-  </cell>
-  <cell>
-    <id>52340631</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>5</cell_row>
-    <cell_col>6</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <background_color>#A3A3A3</background_color>
-  </cell>
-  <cell>
-    <id>1244341896</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>5</cell_row>
-    <cell_col>7</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <background_color>#A3A3A3</background_color>
-  </cell>
-  <cell>
-    <id>1042875641</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>5</cell_row>
-    <cell_col>8</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <background_color>#A3A3A3</background_color>
-  </cell>
-  <cell>
-    <id>811169175</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>5</cell_row>
-    <cell_col>9</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <background_color>#A3A3A3</background_color>
-  </cell>
-  <cell>
-    <id>195849162</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>5</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>10</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <background_color>#A3A3A3</background_color>
-  </cell>
-  <cell>
-    <id>369403135</id>
-    <cell_text>LV_ITEM_01.department</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>6</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#CBCBCB</background_color>
-  </cell>
-  <cell>
-    <id>986950066</id>
-    <cell_text>LV_SITE_01.name</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>0</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#CBCBCB</background_color>
-  </cell>
-  <cell>
-    <id>1867994197</id>
-    <cell_text>LV_SITE_01.short_code</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>1</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#CBCBCB</background_color>
-  </cell>
-  <cell>
-    <id>904447486</id>
-    <cell_text>LV_SITE_01.site_type</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>2</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#CBCBCB</background_color>
-  </cell>
-  <cell>
-    <id>267863061</id>
-    <cell_text>LV_STOCKPOINT_01.name</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>3</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#CBCBCB</background_color>
-  </cell>
-  <cell>
-    <id>503861367</id>
-    <cell_text>LV_ITEM_01.division</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>4</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#CBCBCB</background_color>
-  </cell>
-  <cell>
-    <id>1231579024</id>
-    <cell_text>LV_ITEM_01.section</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>5</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#CBCBCB</background_color>
-  </cell>
-  <cell>
-    <id>1527450003</id>
-    <cell_text>=[L11]</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>11</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -592,357 +446,743 @@ VALUES (
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
     <format_negative_color>#000000</format_negative_color>
-    <background_color>#CBCBCB</background_color>
+    <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>848759216</id>
+    <id>1143244067</id>
+    <cell_text>=[L9]</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>4</cell_row>
+    <cell_col>11</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+    <background_color>#DFDFDF</background_color>
+  </cell>
+  <cell>
+    <id>366631715</id>
+    <cell_text>=[O9]</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>4</cell_row>
+    <cell_col>14</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+    <background_color>#DFDFDF</background_color>
+  </cell>
+  <cell>
+    <id>1729105063</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
+    <cell_row>4</cell_row>
+    <cell_col>3</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#DFDFDF</background_color>
+  </cell>
+  <cell>
+    <id>1848499745</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>4</cell_row>
+    <cell_col>4</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#DFDFDF</background_color>
+  </cell>
+  <cell>
+    <id>1824219850</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>4</cell_row>
+    <cell_col>5</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#DFDFDF</background_color>
+  </cell>
+  <cell>
+    <id>314575648</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>4</cell_row>
+    <cell_col>6</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#DFDFDF</background_color>
+  </cell>
+  <cell>
+    <id>1554571588</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>4</cell_row>
     <cell_col>7</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
-    <background_color>#CBCBCB</background_color>
+    <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>1047021520</id>
+    <id>919421424</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>8</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
-    <background_color>#CBCBCB</background_color>
+    <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>1063867543</id>
+    <id>1806625598</id>
+    <cell_text>=[M9]</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>4</cell_row>
+    <cell_col>12</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+    <background_color>#DFDFDF</background_color>
+  </cell>
+  <cell>
+    <id>332800665</id>
+    <cell_text>=[N9]</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>4</cell_row>
+    <cell_col>13</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+    <background_color>#DFDFDF</background_color>
+  </cell>
+  <cell>
+    <id>1587927399</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>9</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
-    <background_color>#CBCBCB</background_color>
+    <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>593171384</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>10</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <background_color>#CBCBCB</background_color>
-  </cell>
-  <cell>
-    <id>246936632</id>
-    <cell_text>LV_SITE_01.name</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>0</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#E4E4E4</background_color>
-  </cell>
-  <cell>
-    <id>1446357728</id>
-    <cell_text>LV_ITEM_01.code</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>9</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#E4E4E4</background_color>
-  </cell>
-  <cell>
-    <id>1290504965</id>
-    <cell_text>LV_SITE_01.short_code</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>1</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#E4E4E4</background_color>
-  </cell>
-  <cell>
-    <id>1153293971</id>
+    <id>246282305</id>
     <cell_text>LV_SITE_01.site_type</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>7</cell_row>
+    <cell_row>5</cell_row>
     <cell_col>2</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
-    <background_color>#E4E4E4</background_color>
+    <format_type>Text</format_type>
+    <foreground_color>#808080</foreground_color>
+    <background_color>#F7F7F7</background_color>
   </cell>
   <cell>
-    <id>1940024858</id>
-    <cell_text>LV_STOCKPOINT_01.name</cell_text>
+    <id>200177846</id>
+    <cell_text>LV_SITE_01.name</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>3</cell_col>
+    <cell_row>5</cell_row>
+    <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
-    <background_color>#E4E4E4</background_color>
+    <format_type>Text</format_type>
+    <foreground_color>#808080</foreground_color>
+    <background_color>#F7F7F7</background_color>
   </cell>
   <cell>
-    <id>922768687</id>
-    <cell_text>LV_ITEM_01.division</cell_text>
+    <id>588535372</id>
+    <cell_text>LV_SITE_01.short_code</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>4</cell_col>
+    <cell_row>5</cell_row>
+    <cell_col>1</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
-    <background_color>#E4E4E4</background_color>
+    <format_type>Text</format_type>
+    <foreground_color>#808080</foreground_color>
+    <background_color>#F7F7F7</background_color>
   </cell>
   <cell>
-    <id>1207637238</id>
-    <cell_text>LV_ITEM_01.section</cell_text>
+    <id>1258433173</id>
+    <cell_text>LV_ITEM_01.department</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>7</cell_row>
+    <cell_row>5</cell_row>
     <cell_col>5</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
-    <background_color>#E4E4E4</background_color>
+    <format_type>Text</format_type>
+    <background_color>#F7F7F7</background_color>
   </cell>
   <cell>
-    <id>934688082</id>
-    <cell_text>LV_ITEM_01.department</cell_text>
+    <id>1439782117</id>
+    <cell_text>LV_ITEM_01.division</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>6</cell_col>
+    <cell_row>5</cell_row>
+    <cell_col>3</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
-    <background_color>#E4E4E4</background_color>
+    <format_type>Text</format_type>
+    <background_color>#F7F7F7</background_color>
   </cell>
   <cell>
-    <id>1601713182</id>
+    <id>896852822</id>
+    <cell_text>LV_ITEM_01.section</cell_text>
+    <cell_type>data</cell_type>
+    <cell_row>5</cell_row>
+    <cell_col>4</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <format_type>Text</format_type>
+    <background_color>#F7F7F7</background_color>
+  </cell>
+  <cell>
+    <id>807273283</id>
+    <cell_text>=[O8]</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>5</cell_row>
+    <cell_col>14</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+    <background_color>#F7F7F7</background_color>
+  </cell>
+  <cell>
+    <id>1148793015</id>
+    <cell_text>=[K8]</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>5</cell_row>
+    <cell_col>10</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+    <background_color>#F7F7F7</background_color>
+  </cell>
+  <cell>
+    <id>1623910184</id>
+    <cell_text>=[L8]</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>5</cell_row>
+    <cell_col>11</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+    <background_color>#F7F7F7</background_color>
+  </cell>
+  <cell>
+    <id>1376740464</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>5</cell_row>
+    <cell_col>6</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#F7F7F7</background_color>
+  </cell>
+  <cell>
+    <id>2100943666</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>5</cell_row>
+    <cell_col>7</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#F7F7F7</background_color>
+  </cell>
+  <cell>
+    <id>113819475</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>5</cell_row>
+    <cell_col>8</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#F7F7F7</background_color>
+  </cell>
+  <cell>
+    <id>1681796247</id>
+    <cell_text>=[N8]</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>5</cell_row>
+    <cell_col>13</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+    <background_color>#F7F7F7</background_color>
+  </cell>
+  <cell>
+    <id>838181067</id>
+    <cell_text>=[M8]</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>5</cell_row>
+    <cell_col>12</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+    <background_color>#F7F7F7</background_color>
+  </cell>
+  <cell>
+    <id>1043583090</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>5</cell_row>
+    <cell_col>9</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#F7F7F7</background_color>
+  </cell>
+  <cell>
+    <id>201031035</id>
+    <cell_text>LV_SITE_01.name</cell_text>
+    <cell_type>data</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>0</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Text</format_type>
+    <foreground_color>#808080</foreground_color>
+  </cell>
+  <cell>
+    <id>2034491123</id>
+    <cell_text>LV_SITE_01.short_code</cell_text>
+    <cell_type>data</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>1</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Text</format_type>
+    <foreground_color>#808080</foreground_color>
+  </cell>
+  <cell>
+    <id>1299507838</id>
+    <cell_text>LV_SITE_01.site_type</cell_text>
+    <cell_type>data</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>2</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Text</format_type>
+    <foreground_color>#808080</foreground_color>
+  </cell>
+  <cell>
+    <id>518710869</id>
+    <cell_text>LV_ITEM_01.division</cell_text>
+    <cell_type>data</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>3</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Text</format_type>
+    <foreground_color>#9F9F9F</foreground_color>
+  </cell>
+  <cell>
+    <id>615782894</id>
+    <cell_text>LV_ITEM_01.section</cell_text>
+    <cell_type>data</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>4</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Text</format_type>
+    <foreground_color>#9F9F9F</foreground_color>
+  </cell>
+  <cell>
+    <id>824390166</id>
+    <cell_text>LV_ITEM_01.department</cell_text>
+    <cell_type>data</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>5</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Text</format_type>
+    <foreground_color>#9F9F9F</foreground_color>
+  </cell>
+  <cell>
+    <id>108635175</id>
     <cell_text>LV_ITEM_01.item_name</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>7</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#E4E4E4</background_color>
-  </cell>
-  <cell>
-    <id>1677262214</id>
-    <cell_text>LV_ITEM_01.barcode</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>8</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#E4E4E4</background_color>
-  </cell>
-  <cell>
-    <id>229956975</id>
-    <cell_text>=[L10]</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>11</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <format_type>Number</format_type>
-    <format_decimal_places>3</format_decimal_places>
-    <format_separator_flag>False</format_separator_flag>
-    <format_negative_symbol_flag>True</format_negative_symbol_flag>
-    <format_negative_color>#000000</format_negative_color>
-    <background_color>#E4E4E4</background_color>
-  </cell>
-  <cell>
-    <id>1102007473</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>10</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <background_color>#E4E4E4</background_color>
-  </cell>
-  <cell>
-    <id>1503627695</id>
-    <cell_text>=AggSum({SQ_ITEMSTOCK_STATUS_STKPT_01.stock_qty})</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>8</cell_row>
-    <cell_col>11</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <format_type>Number</format_type>
-    <format_decimal_places>3</format_decimal_places>
-    <format_separator_flag>False</format_separator_flag>
-    <format_negative_symbol_flag>True</format_negative_symbol_flag>
-    <format_negative_color>#000000</format_negative_color>
-  </cell>
-  <cell>
-    <id>868900429</id>
-    <cell_text>LV_SITE_01.name</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>8</cell_row>
-    <cell_col>0</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-  </cell>
-  <cell>
-    <id>369979516</id>
-    <cell_text>LV_SITE_01.short_code</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>8</cell_row>
-    <cell_col>1</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-  </cell>
-  <cell>
-    <id>1294523665</id>
-    <cell_text>LV_SITE_01.site_type</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>8</cell_row>
-    <cell_col>2</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-  </cell>
-  <cell>
-    <id>3393181</id>
-    <cell_text>LV_STOCKPOINT_01.name</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>8</cell_row>
-    <cell_col>3</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-  </cell>
-  <cell>
-    <id>1941357951</id>
-    <cell_text>LV_ITEM_01.division</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>8</cell_row>
-    <cell_col>4</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-  </cell>
-  <cell>
-    <id>1013575820</id>
-    <cell_text>LV_ITEM_01.section</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>8</cell_row>
-    <cell_col>5</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-  </cell>
-  <cell>
-    <id>727884585</id>
-    <cell_text>LV_ITEM_01.department</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>8</cell_row>
+    <cell_row>6</cell_row>
     <cell_col>6</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Text</format_type>
   </cell>
   <cell>
-    <id>837537125</id>
-    <cell_text>LV_ITEM_01.item_name</cell_text>
+    <id>1307085812</id>
+    <cell_text>LV_ITEM_01.barcode</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>8</cell_row>
+    <cell_row>6</cell_row>
     <cell_col>7</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Text</format_type>
   </cell>
   <cell>
-    <id>1026706282</id>
-    <cell_text>LV_ITEM_01.barcode</cell_text>
+    <id>1622678101</id>
+    <cell_text>LV_ITEM_01.code</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>8</cell_row>
+    <cell_row>6</cell_row>
     <cell_col>8</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Text</format_type>
   </cell>
   <cell>
-    <id>1159370882</id>
-    <cell_text>LV_ITEM_01.code</cell_text>
+    <id>1898649272</id>
+    <cell_text>ITEMSTOCK_STATUS_01.stock_qty</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>8</cell_row>
-    <cell_col>9</cell_col>
+    <cell_row>6</cell_row>
+    <cell_col>10</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+  </cell>
+  <cell>
+    <id>1884137922</id>
+    <cell_text>ITEMSTOCK_STATUS_01.stock_amount</cell_text>
+    <cell_type>data</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>11</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+  </cell>
+  <cell>
+    <id>1581188029</id>
+    <cell_text>ITEMSTOCK_STATUS_01.unsettled_qty</cell_text>
+    <cell_type>data</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>14</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+  </cell>
+  <cell>
+    <id>1947688650</id>
+    <cell_text>ITEMSTOCK_STATUS_01.transit_amount</cell_text>
+    <cell_type>data</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>13</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
   </cell>
   <cell>
-    <id>109765118</id>
-    <cell_text>LV_ITEM_BATCHSERIAL_01.batch_serial_no</cell_text>
+    <id>90759445</id>
+    <cell_text>ITEMSTOCK_STATUS_01.transit_quantity</cell_text>
     <cell_type>data</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>12</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+  </cell>
+  <cell>
+    <id>1215875187</id>
+    <cell_text>=If(@ShowBatchSerial@=''No'', '''', {LV_ITEM_BATCHSERIAL_01.batch_serial_no})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>9</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+  </cell>
+  <cell>
+    <id>1463200181</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.stock_qty})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>10</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+  </cell>
+  <cell>
+    <id>1394542661</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.stock_amount})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>11</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+  </cell>
+  <cell>
+    <id>403463722</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.unsettled_qty})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>14</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+  </cell>
+  <cell>
+    <id>789677231</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.transit_quantity})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>12</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+  </cell>
+  <cell>
+    <id>2048880801</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.transit_amount})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>13</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+  </cell>
+  <cell>
+    <id>655226131</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.stock_qty})</cell_text>
+    <cell_type>formula</cell_type>
     <cell_row>8</cell_row>
     <cell_col>10</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+  </cell>
+  <cell>
+    <id>1577829715</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.stock_amount})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>8</cell_row>
+    <cell_col>11</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+  </cell>
+  <cell>
+    <id>1039088375</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.unsettled_qty})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>8</cell_row>
+    <cell_col>14</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+  </cell>
+  <cell>
+    <id>50844335</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.transit_quantity})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>8</cell_row>
+    <cell_col>12</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+  </cell>
+  <cell>
+    <id>1548810836</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.transit_amount})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>8</cell_row>
+    <cell_col>13</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+  </cell>
+  <cell>
+    <id>1475504943</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.unsettled_qty})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>9</cell_row>
+    <cell_col>14</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
-    <conditional>
-      <formula>@ShowBatchSerial@ = ''No''</formula>
-      <action>SuppressSection</action>
-    </conditional>
+    <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+    <background_color>#BFBFBF</background_color>
   </cell>
   <cell>
-    <id>536185182</id>
-    <cell_text>=AggSum({SQ_ITEMSTOCK_STATUS_STKPT_01.stock_qty})</cell_text>
+    <id>1242970532</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.stock_qty})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>9</cell_row>
+    <cell_col>10</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+    <background_color>#BFBFBF</background_color>
+  </cell>
+  <cell>
+    <id>1233354920</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.stock_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>9</cell_row>
     <cell_col>11</cell_col>
@@ -951,117 +1191,155 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
-    <format_decimal_places>3</format_decimal_places>
-    <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
     <format_negative_color>#000000</format_negative_color>
+    <background_color>#BFBFBF</background_color>
   </cell>
   <cell>
-    <id>1122985990</id>
-    <cell_text>=AggSum({SQ_ITEMSTOCK_STATUS_STKPT_01.stock_qty})</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>10</cell_row>
-    <cell_col>11</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <format_type>Number</format_type>
-    <format_decimal_places>3</format_decimal_places>
-    <format_separator_flag>False</format_separator_flag>
-    <format_negative_symbol_flag>True</format_negative_symbol_flag>
-    <format_negative_color>#000000</format_negative_color>
-  </cell>
-  <cell>
-    <id>1994395206</id>
-    <cell_text>=AggSum({SQ_ITEMSTOCK_STATUS_STKPT_01.stock_qty})</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>11</cell_row>
-    <cell_col>11</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <format_type>Number</format_type>
-    <format_decimal_places>3</format_decimal_places>
-    <format_separator_flag>False</format_separator_flag>
-    <format_negative_symbol_flag>True</format_negative_symbol_flag>
-    <format_negative_color>#000000</format_negative_color>
-  </cell>
-  <cell>
-    <id>973302727</id>
-    <cell_text>Total : </cell_text>
+    <id>1218501269</id>
+    <cell_text>Total :</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>12</cell_row>
+    <cell_row>9</cell_row>
     <cell_col>0</cell_col>
-    <cell_colspan>10</cell_colspan>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <border_top_width>1</border_top_width>
-    <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
-    <background_color>#BFBFBF</background_color>
-  </cell>
-  <cell>
-    <id>344464807</id>
-    <cell_text>=AggSum({SQ_ITEMSTOCK_STATUS_STKPT_01.stock_qty})</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>12</cell_row>
-    <cell_col>11</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
+    <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
-    <border_top_width>1</border_top_width>
-    <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
     <background_color>#BFBFBF</background_color>
   </cell>
   <cell>
-    <id>320078156</id>
+    <id>935379674</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>12</cell_row>
-    <cell_col>10</cell_col>
+    <cell_row>9</cell_row>
+    <cell_col>2</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#BFBFBF</background_color>
+  </cell>
+  <cell>
+    <id>445075838</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>9</cell_row>
+    <cell_col>3</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#BFBFBF</background_color>
+  </cell>
+  <cell>
+    <id>929782579</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>9</cell_row>
+    <cell_col>4</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#BFBFBF</background_color>
+  </cell>
+  <cell>
+    <id>1260172493</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>9</cell_row>
+    <cell_col>5</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#BFBFBF</background_color>
+  </cell>
+  <cell>
+    <id>1859822884</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>9</cell_row>
+    <cell_col>6</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#BFBFBF</background_color>
+  </cell>
+  <cell>
+    <id>981929790</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>9</cell_row>
+    <cell_col>7</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#BFBFBF</background_color>
+  </cell>
+  <cell>
+    <id>552433641</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>9</cell_row>
+    <cell_col>8</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#BFBFBF</background_color>
+  </cell>
+  <cell>
+    <id>494329864</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.transit_quantity})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>9</cell_row>
+    <cell_col>12</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
-    <border_top_width>1</border_top_width>
-    <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
+    <format_type>Number</format_type>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
     <background_color>#BFBFBF</background_color>
   </cell>
   <cell>
-    <id>318447677</id>
-    <cell_text>=''Print Date : ''&amp;GlobalDateFormat(Now())</cell_text>
+    <id>446544722</id>
+    <cell_text>=AggSum({ITEMSTOCK_STATUS_01.transit_amount})</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>13</cell_row>
-    <cell_col>0</cell_col>
-    <cell_colspan>4</cell_colspan>
+    <cell_row>9</cell_row>
+    <cell_col>13</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
+    <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
+    <background_color>#BFBFBF</background_color>
   </cell>
   <cell>
-    <id>994319165</id>
-    <cell_text>=''Page No. : ''&amp;PageNumber()</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>13</cell_row>
+    <id>658507061</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>9</cell_row>
     <cell_col>9</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#BFBFBF</background_color>
+  </cell>
+  <cell>
+    <id>666818957</id>
+    <cell_text>=''Print Date : ''&amp;GlobalDateFormat(Now())</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>10</cell_row>
+    <cell_col>0</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
     <cell_colspan>3</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1070,10 +1348,22 @@ VALUES (
     <border_top_color>#000000</border_top_color>
   </cell>
   <cell>
-    <id>38669116</id>
+    <id>711103202</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>13</cell_row>
+    <cell_row>10</cell_row>
+    <cell_col>3</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
+  <cell>
+    <id>353739911</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>10</cell_row>
     <cell_col>4</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1082,10 +1372,10 @@ VALUES (
     <border_top_color>#000000</border_top_color>
   </cell>
   <cell>
-    <id>555936564</id>
+    <id>319983704</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>13</cell_row>
+    <cell_row>10</cell_row>
     <cell_col>5</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1094,10 +1384,10 @@ VALUES (
     <border_top_color>#000000</border_top_color>
   </cell>
   <cell>
-    <id>606224370</id>
+    <id>1079238284</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>13</cell_row>
+    <cell_row>10</cell_row>
     <cell_col>6</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1106,10 +1396,10 @@ VALUES (
     <border_top_color>#000000</border_top_color>
   </cell>
   <cell>
-    <id>1620153796</id>
+    <id>2056230226</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>13</cell_row>
+    <cell_row>10</cell_row>
     <cell_col>7</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1118,11 +1408,38 @@ VALUES (
     <border_top_color>#000000</border_top_color>
   </cell>
   <cell>
-    <id>624699057</id>
+    <id>2122011784</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>13</cell_row>
+    <cell_row>10</cell_row>
     <cell_col>8</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
+  <cell>
+    <id>2049398312</id>
+    <cell_text>=''Page No. : ''&amp;PageNumber()</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>10</cell_row>
+    <cell_col>10</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <cell_colspan>5</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
+  <cell>
+    <id>83010331</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>10</cell_row>
+    <cell_col>9</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
@@ -1142,28 +1459,21 @@ VALUES (
     <group_type>Page Header</group_type>
   </row>
   <row>
-    <group_type>Page Header</group_type>
-  </row>
-  <row>
     <group_type>Header</group_type>
-    <group_field>LV_SITE_01.site_type</group_field>
+    <group_field>LV_SITE_01.name</group_field>
+    <shading>
+      <color>#F6F6F6</color>
+    </shading>
   </row>
   <row>
     <group_type>Header</group_type>
     <group_field>LV_ITEM_01.department</group_field>
+    <shading>
+      <color>#FCFCFC</color>
+    </shading>
   </row>
   <row>
-    <group_type>Header</group_type>
-    <group_field>LV_ITEM_01.code</group_field>
-  </row>
-  <row>
-    <group_type>Footer</group_type>
-    <group_field>LV_ITEM_BATCHSERIAL_01.batch_serial_no</group_field>
-  </row>
-  <row>
-    <group_type>Footer</group_type>
-    <group_field>LV_ITEM_01.code</group_field>
-    <suppress_flag>True</suppress_flag>
+    <group_type>Detail</group_type>
   </row>
   <row>
     <group_type>Footer</group_type>
@@ -1172,7 +1482,7 @@ VALUES (
   </row>
   <row>
     <group_type>Footer</group_type>
-    <group_field>LV_SITE_01.site_type</group_field>
+    <group_field>LV_SITE_01.name</group_field>
     <suppress_flag>True</suppress_flag>
   </row>
   <row>
@@ -1209,6 +1519,12 @@ VALUES (
     <column_width>100</column_width>
   </column>
   <column>
+    <column_width>146</column_width>
+  </column>
+  <column>
+    <column_width>100</column_width>
+  </column>
+  <column>
     <column_width>100</column_width>
   </column>
   <column>
@@ -1217,93 +1533,73 @@ VALUES (
   <column>
     <column_width>100</column_width>
   </column>
+  <column>
+    <column_width>100</column_width>
+  </column>
   <join>
     <affinity>Global</affinity>
-    <entity_from_name>SQ_ITEMSTOCK_STATUS_STKPT_01</entity_from_name>
-    <entity_to_name>LV_ITEM_01</entity_to_name>
-    <entity_from_id>SQ_ITEMSTOCK_STATUS_STKPT_01</entity_from_id>
-    <entity_to_id>LV_ITEM_01</entity_to_id>
-    <join_type>inner</join_type>
-    <relation_type>11</relation_type>
-    <weight>0</weight>
-    <key>
-      <col_from_name>icode</col_from_name>
-      <col_to_name>code</col_to_name>
-    </key>
-    <clause>
-      <left_side>icode</left_side>
-      <left_side_type>Column</left_side_type>
-      <comparison>EQ</comparison>
-      <right_side>code</right_side>
-      <right_side_type>Column</right_side_type>
-      <conjunction>AND</conjunction>
-      <level>0</level>
-    </clause>
-  </join>
-  <join>
-    <affinity>Global</affinity>
-    <entity_from_name>SQ_ITEMSTOCK_STATUS_STKPT_01</entity_from_name>
-    <entity_to_name>LV_SITE_01</entity_to_name>
-    <entity_from_id>SQ_ITEMSTOCK_STATUS_STKPT_01</entity_from_id>
-    <entity_to_id>LV_SITE_01</entity_to_id>
-    <join_type>inner</join_type>
-    <relation_type>11</relation_type>
-    <weight>0</weight>
-    <key>
-      <col_from_name>admsite_code</col_from_name>
-      <col_to_name>sitecode</col_to_name>
-    </key>
-    <clause>
-      <left_side>admsite_code</left_side>
-      <left_side_type>Column</left_side_type>
-      <comparison>EQ</comparison>
-      <right_side>sitecode</right_side>
-      <right_side_type>Column</right_side_type>
-      <conjunction>AND</conjunction>
-      <level>0</level>
-    </clause>
-  </join>
-  <join>
-    <affinity>Global</affinity>
-    <entity_from_name>SQ_ITEMSTOCK_STATUS_STKPT_01</entity_from_name>
-    <entity_to_name>LV_STOCKPOINT_01</entity_to_name>
-    <entity_from_id>SQ_ITEMSTOCK_STATUS_STKPT_01</entity_from_id>
-    <entity_to_id>LV_STOCKPOINT_01</entity_to_id>
-    <join_type>inner</join_type>
-    <relation_type>11</relation_type>
-    <weight>0</weight>
-    <key>
-      <col_from_name>stockpoint_code</col_from_name>
-      <col_to_name>stockpoint_code</col_to_name>
-    </key>
-    <clause>
-      <left_side>stockpoint_code</left_side>
-      <left_side_type>Column</left_side_type>
-      <comparison>EQ</comparison>
-      <right_side>stockpoint_code</right_side>
-      <right_side_type>Column</right_side_type>
-      <conjunction>AND</conjunction>
-      <level>0</level>
-    </clause>
-  </join>
-  <join>
-    <affinity>Global</affinity>
-    <entity_from_name>SQ_ITEMSTOCK_STATUS_STKPT_01</entity_from_name>
+    <entity_from_name>ITEMSTOCK_STATUS_01</entity_from_name>
     <entity_to_name>LV_ITEM_BATCHSERIAL_01</entity_to_name>
-    <entity_from_id>SQ_ITEMSTOCK_STATUS_STKPT_01</entity_from_id>
+    <entity_from_id>ITEMSTOCK_STATUS_01</entity_from_id>
     <entity_to_id>LV_ITEM_BATCHSERIAL_01</entity_to_id>
     <join_type>leftouter</join_type>
     <relation_type>11</relation_type>
     <weight>0</weight>
     <key>
-      <col_from_name>batch_serial_code</col_from_name>
+      <col_from_name>invbatch_serial_code</col_from_name>
       <col_to_name>batch_serial_code</col_to_name>
     </key>
     <clause>
-      <left_side>batch_serial_code</left_side>
+      <left_side>invbatch_serial_code</left_side>
       <left_side_type>Column</left_side_type>
       <comparison>EQ</comparison>
       <right_side>batch_serial_code</right_side>
+      <right_side_type>Column</right_side_type>
+      <conjunction>AND</conjunction>
+      <level>0</level>
+    </clause>
+  </join>
+  <join>
+    <affinity>Global</affinity>
+    <entity_from_name>LV_ITEM_01</entity_from_name>
+    <entity_to_name>ITEMSTOCK_STATUS_01</entity_to_name>
+    <entity_from_id>LV_ITEM_01</entity_from_id>
+    <entity_to_id>ITEMSTOCK_STATUS_01</entity_to_id>
+    <join_type>inner</join_type>
+    <relation_type>11</relation_type>
+    <weight>0</weight>
+    <key>
+      <col_from_name>code</col_from_name>
+      <col_to_name>icode</col_to_name>
+    </key>
+    <clause>
+      <left_side>code</left_side>
+      <left_side_type>Column</left_side_type>
+      <comparison>EQ</comparison>
+      <right_side>icode</right_side>
+      <right_side_type>Column</right_side_type>
+      <conjunction>AND</conjunction>
+      <level>0</level>
+    </clause>
+  </join>
+  <join>
+    <affinity>Global</affinity>
+    <entity_from_name>LV_SITE_01</entity_from_name>
+    <entity_to_name>ITEMSTOCK_STATUS_01</entity_to_name>
+    <entity_from_id>LV_SITE_01</entity_from_id>
+    <entity_to_id>ITEMSTOCK_STATUS_01</entity_to_id>
+    <join_type>inner</join_type>
+    <relation_type>11</relation_type>
+    <weight>0</weight>
+    <key>
+      <col_from_name>sitecode</col_from_name>
+      <col_to_name>admsite_code</col_to_name>
+    </key>
+    <clause>
+      <left_side>sitecode</left_side>
+      <left_side_type>Column</left_side_type>
+      <comparison>EQ</comparison>
+      <right_side>admsite_code</right_side>
       <right_side_type>Column</right_side_type>
       <conjunction>AND</conjunction>
       <level>0</level>
@@ -1316,63 +1612,39 @@ VALUES (
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>LV_SITE_01.short_code</sort_name>
+    <sort_name>LV_ITEM_01.division</sort_name>
     <sort_title />
     <order_num>1</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>LV_SITE_01.site_type</sort_name>
+    <sort_name>LV_ITEM_01.section</sort_name>
     <sort_title />
     <order_num>2</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>LV_STOCKPOINT_01.name</sort_name>
+    <sort_name>LV_ITEM_01.department</sort_name>
     <sort_title />
     <order_num>3</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>LV_ITEM_01.division</sort_name>
+    <sort_name>LV_ITEM_01.item_name</sort_name>
     <sort_title />
     <order_num>4</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>LV_ITEM_01.section</sort_name>
+    <sort_name>LV_ITEM_01.barcode</sort_name>
     <sort_title />
     <order_num>5</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>LV_ITEM_01.department</sort_name>
-    <sort_title />
-    <order_num>6</order_num>
-    <ascending_flag>True</ascending_flag>
-  </sort>
-  <sort>
-    <sort_name>LV_ITEM_01.item_name</sort_name>
-    <sort_title />
-    <order_num>7</order_num>
-    <ascending_flag>True</ascending_flag>
-  </sort>
-  <sort>
-    <sort_name>LV_ITEM_01.barcode</sort_name>
-    <sort_title />
-    <order_num>8</order_num>
-    <ascending_flag>True</ascending_flag>
-  </sort>
-  <sort>
     <sort_name>LV_ITEM_01.code</sort_name>
     <sort_title />
-    <order_num>9</order_num>
-    <ascending_flag>True</ascending_flag>
-  </sort>
-  <sort>
-    <sort_name>LV_ITEM_BATCHSERIAL_01.batch_serial_no</sort_name>
-    <sort_title />
-    <order_num>10</order_num>
+    <order_num>6</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <filter>
@@ -1382,46 +1654,20 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1427295789</filter_ref_id>
+    <filter_ref_id>1772666397</filter_ref_id>
     <filter_title>Extinct</filter_title>
     <values>
       <value>No</value>
     </values>
   </filter>
   <filter>
-    <filter_name>LV_SITE_01.name</filter_name>
+    <filter_name>LV_ITEM_01.division</filter_name>
     <order_num>1</order_num>
     <operator>oo</operator>
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>978419921</filter_ref_id>
-    <filter_title>Owner Site</filter_title>
-    <values>
-      <value />
-    </values>
-  </filter>
-  <filter>
-    <filter_name>LV_STOCKPOINT_01.name</filter_name>
-    <order_num>2</order_num>
-    <operator>oo</operator>
-    <prompt_flag>True</prompt_flag>
-    <and_flag>True</and_flag>
-    <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>893349189</filter_ref_id>
-    <filter_title>Stock Point</filter_title>
-    <values>
-      <value />
-    </values>
-  </filter>
-  <filter>
-    <filter_name>LV_ITEM_01.division</filter_name>
-    <order_num>3</order_num>
-    <operator>oo</operator>
-    <prompt_flag>True</prompt_flag>
-    <and_flag>True</and_flag>
-    <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1598146233</filter_ref_id>
+    <filter_ref_id>1990283787</filter_ref_id>
     <filter_title>Division</filter_title>
     <values>
       <value />
@@ -1429,12 +1675,12 @@ VALUES (
   </filter>
   <filter>
     <filter_name>LV_ITEM_01.section</filter_name>
-    <order_num>4</order_num>
+    <order_num>2</order_num>
     <operator>oo</operator>
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1641009060</filter_ref_id>
+    <filter_ref_id>1573649359</filter_ref_id>
     <filter_title>Section</filter_title>
     <values>
       <value />
@@ -1442,12 +1688,12 @@ VALUES (
   </filter>
   <filter>
     <filter_name>LV_ITEM_01.department</filter_name>
-    <order_num>5</order_num>
+    <order_num>3</order_num>
     <operator>oo</operator>
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1338593160</filter_ref_id>
+    <filter_ref_id>2097198564</filter_ref_id>
     <filter_title>Department</filter_title>
     <values>
       <value />
@@ -1455,25 +1701,25 @@ VALUES (
   </filter>
   <filter>
     <filter_name>LV_ITEM_01.article_name</filter_name>
-    <order_num>6</order_num>
+    <order_num>4</order_num>
     <operator>oo</operator>
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1957234146</filter_ref_id>
-    <filter_title>Article</filter_title>
+    <filter_ref_id>1221848557</filter_ref_id>
+    <filter_title>Article Name</filter_title>
     <values>
       <value />
     </values>
   </filter>
   <filter>
     <filter_name>LV_ITEM_01.category1</filter_name>
-    <order_num>7</order_num>
+    <order_num>5</order_num>
     <operator>oo</operator>
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1263646033</filter_ref_id>
+    <filter_ref_id>2110876745</filter_ref_id>
     <filter_title>Category 1</filter_title>
     <values>
       <value />
@@ -1481,12 +1727,12 @@ VALUES (
   </filter>
   <filter>
     <filter_name>LV_ITEM_01.category2</filter_name>
-    <order_num>8</order_num>
+    <order_num>6</order_num>
     <operator>oo</operator>
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1854106917</filter_ref_id>
+    <filter_ref_id>2132663949</filter_ref_id>
     <filter_title>Category 2</filter_title>
     <values>
       <value />
@@ -1494,12 +1740,12 @@ VALUES (
   </filter>
   <filter>
     <filter_name>LV_ITEM_01.category3</filter_name>
-    <order_num>9</order_num>
+    <order_num>7</order_num>
     <operator>oo</operator>
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>934414181</filter_ref_id>
+    <filter_ref_id>1360140828</filter_ref_id>
     <filter_title>Category 3</filter_title>
     <values>
       <value />
@@ -1507,12 +1753,12 @@ VALUES (
   </filter>
   <filter>
     <filter_name>LV_ITEM_01.category4</filter_name>
-    <order_num>10</order_num>
+    <order_num>8</order_num>
     <operator>oo</operator>
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>247942301</filter_ref_id>
+    <filter_ref_id>1439424093</filter_ref_id>
     <filter_title>Category 4</filter_title>
     <values>
       <value />
@@ -1520,12 +1766,12 @@ VALUES (
   </filter>
   <filter>
     <filter_name>LV_ITEM_01.category5</filter_name>
-    <order_num>11</order_num>
+    <order_num>9</order_num>
     <operator>oo</operator>
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>276303234</filter_ref_id>
+    <filter_ref_id>750582818</filter_ref_id>
     <filter_title>Category 5</filter_title>
     <values>
       <value />
@@ -1533,12 +1779,12 @@ VALUES (
   </filter>
   <filter>
     <filter_name>LV_ITEM_01.category6</filter_name>
-    <order_num>12</order_num>
+    <order_num>10</order_num>
     <operator>oo</operator>
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>638750199</filter_ref_id>
+    <filter_ref_id>494894645</filter_ref_id>
     <filter_title>Category 6</filter_title>
     <values>
       <value />
@@ -1546,12 +1792,12 @@ VALUES (
   </filter>
   <filter>
     <filter_name>LV_ITEM_01.barcode</filter_name>
-    <order_num>13</order_num>
+    <order_num>11</order_num>
     <operator>oo</operator>
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1506577763</filter_ref_id>
+    <filter_ref_id>242824364</filter_ref_id>
     <filter_title>Barcode</filter_title>
     <values>
       <value />
@@ -1566,12 +1812,12 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-05-05 07:24:18.712770', '132560', '2026-06-11 12:55:21.023381',
+    '2025-07-02 12:45:40.583080', '132560', '2026-06-11 12:56:23.325521',
     '132560', '75a16cac-c843-4b39-8259-a06b6f97fea3', 27,
     FALSE, 2, 768,
     NULL, 0, 0,
     FALSE, FALSE, NULL,
-    NULL, '2026004', 'I'
+    NULL, '2026004', 'U'
 );
 
 -- Insert into ex_content_access_dev (1 record(s))
@@ -1581,7 +1827,7 @@ INSERT INTO ginview.ex_content_access_dev (
     access_flags, child_inherits, release_version, action
 )
 VALUES (
-    '2f28175a-e2eb-494b-b7ba-e73563921a8d', '6d0a3125-672a-4b60-a548-1c3be854e5b8', 2,
+    '20c31860-3172-48d3-a44b-6222ffa1a6f3', '6d0a3125-672a-4b60-a548-1c3be854e5b8', 2,
     '75a16cac-c843-4b39-8259-a06b6f97fea3', 0, 768,
-    FALSE, '2026004', 'I'
+    FALSE, '2026004', 'U'
 );
