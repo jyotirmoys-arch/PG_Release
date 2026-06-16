@@ -3,7 +3,7 @@
 -- Name: #Reservation Register#
 -- Action: UPDATE
 -- Version: 2026004
--- Generated on: 2026-06-16 14:01:35
+-- Generated on: 2026-06-16 16:00:03
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -1061,7 +1061,7 @@ VALUES (
   </cell>
   <cell>
     <id>2071170603</id>
-    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.reserved_quantity})</cell_text>
+    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.cancelled_quantity})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>9</cell_row>
     <cell_col>13</cell_col>
@@ -1072,7 +1072,7 @@ VALUES (
   </cell>
   <cell>
     <id>446312818</id>
-    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.reserved_quantity})</cell_text>
+    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.pick_list_quantity})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>9</cell_row>
     <cell_col>14</cell_col>
@@ -1082,91 +1082,100 @@ VALUES (
     <font_size>9</font_size>
   </cell>
   <cell>
-    <id>249716037</id>
-    <cell_text>=aggsum([M10])</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>10</cell_row>
-    <cell_col>12</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-  </cell>
-  <cell>
-    <id>604417095</id>
-    <cell_text>=aggsum([N10])</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>10</cell_row>
-    <cell_col>13</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-  </cell>
-  <cell>
-    <id>1634171992</id>
-    <cell_text>=aggsum([O10])</cell_text>
+    <id>1171589762</id>
+    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.pick_list_quantity})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>10</cell_row>
     <cell_col>14</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
   </cell>
   <cell>
-    <id>897909899</id>
-    <cell_text>=aggsum([M11])</cell_text>
+    <id>2005135311</id>
+    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.reserved_quantity})</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>11</cell_row>
+    <cell_row>10</cell_row>
     <cell_col>12</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
   </cell>
   <cell>
-    <id>1849774110</id>
-    <cell_text>=aggsum([N11])</cell_text>
+    <id>797814019</id>
+    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.cancelled_quantity})</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>11</cell_row>
+    <cell_row>10</cell_row>
     <cell_col>13</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
   </cell>
   <cell>
-    <id>1776289337</id>
-    <cell_text>=aggsum([O11])</cell_text>
+    <id>277554636</id>
+    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.pick_list_quantity})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>11</cell_row>
     <cell_col>14</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
   </cell>
   <cell>
-    <id>1487380678</id>
-    <cell_text>=aggsum([M12])</cell_text>
+    <id>888936087</id>
+    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.reserved_quantity})</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>12</cell_row>
+    <cell_row>11</cell_row>
     <cell_col>12</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
   </cell>
   <cell>
-    <id>1031207407</id>
-    <cell_text>=aggsum([N12])</cell_text>
+    <id>2058208142</id>
+    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.cancelled_quantity})</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>12</cell_row>
+    <cell_row>11</cell_row>
     <cell_col>13</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
   </cell>
   <cell>
-    <id>212706465</id>
-    <cell_text>=aggsum([O12])</cell_text>
+    <id>712235203</id>
+    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.pick_list_quantity})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>12</cell_row>
     <cell_col>14</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+  </cell>
+  <cell>
+    <id>751125425</id>
+    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.reserved_quantity})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>12</cell_row>
+    <cell_col>12</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+  </cell>
+  <cell>
+    <id>1145750147</id>
+    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.cancelled_quantity})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>12</cell_row>
+    <cell_col>13</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
@@ -1294,8 +1303,25 @@ VALUES (
     <background_color>#E2E2E2</background_color>
   </cell>
   <cell>
-    <id>338006282</id>
-    <cell_text>=aggsum([M13])</cell_text>
+    <id>1415699862</id>
+    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.pick_list_quantity})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>13</cell_row>
+    <cell_col>14</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <border_top_width>1</border_top_width>
+    <border_bottom_width>1</border_bottom_width>
+    <border_top_color>#000000</border_top_color>
+    <border_bottom_color>#000000</border_bottom_color>
+    <background_color>#E2E2E2</background_color>
+  </cell>
+  <cell>
+    <id>1897799357</id>
+    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.reserved_quantity})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>13</cell_row>
     <cell_col>12</cell_col>
@@ -1311,28 +1337,11 @@ VALUES (
     <background_color>#E2E2E2</background_color>
   </cell>
   <cell>
-    <id>777449631</id>
-    <cell_text>=aggsum([N13])</cell_text>
+    <id>1099500470</id>
+    <cell_text>=aggsum({LV_STOCK_RESERVATION_01.cancelled_quantity})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>13</cell_row>
     <cell_col>13</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <border_top_width>1</border_top_width>
-    <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
-    <background_color>#E2E2E2</background_color>
-  </cell>
-  <cell>
-    <id>243173677</id>
-    <cell_text>=aggsum([O13])</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>13</cell_row>
-    <cell_col>14</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1694,7 +1703,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2022-03-03 10:01:36', '1295', '2026-06-16 08:04:31.564098',
+    '2022-03-03 10:01:36', '1295', '2026-06-16 10:25:47.733270',
     '132560', '75a16cac-c843-4b39-8259-a06b6f97fea3', 31,
     FALSE, 2, 768,
     NULL, 0, 0,
