@@ -3,7 +3,7 @@
 -- Name: #Stock Adjustment Summary#
 -- Action: UPDATE
 -- Version: 2026004
--- Generated on: 2026-06-04 18:07:04
+-- Generated on: 2026-07-08 16:26:16
 -- =====================================================
 
 -- Insert into ex_content_dev

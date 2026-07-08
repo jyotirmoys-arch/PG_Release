@@ -3,7 +3,7 @@
 -- Name: #VMI Goods Receive Register#
 -- Action: UPDATE
 -- Version: 2026004
--- Generated on: 2026-06-16 14:01:35
+-- Generated on: 2026-07-08 16:26:17
 -- =====================================================
 
 -- Insert into ex_content_dev

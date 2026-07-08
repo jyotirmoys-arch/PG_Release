@@ -3,7 +3,7 @@
 -- Name: #Stock Status Register - Stock Point#
 -- Action: INSERT
 -- Version: 2026004
--- Generated on: 2026-06-11 18:43:18
+-- Generated on: 2026-07-08 16:26:14
 -- =====================================================
 
 -- Insert into ex_content_dev
