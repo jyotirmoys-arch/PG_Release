@@ -3,7 +3,7 @@
 -- Name: #Bin Adjustment Register#
 -- Action: INSERT
 -- Version: 2026007
--- Generated on: 2026-08-07 16:08:45
+-- Generated on: 2026-08-07 16:18:16
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -79,24 +79,13 @@ VALUES (
     <category>01-Master</category>
   </entity>
   <cell>
-    <id>321791971</id>
-    <cell_text>=@IsBarcodeApplicable@&amp;@IsCategory1@&amp;@IsCategory2@&amp;@IsCategory3@&amp;@IsCategory4@&amp;@IsCategory5@&amp;@IsCategory6@&amp;@ShowBatchSerial@</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>0</cell_row>
-    <cell_col>0</cell_col>
-    <cell_colspan>7</cell_colspan>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-  </cell>
-  <cell>
     <id>64373363</id>
     <cell_text>=@OrgName@</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>1</cell_row>
+    <cell_row>0</cell_row>
     <cell_col>0</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
-    <cell_colspan>15</cell_colspan>
+    <cell_colspan>16</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>13</font_size>
@@ -106,10 +95,10 @@ VALUES (
     <id>944938447</id>
     <cell_text>=@reportName@</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>2</cell_row>
+    <cell_row>1</cell_row>
     <cell_col>0</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
-    <cell_colspan>15</cell_colspan>
+    <cell_colspan>16</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>11</font_size>
@@ -119,10 +108,10 @@ VALUES (
     <id>251900004</id>
     <cell_text>=Bold(''Period : '')&amp;GlobalDateFormat(@DTFR@)&amp;Bold('' To '')&amp;GlobalDateFormat(@DTTO@)</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>3</cell_row>
+    <cell_row>2</cell_row>
     <cell_col>0</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
-    <cell_colspan>15</cell_colspan>
+    <cell_colspan>16</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
@@ -131,7 +120,7 @@ VALUES (
     <id>1509450433</id>
     <cell_text>Owner Site</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -148,7 +137,7 @@ VALUES (
     <id>709398894</id>
     <cell_text>Bin Adjustment No</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>1</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -165,7 +154,7 @@ VALUES (
     <id>1118189629</id>
     <cell_text>Bin Adjustment Date</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>2</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -182,7 +171,7 @@ VALUES (
     <id>1343861635</id>
     <cell_text>Status</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>3</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -199,7 +188,7 @@ VALUES (
     <id>779276619</id>
     <cell_text>Is Plan Based Adjustment</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>4</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -216,7 +205,7 @@ VALUES (
     <id>473331287</id>
     <cell_text>Source Bin No</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>5</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -233,7 +222,7 @@ VALUES (
     <id>194166941</id>
     <cell_text>Destination Bin No</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>6</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -250,7 +239,7 @@ VALUES (
     <id>447473912</id>
     <cell_text>Icode</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>7</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -267,7 +256,7 @@ VALUES (
     <id>2108683605</id>
     <cell_text>Item Name</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
+    <cell_row>3</cell_row>
     <cell_col>8</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -284,8 +273,8 @@ VALUES (
     <id>150297867</id>
     <cell_text>Adjustment Quantity</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>9</cell_col>
+    <cell_row>3</cell_row>
+    <cell_col>10</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -302,8 +291,8 @@ VALUES (
     <id>1560915685</id>
     <cell_text>Created By</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>11</cell_col>
+    <cell_row>3</cell_row>
+    <cell_col>12</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -319,8 +308,8 @@ VALUES (
     <id>1480126504</id>
     <cell_text>Created On</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>12</cell_col>
+    <cell_row>3</cell_row>
+    <cell_col>13</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -336,8 +325,8 @@ VALUES (
     <id>1784140417</id>
     <cell_text>Posted By</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>13</cell_col>
+    <cell_row>3</cell_row>
+    <cell_col>14</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -353,8 +342,8 @@ VALUES (
     <id>111710855</id>
     <cell_text>Posted On</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>14</cell_col>
+    <cell_row>3</cell_row>
+    <cell_col>15</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -370,9 +359,26 @@ VALUES (
     <id>1611288525</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>10</cell_col>
+    <cell_row>3</cell_row>
+    <cell_col>11</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <border_top_width>1</border_top_width>
+    <border_bottom_width>1</border_bottom_width>
+    <border_top_color>#808080</border_top_color>
+    <border_bottom_color>#808080</border_bottom_color>
+    <background_color>#DFDFDF</background_color>
+  </cell>
+  <cell>
+    <id>1725134271</id>
+    <cell_text>Batch Serial No.</cell_text>
+    <cell_type>text</cell_type>
+    <cell_row>3</cell_row>
+    <cell_col>9</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -388,8 +394,8 @@ VALUES (
     <id>542217904</id>
     <cell_text>LV_BIN_ADJUSTMENT_BATCH_01.posted_on</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
-    <cell_col>14</cell_col>
+    <cell_row>4</cell_row>
+    <cell_col>15</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -399,7 +405,7 @@ VALUES (
     <id>115382886</id>
     <cell_text>LV_SITE_01.name</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -410,7 +416,7 @@ VALUES (
     <id>2019883981</id>
     <cell_text>LV_BIN_ADJUSTMENT_BATCH_01.bin_adjustment_no</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>1</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -421,7 +427,7 @@ VALUES (
     <id>1055403540</id>
     <cell_text>LV_BIN_ADJUSTMENT_BATCH_01.bin_adjustment_date</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>2</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -432,7 +438,7 @@ VALUES (
     <id>1605233396</id>
     <cell_text>LV_BIN_ADJUSTMENT_BATCH_01.status</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>3</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -443,7 +449,7 @@ VALUES (
     <id>329924418</id>
     <cell_text>LV_BIN_ADJUSTMENT_BATCH_01.is_plan_based_adj</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>4</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -454,7 +460,7 @@ VALUES (
     <id>784504821</id>
     <cell_text>LV_BIN_ADJUSTMENT_BATCH_01.source_bin_no</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>5</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -465,7 +471,7 @@ VALUES (
     <id>1988007425</id>
     <cell_text>LV_BIN_ADJUSTMENT_BATCH_01.destination_bin_no</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>6</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -476,7 +482,7 @@ VALUES (
     <id>1301755263</id>
     <cell_text>LV_BIN_ADJUSTMENT_BATCH_01.icode</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>7</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -487,7 +493,7 @@ VALUES (
     <id>1420325742</id>
     <cell_text>LV_ITEM_01.item_name</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
+    <cell_row>4</cell_row>
     <cell_col>8</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -498,8 +504,8 @@ VALUES (
     <id>722104974</id>
     <cell_text>LV_BIN_ADJUSTMENT_BATCH_01.quantity</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
-    <cell_col>9</cell_col>
+    <cell_row>4</cell_row>
+    <cell_col>10</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -511,8 +517,8 @@ VALUES (
     <id>1590835127</id>
     <cell_text>LV_BIN_ADJUSTMENT_BATCH_01.created_by</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
-    <cell_col>11</cell_col>
+    <cell_row>4</cell_row>
+    <cell_col>12</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -522,8 +528,8 @@ VALUES (
     <id>1789626678</id>
     <cell_text>LV_BIN_ADJUSTMENT_BATCH_01.created_on</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
-    <cell_col>12</cell_col>
+    <cell_row>4</cell_row>
+    <cell_col>13</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -533,8 +539,19 @@ VALUES (
     <id>1736446535</id>
     <cell_text>LV_BIN_ADJUSTMENT_BATCH_01.posted_by</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>5</cell_row>
-    <cell_col>13</cell_col>
+    <cell_row>4</cell_row>
+    <cell_col>14</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+  </cell>
+  <cell>
+    <id>420334124</id>
+    <cell_text>LV_ITEM_BATCHSERIAL_01.batch_serial_no</cell_text>
+    <cell_type>data</cell_type>
+    <cell_row>4</cell_row>
+    <cell_col>9</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -544,7 +561,7 @@ VALUES (
     <id>1424237851</id>
     <cell_text>={LV_SITE_01.name}&amp;'' Total : ''</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>6</cell_row>
+    <cell_row>5</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <cell_colspan>6</cell_colspan>
@@ -556,10 +573,10 @@ VALUES (
   </cell>
   <cell>
     <id>468745668</id>
-    <cell_text>=AggSum([J6])</cell_text>
+    <cell_text>=AggSum([K5])</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>9</cell_col>
+    <cell_row>5</cell_row>
+    <cell_col>10</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -572,8 +589,8 @@ VALUES (
     <id>1358005719</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>14</cell_col>
+    <cell_row>5</cell_row>
+    <cell_col>15</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -584,7 +601,7 @@ VALUES (
     <id>409912202</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
+    <cell_row>5</cell_row>
     <cell_col>6</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -596,7 +613,7 @@ VALUES (
     <id>458546126</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
+    <cell_row>5</cell_row>
     <cell_col>7</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -608,7 +625,7 @@ VALUES (
     <id>673388825</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
+    <cell_row>5</cell_row>
     <cell_col>8</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -620,8 +637,8 @@ VALUES (
     <id>82791274</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>11</cell_col>
+    <cell_row>5</cell_row>
+    <cell_col>12</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -632,8 +649,8 @@ VALUES (
     <id>681840089</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>12</cell_col>
+    <cell_row>5</cell_row>
+    <cell_col>13</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -644,8 +661,8 @@ VALUES (
     <id>1568663403</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>13</cell_col>
+    <cell_row>5</cell_row>
+    <cell_col>14</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -656,8 +673,20 @@ VALUES (
     <id>2075083003</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>10</cell_col>
+    <cell_row>5</cell_row>
+    <cell_col>11</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <background_color>#DFDFDF</background_color>
+  </cell>
+  <cell>
+    <id>1559228991</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>5</cell_row>
+    <cell_col>9</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -668,7 +697,7 @@ VALUES (
     <id>1051574701</id>
     <cell_text>=''Print Date : ''&amp;GlobalDateFormat(Now())</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>7</cell_row>
+    <cell_row>6</cell_row>
     <cell_col>0</cell_col>
     <cell_colspan>5</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -681,8 +710,8 @@ VALUES (
     <id>1118507402</id>
     <cell_text>=''Page No. : ''&amp;PageNumber()</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>12</cell_col>
+    <cell_row>6</cell_row>
+    <cell_col>13</cell_col>
     <cell_colspan>3</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -694,7 +723,7 @@ VALUES (
     <id>699434401</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
+    <cell_row>6</cell_row>
     <cell_col>5</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -706,7 +735,7 @@ VALUES (
     <id>1288100775</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
+    <cell_row>6</cell_row>
     <cell_col>6</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -718,7 +747,7 @@ VALUES (
     <id>1278317039</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
+    <cell_row>6</cell_row>
     <cell_col>7</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -730,7 +759,7 @@ VALUES (
     <id>726543645</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
+    <cell_row>6</cell_row>
     <cell_col>8</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -742,8 +771,8 @@ VALUES (
     <id>954114157</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>9</cell_col>
+    <cell_row>6</cell_row>
+    <cell_col>10</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
@@ -754,8 +783,8 @@ VALUES (
     <id>75257067</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>11</cell_col>
+    <cell_row>6</cell_row>
+    <cell_col>12</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
@@ -766,18 +795,26 @@ VALUES (
     <id>883149622</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>10</cell_col>
+    <cell_row>6</cell_row>
+    <cell_col>11</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <border_top_width>1</border_top_width>
     <border_top_color>#000000</border_top_color>
   </cell>
-  <row>
-    <group_type>Page Header</group_type>
-    <suppress_flag>True</suppress_flag>
-  </row>
+  <cell>
+    <id>1443695336</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>9</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
   <row>
     <group_type>Page Header</group_type>
   </row>
@@ -792,7 +829,7 @@ VALUES (
   </row>
   <row>
     <group_type>Footer</group_type>
-    <group_field>LV_ITEM_01.item_name</group_field>
+    <group_field>LV_ITEM_BATCHSERIAL_01.batch_serial_no</group_field>
   </row>
   <row>
     <group_type>Footer</group_type>
@@ -827,6 +864,9 @@ VALUES (
   </column>
   <column>
     <column_width>298</column_width>
+  </column>
+  <column>
+    <column_width>203</column_width>
   </column>
   <column>
     <column_width>142</column_width>
@@ -939,6 +979,18 @@ VALUES (
     <order_num>3</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
+  <sort>
+    <sort_name>LV_BIN_ADJUSTMENT_BATCH_01.invbatch_serial_code</sort_name>
+    <sort_title />
+    <order_num>4</order_num>
+    <ascending_flag>True</ascending_flag>
+  </sort>
+  <sort>
+    <sort_name>LV_ITEM_BATCHSERIAL_01.batch_serial_no</sort_name>
+    <sort_title />
+    <order_num>5</order_num>
+    <ascending_flag>True</ascending_flag>
+  </sort>
   <filter>
     <filter_name>LV_BIN_ADJUSTMENT_BATCH_01.bin_adjustment_date</filter_name>
     <order_num>0</order_num>
@@ -1030,13 +1082,9 @@ VALUES (
     <cellId>-1</cellId>
     <direction>asc</direction>
   </topn>
-  <serverevent>
-    <event_type>OnExecuteSqlStatementConstructed</event_type>
-    <event_id>0</event_id>
-  </serverevent>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-08-07 09:34:06.331194', '2274', '2026-08-07 10:33:04.310905',
+    '2026-08-07 09:34:06.331194', '2274', '2026-08-07 10:46:45.782535',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 31,
     FALSE, 2, 768,
     NULL, 0, 0,
