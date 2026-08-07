@@ -3,7 +3,7 @@
 -- Name: #Bin Stock Audit Plan Register#
 -- Action: INSERT
 -- Version: 2026007
--- Generated on: 2026-08-07 13:23:41
+-- Generated on: 2026-08-07 14:00:54
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -881,6 +881,140 @@ VALUES (
     <font_size>9</font_size>
     <background_color>#FFFFFF</background_color>
   </cell>
+  <cell>
+    <id>1230941397</id>
+    <cell_text>=''Print Date : ''&amp;GlobalDateFormat(Now())</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>0</cell_col>
+    <cell_colspan>5</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
+  <cell>
+    <id>945568433</id>
+    <cell_text>=''Page No. : ''&amp;PageNumber()</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>14</cell_col>
+    <cell_colspan>3</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
+  <cell>
+    <id>1965995898</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>5</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
+  <cell>
+    <id>1434480643</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>6</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
+  <cell>
+    <id>497082367</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>7</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
+  <cell>
+    <id>1177553260</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>8</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
+  <cell>
+    <id>681079392</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>9</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
+  <cell>
+    <id>959010717</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>10</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
+  <cell>
+    <id>1073801176</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>11</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
+  <cell>
+    <id>937170363</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>12</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
+  <cell>
+    <id>193875084</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>13</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <border_top_width>1</border_top_width>
+    <border_top_color>#000000</border_top_color>
+  </cell>
   <row>
     <group_type>Page Header</group_type>
   </row>
@@ -905,6 +1039,9 @@ VALUES (
     <group_type>Footer</group_type>
     <group_field>LV_BIN_STK_PLAN_HEADER_01.plan_name</group_field>
     <suppress_flag>True</suppress_flag>
+  </row>
+  <row>
+    <group_type>Page Footer</group_type>
   </row>
   <column>
     <column_width>170</column_width>
@@ -1124,7 +1261,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-08-07 07:17:51.921167', '2274', '2026-08-07 07:42:02.555616',
+    '2026-08-07 07:17:51.921167', '2274', '2026-08-07 08:30:12.382853',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 31,
     FALSE, 2, 768,
     NULL, 0, 0,
