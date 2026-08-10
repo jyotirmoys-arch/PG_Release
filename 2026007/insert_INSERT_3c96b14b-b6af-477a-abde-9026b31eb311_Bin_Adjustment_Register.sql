@@ -3,7 +3,7 @@
 -- Name: #Bin Adjustment Register#
 -- Action: INSERT
 -- Version: 2026007
--- Generated on: 2026-08-07 16:18:16
+-- Generated on: 2026-08-10 13:09:43
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -911,29 +911,6 @@ VALUES (
   </join>
   <join>
     <affinity>Global</affinity>
-    <entity_from_name>LV_ITEM_01</entity_from_name>
-    <entity_to_name>LV_ITEM_BATCHSERIAL_01</entity_to_name>
-    <entity_from_id>LV_ITEM_01</entity_from_id>
-    <entity_to_id>LV_ITEM_BATCHSERIAL_01</entity_to_id>
-    <join_type>leftouter</join_type>
-    <relation_type>11</relation_type>
-    <weight>0</weight>
-    <key>
-      <col_from_name>code</col_from_name>
-      <col_to_name>icode</col_to_name>
-    </key>
-    <clause>
-      <left_side>code</left_side>
-      <left_side_type>Column</left_side_type>
-      <comparison>EQ</comparison>
-      <right_side>icode</right_side>
-      <right_side_type>Column</right_side_type>
-      <conjunction>AND</conjunction>
-      <level>0</level>
-    </clause>
-  </join>
-  <join>
-    <affinity>Global</affinity>
     <entity_from_name>LV_SITE_01</entity_from_name>
     <entity_to_name>LV_BIN_ADJUSTMENT_BATCH_01</entity_to_name>
     <entity_from_id>LV_SITE_01</entity_from_id>
@@ -950,6 +927,29 @@ VALUES (
       <left_side_type>Column</left_side_type>
       <comparison>EQ</comparison>
       <right_side>admsite_code_owner</right_side>
+      <right_side_type>Column</right_side_type>
+      <conjunction>AND</conjunction>
+      <level>0</level>
+    </clause>
+  </join>
+  <join>
+    <affinity>Global</affinity>
+    <entity_from_name>LV_BIN_ADJUSTMENT_BATCH_01</entity_from_name>
+    <entity_to_name>LV_ITEM_BATCHSERIAL_01</entity_to_name>
+    <entity_from_id>LV_BIN_ADJUSTMENT_BATCH_01</entity_from_id>
+    <entity_to_id>LV_ITEM_BATCHSERIAL_01</entity_to_id>
+    <join_type>leftouter</join_type>
+    <relation_type>11</relation_type>
+    <weight>0</weight>
+    <key>
+      <col_from_name>invbatch_serial_code</col_from_name>
+      <col_to_name>batch_serial_code</col_to_name>
+    </key>
+    <clause>
+      <left_side>invbatch_serial_code</left_side>
+      <left_side_type>Column</left_side_type>
+      <comparison>EQ</comparison>
+      <right_side>batch_serial_code</right_side>
       <right_side_type>Column</right_side_type>
       <conjunction>AND</conjunction>
       <level>0</level>
@@ -1084,7 +1084,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-08-07 09:34:06.331194', '2274', '2026-08-07 10:46:45.782535',
+    '2026-08-07 09:34:06.331194', '2274', '2026-08-10 07:38:22.127425',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 31,
     FALSE, 2, 768,
     NULL, 0, 0,
