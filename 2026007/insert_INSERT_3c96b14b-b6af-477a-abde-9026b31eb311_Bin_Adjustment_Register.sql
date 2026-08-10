@@ -3,7 +3,7 @@
 -- Name: #Bin Adjustment Register#
 -- Action: INSERT
 -- Version: 2026007
--- Generated on: 2026-08-10 13:09:43
+-- Generated on: 2026-08-10 14:39:03
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -998,7 +998,7 @@ VALUES (
     <prompt_flag>False</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>2078269941</filter_ref_id>
+    <filter_ref_id>811210463</filter_ref_id>
     <filter_title />
     <values>
       <value>@DTFR@</value>
@@ -1014,7 +1014,7 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1927798178</filter_ref_id>
+    <filter_ref_id>1717641247</filter_ref_id>
     <filter_title>Site Name</filter_title>
     <values>
       <value />
@@ -1027,7 +1027,7 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>104196332</filter_ref_id>
+    <filter_ref_id>175981826</filter_ref_id>
     <filter_title>Source Bin No</filter_title>
     <values>
       <value />
@@ -1040,7 +1040,7 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>2057405391</filter_ref_id>
+    <filter_ref_id>1370210158</filter_ref_id>
     <filter_title>Destination Bin No</filter_title>
     <values>
       <value />
@@ -1053,7 +1053,7 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>305978513</filter_ref_id>
+    <filter_ref_id>1702091531</filter_ref_id>
     <filter_title>Barcode</filter_title>
     <values>
       <value />
@@ -1066,13 +1066,26 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>187337638</filter_ref_id>
+    <filter_ref_id>2105796994</filter_ref_id>
     <filter_title>Is Plan Based Adjustment</filter_title>
     <values>
       <value>Yes</value>
     </values>
     <values>
       <value>No</value>
+    </values>
+  </filter>
+  <filter>
+    <filter_name>LV_BIN_ADJUSTMENT_BATCH_01.binstkplan_name</filter_name>
+    <order_num>6</order_num>
+    <operator>oo</operator>
+    <prompt_flag>True</prompt_flag>
+    <and_flag>True</and_flag>
+    <group_with_next_flag>False</group_with_next_flag>
+    <filter_ref_id>1312723037</filter_ref_id>
+    <filter_title>Bin Stock Plan Name</filter_title>
+    <values>
+      <value />
     </values>
   </filter>
   <topn>
@@ -1084,7 +1097,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-08-07 09:34:06.331194', '2274', '2026-08-10 07:38:22.127425',
+    '2026-08-07 09:34:06.331194', '2274', '2026-08-10 09:07:33.649794',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 31,
     FALSE, 2, 768,
     NULL, 0, 0,
