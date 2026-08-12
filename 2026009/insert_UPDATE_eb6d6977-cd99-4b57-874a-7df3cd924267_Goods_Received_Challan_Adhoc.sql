@@ -3,7 +3,7 @@
 -- Name: #Goods Received Challan Adhoc#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-12 12:32:54
+-- Generated on: 2026-08-12 12:54:33
 -- =====================================================
 
 -- Insert into ex_content_dev

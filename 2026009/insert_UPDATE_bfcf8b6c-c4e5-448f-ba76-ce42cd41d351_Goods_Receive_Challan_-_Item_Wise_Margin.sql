@@ -3,7 +3,7 @@
 -- Name: #Goods Receive Challan - Item Wise Margin#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-12 12:32:53
+-- Generated on: 2026-08-12 12:54:33
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -212,7 +212,7 @@ VALUES (
   </cell>
   <cell>
     <id>2088637988</id>
-    <cell_text>=If({RQ_GOODS_RECEIVE_01.l1_owner_site_phone1}!='''', ''Phone 1: ''&amp;{RQ_GOODS_RECEIVE_01.l1_owner_site_phone1}&amp;'' '', '''') &amp; If({RQ_GOODS_RECEIVE_01.l1_owner_site_phone2}!='''', ''Phone 2: ''&amp;{RQ_GOODS_RECEIVE_01.l1_owner_site_phone2}&amp;'' '', '''') &amp; If({RQ_GOODS_RECEIVE_01.l1_owner_site_phone3}!='''', ''Phone 3: ''&amp;{RQ_GOODS_RECEIVE_01.l1_owner_site_phone3}&amp;'' '', '''')&amp;NewLine()&amp;If({RQ_GOODS_RECEIVE_01.l1_owner_site_email1}!='''', ''Email: ''&amp;{RQ_GOODS_RECEIVE_01.l1_owner_site_email1}, '''')</cell_text>
+    <cell_text>=If({RQ_GOODS_RECEIVE_01.l1_owner_site_phone1}!='''', ''Phone: ''&amp;{RQ_GOODS_RECEIVE_01.l1_owner_site_phone1}&amp;'' '', '''') &amp;If({RQ_GOODS_RECEIVE_01.l1_owner_site_email1}!='''', ''Email: ''&amp;{RQ_GOODS_RECEIVE_01.l1_owner_site_email1}, '''')</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>4</cell_row>
     <cell_col>1</cell_col>
@@ -3394,7 +3394,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2019-08-26 15:29:20', '2109', '2026-08-12 06:43:49.397530',
+    '2019-08-26 15:29:20', '2109', '2026-08-12 07:15:19.265428',
     '132562', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,
