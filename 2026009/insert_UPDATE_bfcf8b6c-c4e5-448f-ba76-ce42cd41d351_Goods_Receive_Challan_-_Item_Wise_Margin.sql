@@ -3,7 +3,7 @@
 -- Name: #Goods Receive Challan - Item Wise Margin#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-07 19:15:26
+-- Generated on: 2026-08-12 12:32:53
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -402,8 +402,8 @@ VALUES (
   </cell>
   <cell>
     <id>1384101046</id>
-    <cell_text>{Goods Receive.l1_cust_billing_address}</cell_text>
-    <cell_type>text</cell_type>
+    <cell_text>RQ_GOODS_RECEIVE_01.l1_cust_billing_address</cell_text>
+    <cell_type>data</cell_type>
     <cell_row>7</cell_row>
     <cell_col>6</cell_col>
     <cell_colspan>12</cell_colspan>
@@ -493,7 +493,7 @@ VALUES (
   </cell>
   <cell>
     <id>1786202134</id>
-    <cell_text>={RQ_GOODS_RECEIVE_01.l1_cust_billing_office_ph1}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l1_cust_billing_office_ph2}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l1_cust_billing_office_ph3}</cell_text>
+    <cell_text>={RQ_GOODS_RECEIVE_01.l1_cust_billing_mobile}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l1_cust_billing_office_ph1}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l1_cust_billing_office_ph2}</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>9</cell_row>
     <cell_col>6</cell_col>
@@ -609,8 +609,8 @@ VALUES (
   </cell>
   <cell>
     <id>887640106</id>
-    <cell_text>{Goods Receive.l1_cust_gstin_no}</cell_text>
-    <cell_type>text</cell_type>
+    <cell_text>RQ_GOODS_RECEIVE_01.l1_cust_gstin_no</cell_text>
+    <cell_type>data</cell_type>
     <cell_row>11</cell_row>
     <cell_col>6</cell_col>
     <cell_colspan>4</cell_colspan>
@@ -3394,7 +3394,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2019-08-26 15:29:20', '2109', '2026-06-05 08:41:46.242373',
+    '2019-08-26 15:29:20', '2109', '2026-08-12 06:43:49.397530',
     '132562', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,

@@ -3,7 +3,7 @@
 -- Name: #Goods Receive Challan#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-07 19:15:26
+-- Generated on: 2026-08-12 12:32:54
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -528,7 +528,7 @@ VALUES (
   </cell>
   <cell>
     <id>1786202134</id>
-    <cell_text>='': ''&amp;{RQ_GOODS_RECEIVE_01.l1_cust_billing_office_ph1}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l1_cust_billing_office_ph2}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l1_cust_billing_office_ph3}</cell_text>
+    <cell_text>='': ''&amp;{RQ_GOODS_RECEIVE_01.l1_cust_billing_mobile}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l1_cust_billing_office_ph1}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l1_cust_billing_office_ph2}</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>9</cell_row>
     <cell_col>2</cell_col>
@@ -1877,7 +1877,7 @@ VALUES (
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
   </cell>
   <cell>
-    <id>549796737</id>
+    <id>1062174785</id>
     <cell_text>Reference Details</cell_text>
     <cell_type>text</cell_type>
     <cell_row>28</cell_row>
@@ -2012,7 +2012,7 @@ VALUES (
     <border_left_width>1</border_left_width>
     <border_left_color>#000000</border_left_color>
     <conditional>
-      <formula>{GRC Header.entry_mode}=''Adhoc''</formula>
+      <formula>{RQ_GOODS_RECEIVE_01.l1_entry_mode}=''Adhoc''</formula>
       <action>SuppressSection</action>
     </conditional>
   </cell>
@@ -3574,7 +3574,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2019-08-26 15:29:20', '2109', '2026-06-05 08:41:07.012705',
+    '2019-08-26 15:29:20', '2109', '2026-08-12 06:36:45.185163',
     '132562', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,
