@@ -3,7 +3,7 @@
 -- Name: #Goods Received Challan Adhoc#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-12 12:54:33
+-- Generated on: 2026-08-12 16:31:19
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -1006,27 +1006,6 @@ VALUES (
     </conditional>
   </cell>
   <cell>
-    <id>532915574</id>
-    <cell_text>=If(Len({RQ_GOODS_RECEIVE_01.l2_detail_barcode})=0,{RQ_GOODS_RECEIVE_01.l2_detail_icode},{RQ_GOODS_RECEIVE_01.l2_detail_barcode})&amp;'' ''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category1}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category2}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category3}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category4}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category5}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category6}</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>19</cell_row>
-    <cell_col>0</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>6</cell_colspan>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>8</font_size>
-    <format_type>Text</format_type>
-    <conditional>
-      <formula>If(CellValue() = '''',''true'',''false'') </formula>
-      <action>SuppressRow</action>
-    </conditional>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
     <id>994995994</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l2_detail_hsn_code</cell_text>
     <cell_type>data</cell_type>
@@ -1099,7 +1078,9 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>1308960740</id>
@@ -1126,6 +1107,23 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
+  </cell>
+  <cell>
+    <id>511569133</id>
+    <cell_text>=If(Len({RQ_GOODS_RECEIVE_01.l2_detail_barcode})=0,{RQ_GOODS_RECEIVE_01.l2_detail_icode},{RQ_GOODS_RECEIVE_01.l2_detail_barcode})&amp;'' ''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category1}&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category2}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category2})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category3}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category3})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category4}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category4})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category5}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category5})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category6}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category6})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>19</cell_row>
+    <cell_col>0</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <cell_colspan>6</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>8</font_size>
+    <format_type>Text</format_type>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>1201809687</id>
@@ -2213,7 +2211,7 @@ VALUES (
   </cell>
   <cell>
     <id>1117674186</id>
-    <cell_text>=[A29]</cell_text>
+    <cell_text>=AggSum([A29])</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>32</cell_row>
     <cell_col>2</cell_col>
@@ -3794,7 +3792,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2018-03-26 14:40:37', '18881', '2026-06-05 08:39:28.515761',
+    '2018-03-26 14:40:37', '18881', '2026-08-12 10:58:38.877580',
     '132562', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,

@@ -3,7 +3,7 @@
 -- Name: #Goods Receive Challan#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-12 12:54:33
+-- Generated on: 2026-08-12 16:31:19
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -1732,34 +1732,10 @@ VALUES (
     <background_color>#E2E2E2</background_color>
   </cell>
   <cell>
-    <id>1924857491</id>
-    <cell_text>Amount In Words :</cell_text>
-    <cell_type>text</cell_type>
-    <cell_row>24</cell_row>
-    <cell_col>0</cell_col>
-    <cell_colspan>2</cell_colspan>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>10</font_size>
-    <font_bold_flag>True</font_bold_flag>
-  </cell>
-  <cell>
-    <id>789640724</id>
-    <cell_text>=AmountinWords({RQ_GOODS_RECEIVE_01.l1_net_amount},@BaseCurrencySymbol@,@BaseCurrencyDecimalSymbol@)&amp;'' Only''</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>24</cell_row>
-    <cell_col>2</cell_col>
-    <cell_colspan>16</cell_colspan>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>10</font_size>
-    <font_bold_flag>True</font_bold_flag>
-  </cell>
-  <cell>
     <id>829948020</id>
     <cell_text>Amount In Words :</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>25</cell_row>
+    <cell_row>24</cell_row>
     <cell_col>0</cell_col>
     <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1771,7 +1747,7 @@ VALUES (
     <id>187793203</id>
     <cell_text>=AmountinWords({RQ_GOODS_RECEIVE_01.l1_net_amount},@BaseCurrencySymbol@,@BaseCurrencyDecimalSymbol@)&amp;'' Only''</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>25</cell_row>
+    <cell_row>24</cell_row>
     <cell_col>2</cell_col>
     <cell_colspan>16</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1783,7 +1759,7 @@ VALUES (
     <id>943113207</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>26</cell_row>
+    <cell_row>25</cell_row>
     <cell_col>0</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1797,7 +1773,7 @@ VALUES (
     <id>1697796968</id>
     <cell_text>RSP Value :</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>27</cell_row>
+    <cell_row>26</cell_row>
     <cell_col>0</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_colspan>2</cell_colspan>
@@ -1810,7 +1786,7 @@ VALUES (
     <id>1117674186</id>
     <cell_text>=AggSum({RQ_GOODS_RECEIVE_01.l2_detail_receive_rsp}*{RQ_GOODS_RECEIVE_01.l2_detail_received_qty})</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>27</cell_row>
+    <cell_row>26</cell_row>
     <cell_col>2</cell_col>
     <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1824,7 +1800,7 @@ VALUES (
     <id>1269869670</id>
     <cell_text>Markup % :</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>27</cell_row>
+    <cell_row>26</cell_row>
     <cell_col>4</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_colspan>2</cell_colspan>
@@ -1837,7 +1813,7 @@ VALUES (
     <id>933309654</id>
     <cell_text>=If(Or(AggSum({RQ_GOODS_RECEIVE_01.l2_detail_landing_cost_amt})=0,{RQ_GOODS_RECEIVE_01.l2_detail_receive_rsp}=0),0,((((AggSum({RQ_GOODS_RECEIVE_01.l2_detail_receive_rsp}*{RQ_GOODS_RECEIVE_01.l2_detail_received_qty}))-AggSum({RQ_GOODS_RECEIVE_01.l2_detail_landing_cost_amt})))/(AggSum({RQ_GOODS_RECEIVE_01.l2_detail_landing_cost_amt}))))</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>27</cell_row>
+    <cell_row>26</cell_row>
     <cell_col>6</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_colspan>3</cell_colspan>
@@ -1852,7 +1828,7 @@ VALUES (
     <id>1080457679</id>
     <cell_text>Markdown %:</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>27</cell_row>
+    <cell_row>26</cell_row>
     <cell_col>9</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_colspan>4</cell_colspan>
@@ -1865,7 +1841,7 @@ VALUES (
     <id>1735265336</id>
     <cell_text>=If(Or(AggSum({RQ_GOODS_RECEIVE_01.l2_detail_landing_cost_amt})=0,{RQ_GOODS_RECEIVE_01.l2_detail_receive_rsp}=0),0,((((AggSum({RQ_GOODS_RECEIVE_01.l2_detail_receive_rsp}*{RQ_GOODS_RECEIVE_01.l2_detail_received_qty}))-AggSum({RQ_GOODS_RECEIVE_01.l2_detail_landing_cost_amt})))/(AggSum({RQ_GOODS_RECEIVE_01.l2_detail_receive_rsp}*{RQ_GOODS_RECEIVE_01.l2_detail_received_qty}))))</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>27</cell_row>
+    <cell_row>26</cell_row>
     <cell_col>13</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_colspan>3</cell_colspan>
@@ -1880,7 +1856,7 @@ VALUES (
     <id>1062174785</id>
     <cell_text>Reference Details</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>28</cell_row>
+    <cell_row>27</cell_row>
     <cell_col>0</cell_col>
     <cell_colspan>4</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1897,7 +1873,7 @@ VALUES (
     <id>1166415174</id>
     <cell_text>PO No.</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>29</cell_row>
+    <cell_row>28</cell_row>
     <cell_col>0</cell_col>
     <cell_rowspan>2</cell_rowspan>
     <cell_colspan>2</cell_colspan>
@@ -1921,7 +1897,7 @@ VALUES (
     <id>977958710</id>
     <cell_text>PO Date</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>29</cell_row>
+    <cell_row>28</cell_row>
     <cell_col>2</cell_col>
     <cell_rowspan>2</cell_rowspan>
     <cell_colspan>2</cell_colspan>
@@ -1941,7 +1917,7 @@ VALUES (
     <id>475591110</id>
     <cell_text>PO Doc Ref No.</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>29</cell_row>
+    <cell_row>28</cell_row>
     <cell_col>4</cell_col>
     <cell_rowspan>2</cell_rowspan>
     <cell_colspan>2</cell_colspan>
@@ -1961,7 +1937,7 @@ VALUES (
     <id>1193890859</id>
     <cell_text>Valid From</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>29</cell_row>
+    <cell_row>28</cell_row>
     <cell_col>6</cell_col>
     <cell_rowspan>2</cell_rowspan>
     <cell_colspan>4</cell_colspan>
@@ -1981,7 +1957,7 @@ VALUES (
     <id>1058841384</id>
     <cell_text>Valid To</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>29</cell_row>
+    <cell_row>28</cell_row>
     <cell_col>10</cell_col>
     <cell_rowspan>2</cell_rowspan>
     <cell_colspan>6</cell_colspan>
@@ -2003,7 +1979,7 @@ VALUES (
     <id>1010569626</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l5_refdoc_order_no</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>31</cell_row>
+    <cell_row>30</cell_row>
     <cell_col>0</cell_col>
     <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2020,7 +1996,7 @@ VALUES (
     <id>2112165920</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l5_refdoc_order_date</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>31</cell_row>
+    <cell_row>30</cell_row>
     <cell_col>2</cell_col>
     <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2035,7 +2011,7 @@ VALUES (
     <id>346460586</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l5_refdoc_order_ref_doc_no</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>31</cell_row>
+    <cell_row>30</cell_row>
     <cell_col>4</cell_col>
     <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2046,7 +2022,7 @@ VALUES (
     <id>810934928</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l5_refdoc_valid_from</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>31</cell_row>
+    <cell_row>30</cell_row>
     <cell_col>6</cell_col>
     <cell_colspan>4</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2057,7 +2033,7 @@ VALUES (
     <id>1684699093</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l5_refdoc_valid_till</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>31</cell_row>
+    <cell_row>30</cell_row>
     <cell_col>10</cell_col>
     <cell_colspan>6</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2070,7 +2046,7 @@ VALUES (
     <id>38398406</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>0</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2082,7 +2058,7 @@ VALUES (
     <id>685900929</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>1</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2094,7 +2070,7 @@ VALUES (
     <id>935302235</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>2</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2106,7 +2082,7 @@ VALUES (
     <id>627962744</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>3</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2118,7 +2094,7 @@ VALUES (
     <id>1318375133</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>4</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2130,7 +2106,7 @@ VALUES (
     <id>1826823991</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>5</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2142,7 +2118,7 @@ VALUES (
     <id>1798970287</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>6</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2154,7 +2130,7 @@ VALUES (
     <id>1144201192</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>7</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2166,7 +2142,7 @@ VALUES (
     <id>427980638</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>8</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2178,7 +2154,7 @@ VALUES (
     <id>892470881</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>9</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2190,7 +2166,7 @@ VALUES (
     <id>1458161238</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>10</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2202,7 +2178,7 @@ VALUES (
     <id>1905232011</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>11</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2214,7 +2190,7 @@ VALUES (
     <id>350403150</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>12</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2226,7 +2202,7 @@ VALUES (
     <id>256193653</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>13</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2238,7 +2214,7 @@ VALUES (
     <id>769721866</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>14</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2250,7 +2226,7 @@ VALUES (
     <id>154352988</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>32</cell_row>
+    <cell_row>31</cell_row>
     <cell_col>15</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2262,7 +2238,7 @@ VALUES (
     <id>1137680793</id>
     <cell_text>HSN Code</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>33</cell_row>
+    <cell_row>32</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <cell_rowspan>2</cell_rowspan>
@@ -2282,7 +2258,7 @@ VALUES (
     <id>27954678</id>
     <cell_text>Taxable</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>33</cell_row>
+    <cell_row>32</cell_row>
     <cell_col>1</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2299,7 +2275,7 @@ VALUES (
     <id>606743346</id>
     <cell_text>Qty.</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>33</cell_row>
+    <cell_row>32</cell_row>
     <cell_col>2</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2320,7 +2296,7 @@ VALUES (
     <id>2044542625</id>
     <cell_text>UOM</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>33</cell_row>
+    <cell_row>32</cell_row>
     <cell_col>3</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2341,7 +2317,7 @@ VALUES (
     <id>39646631</id>
     <cell_text>IGST</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>33</cell_row>
+    <cell_row>32</cell_row>
     <cell_col>4</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2360,7 +2336,7 @@ VALUES (
     <id>1542725282</id>
     <cell_text>CGST</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>33</cell_row>
+    <cell_row>32</cell_row>
     <cell_col>7</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2379,7 +2355,7 @@ VALUES (
     <id>742321902</id>
     <cell_text>SGST</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>33</cell_row>
+    <cell_row>32</cell_row>
     <cell_col>12</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2398,7 +2374,7 @@ VALUES (
     <id>1041753068</id>
     <cell_text>Cess</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>33</cell_row>
+    <cell_row>32</cell_row>
     <cell_col>17</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2419,7 +2395,7 @@ VALUES (
     <id>846022717</id>
     <cell_text>Value</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>34</cell_row>
+    <cell_row>33</cell_row>
     <cell_col>1</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2436,7 +2412,7 @@ VALUES (
     <id>530150376</id>
     <cell_text>Rate</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>34</cell_row>
+    <cell_row>33</cell_row>
     <cell_col>4</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2455,7 +2431,7 @@ VALUES (
     <id>2030814036</id>
     <cell_text>Amount</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>34</cell_row>
+    <cell_row>33</cell_row>
     <cell_col>5</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2475,7 +2451,7 @@ VALUES (
     <id>65454511</id>
     <cell_text>Rate</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>34</cell_row>
+    <cell_row>33</cell_row>
     <cell_col>7</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2495,7 +2471,7 @@ VALUES (
     <id>2025680602</id>
     <cell_text>Amount</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>34</cell_row>
+    <cell_row>33</cell_row>
     <cell_col>9</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2515,7 +2491,7 @@ VALUES (
     <id>1810642669</id>
     <cell_text>Rate</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>34</cell_row>
+    <cell_row>33</cell_row>
     <cell_col>12</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2535,7 +2511,7 @@ VALUES (
     <id>1286224306</id>
     <cell_text>Amount</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>34</cell_row>
+    <cell_row>33</cell_row>
     <cell_col>15</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2555,7 +2531,7 @@ VALUES (
     <id>505252986</id>
     <cell_text>Rate</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>34</cell_row>
+    <cell_row>33</cell_row>
     <cell_col>17</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2574,7 +2550,7 @@ VALUES (
     <id>864094373</id>
     <cell_text>Amount</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>34</cell_row>
+    <cell_row>33</cell_row>
     <cell_col>18</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2596,7 +2572,7 @@ VALUES (
     <id>395684402</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l4_hsn_hsn_code</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>35</cell_row>
+    <cell_row>34</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2611,31 +2587,40 @@ VALUES (
     <id>1378805492</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l4_hsn_taxable_amt</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>35</cell_row>
+    <cell_row>34</cell_row>
     <cell_col>1</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>1142129740</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l4_hsn_receive_qty</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>35</cell_row>
+    <cell_row>34</cell_row>
     <cell_col>2</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>1912985343</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l4_hsn_uom</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>35</cell_row>
+    <cell_row>34</cell_row>
     <cell_col>3</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2646,7 +2631,7 @@ VALUES (
     <id>1240740295</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l4_hsn_igst_amt</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>35</cell_row>
+    <cell_row>34</cell_row>
     <cell_col>5</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2654,12 +2639,16 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>1904475405</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l4_hsn_cgst_rate</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>35</cell_row>
+    <cell_row>34</cell_row>
     <cell_col>7</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2667,12 +2656,17 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>745939939</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l4_hsn_cgst_amt</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>35</cell_row>
+    <cell_row>34</cell_row>
     <cell_col>9</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2680,12 +2674,16 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>1310061648</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l4_hsn_sgst_rate</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>35</cell_row>
+    <cell_row>34</cell_row>
     <cell_col>12</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2693,12 +2691,17 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>92168325</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l4_hsn_sgst_amt</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>35</cell_row>
+    <cell_row>34</cell_row>
     <cell_col>15</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2706,12 +2709,16 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>2021834326</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l4_hsn_cess_amt</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>35</cell_row>
+    <cell_row>34</cell_row>
     <cell_col>18</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2719,36 +2726,50 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>147500385</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l4_hsn_igst_rate</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>35</cell_row>
+    <cell_row>34</cell_row>
     <cell_col>4</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>1282963016</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l4_hsn_cess_rate</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>35</cell_row>
+    <cell_row>34</cell_row>
     <cell_col>17</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>2074680165</id>
     <cell_text>Total  :</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>36</cell_row>
+    <cell_row>35</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2765,7 +2786,7 @@ VALUES (
     <id>1877039350</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>36</cell_row>
+    <cell_row>35</cell_row>
     <cell_col>3</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2782,7 +2803,7 @@ VALUES (
     <id>484822278</id>
     <cell_text>=AggSum({RQ_GOODS_RECEIVE_01.l4_hsn_igst_amt})</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>36</cell_row>
+    <cell_row>35</cell_row>
     <cell_col>4</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2791,6 +2812,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
     <border_top_color>#000000</border_top_color>
@@ -2801,7 +2826,7 @@ VALUES (
     <id>1907097110</id>
     <cell_text>=AggSum({RQ_GOODS_RECEIVE_01.l4_hsn_cgst_amt})</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>36</cell_row>
+    <cell_row>35</cell_row>
     <cell_col>7</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2810,6 +2835,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
     <border_top_color>#000000</border_top_color>
@@ -2820,7 +2849,7 @@ VALUES (
     <id>329435038</id>
     <cell_text>=AggSum({RQ_GOODS_RECEIVE_01.l4_hsn_sgst_amt})</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>36</cell_row>
+    <cell_row>35</cell_row>
     <cell_col>12</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2829,6 +2858,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
     <border_top_color>#000000</border_top_color>
@@ -2839,7 +2872,7 @@ VALUES (
     <id>2056550308</id>
     <cell_text>=AggSum({RQ_GOODS_RECEIVE_01.l4_hsn_cess_amt})</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>36</cell_row>
+    <cell_row>35</cell_row>
     <cell_col>17</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2848,6 +2881,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
     <border_top_color>#000000</border_top_color>
@@ -2858,7 +2895,7 @@ VALUES (
     <id>1590254369</id>
     <cell_text>=AggSum({RQ_GOODS_RECEIVE_01.l4_hsn_taxable_amt})</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>36</cell_row>
+    <cell_row>35</cell_row>
     <cell_col>1</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2866,6 +2903,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
     <border_top_color>#000000</border_top_color>
@@ -2876,7 +2917,7 @@ VALUES (
     <id>408713507</id>
     <cell_text>=AggSum({RQ_GOODS_RECEIVE_01.l4_hsn_receive_qty})</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>36</cell_row>
+    <cell_row>35</cell_row>
     <cell_col>2</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -2884,6 +2925,11 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
+    <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
     <border_top_color>#000000</border_top_color>
@@ -2894,7 +2940,7 @@ VALUES (
     <id>1331649822</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>37</cell_row>
+    <cell_row>36</cell_row>
     <cell_col>0</cell_col>
     <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2905,7 +2951,7 @@ VALUES (
     <id>1293559750</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>37</cell_row>
+    <cell_row>36</cell_row>
     <cell_col>3</cell_col>
     <cell_colspan>5</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2916,7 +2962,7 @@ VALUES (
     <id>2048729587</id>
     <cell_text>=@ReportFooter@</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>38</cell_row>
+    <cell_row>37</cell_row>
     <cell_col>0</cell_col>
     <cell_colspan>20</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2927,7 +2973,7 @@ VALUES (
     <id>1314464058</id>
     <cell_text>Remarks :</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>39</cell_row>
+    <cell_row>38</cell_row>
     <cell_col>0</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -2944,7 +2990,7 @@ VALUES (
     <id>1859632616</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l1_remarks</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>40</cell_row>
+    <cell_row>39</cell_row>
     <cell_col>0</cell_col>
     <cell_colspan>19</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2959,7 +3005,7 @@ VALUES (
     <id>212429400</id>
     <cell_text>For :</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>41</cell_row>
+    <cell_row>40</cell_row>
     <cell_col>14</cell_col>
     <cell_colspan>6</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2971,7 +3017,7 @@ VALUES (
     <id>1779482896</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l1_orgunit_name</cell_text>
     <cell_type>data</cell_type>
-    <cell_row>42</cell_row>
+    <cell_row>41</cell_row>
     <cell_col>14</cell_col>
     <cell_colspan>5</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2982,7 +3028,7 @@ VALUES (
     <id>519883033</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>44</cell_row>
+    <cell_row>43</cell_row>
     <cell_col>1</cell_col>
     <cell_colspan>3</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -2993,7 +3039,7 @@ VALUES (
     <id>391016892</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>44</cell_row>
+    <cell_row>43</cell_row>
     <cell_col>4</cell_col>
     <cell_colspan>15</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -3004,7 +3050,7 @@ VALUES (
     <id>647882678</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>45</cell_row>
+    <cell_row>44</cell_row>
     <cell_col>1</cell_col>
     <cell_colspan>3</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -3015,7 +3061,7 @@ VALUES (
     <id>1842234300</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>45</cell_row>
+    <cell_row>44</cell_row>
     <cell_col>5</cell_col>
     <cell_colspan>3</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -3026,7 +3072,7 @@ VALUES (
     <id>1323891296</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>46</cell_row>
+    <cell_row>45</cell_row>
     <cell_col>0</cell_col>
     <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -3037,7 +3083,7 @@ VALUES (
     <id>1697413665</id>
     <cell_text>Prepared By</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>47</cell_row>
+    <cell_row>46</cell_row>
     <cell_col>0</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_colspan>4</cell_colspan>
@@ -3051,7 +3097,7 @@ VALUES (
     <id>1272416784</id>
     <cell_text>Checked By</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>47</cell_row>
+    <cell_row>46</cell_row>
     <cell_col>6</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_colspan>4</cell_colspan>
@@ -3065,7 +3111,7 @@ VALUES (
     <id>2116999388</id>
     <cell_text>Passed By</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>47</cell_row>
+    <cell_row>46</cell_row>
     <cell_col>14</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_colspan>5</cell_colspan>
@@ -3079,7 +3125,7 @@ VALUES (
     <id>1880473876</id>
     <cell_text>={RQ_GOODS_RECEIVE_01.l1_created_by}&amp;''On [''&amp;{RQ_GOODS_RECEIVE_01.l1_last_accessed_on}&amp;'']''</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>48</cell_row>
+    <cell_row>47</cell_row>
     <cell_col>0</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_colspan>4</cell_colspan>
@@ -3091,7 +3137,7 @@ VALUES (
     <id>329106381</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>49</cell_row>
+    <cell_row>48</cell_row>
     <cell_col>0</cell_col>
     <cell_colspan>13</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -3102,7 +3148,7 @@ VALUES (
     <id>1695178552</id>
     <cell_text>=''Print Date : ''&amp;GlobalDateFormat(Now())</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>50</cell_row>
+    <cell_row>49</cell_row>
     <cell_col>0</cell_col>
     <cell_colspan>5</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -3115,7 +3161,7 @@ VALUES (
     <id>2051238615</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>50</cell_row>
+    <cell_row>49</cell_row>
     <cell_col>5</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -3127,7 +3173,7 @@ VALUES (
     <id>506085373</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>50</cell_row>
+    <cell_row>49</cell_row>
     <cell_col>6</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -3139,7 +3185,7 @@ VALUES (
     <id>100365940</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>50</cell_row>
+    <cell_row>49</cell_row>
     <cell_col>7</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -3151,7 +3197,7 @@ VALUES (
     <id>429640657</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>50</cell_row>
+    <cell_row>49</cell_row>
     <cell_col>8</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -3163,7 +3209,7 @@ VALUES (
     <id>2038115949</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>50</cell_row>
+    <cell_row>49</cell_row>
     <cell_col>9</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -3175,7 +3221,7 @@ VALUES (
     <id>1833694481</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>50</cell_row>
+    <cell_row>49</cell_row>
     <cell_col>10</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -3187,7 +3233,7 @@ VALUES (
     <id>930431592</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>50</cell_row>
+    <cell_row>49</cell_row>
     <cell_col>11</cell_col>
     <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
@@ -3200,7 +3246,7 @@ VALUES (
     <id>961926490</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>50</cell_row>
+    <cell_row>49</cell_row>
     <cell_col>13</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -3212,7 +3258,7 @@ VALUES (
     <id>1868562241</id>
     <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>50</cell_row>
+    <cell_row>49</cell_row>
     <cell_col>14</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -3224,7 +3270,7 @@ VALUES (
     <id>2015041367</id>
     <cell_text>=''Page :  ''&amp;PageNumber()</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>50</cell_row>
+    <cell_row>49</cell_row>
     <cell_col>15</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_colspan>5</cell_colspan>
@@ -3332,13 +3378,8 @@ VALUES (
   <row>
     <group_type>Footer</group_type>
     <group_field>RQ_GOODS_RECEIVE_01.grccode</group_field>
-    <row_height>6</row_height>
-  </row>
-  <row>
-    <group_type>Footer</group_type>
-    <group_field>RQ_GOODS_RECEIVE_01.grccode</group_field>
     <subreport_end_flag>True</subreport_end_flag>
-    <suppress_flag>True</suppress_flag>
+    <row_height>6</row_height>
   </row>
   <row>
     <group_type>Header</group_type>
@@ -3574,7 +3615,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2019-08-26 15:29:20', '2109', '2026-08-12 06:36:45.185163',
+    '2019-08-26 15:29:20', '2109', '2026-08-12 10:47:07.226789',
     '132562', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,

@@ -3,7 +3,7 @@
 -- Name: #Goods Receive Challan - Item Wise Margin#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-12 12:54:33
+-- Generated on: 2026-08-12 16:31:19
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -2807,7 +2807,7 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <conditional>
-      <formula>IsNull({GRC Header.remarks})</formula>
+      <formula>IsNull({RQ_GOODS_RECEIVE_01.l1_remarks})</formula>
       <action>SuppressRow</action>
     </conditional>
   </cell>
@@ -3394,7 +3394,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2019-08-26 15:29:20', '2109', '2026-08-12 07:15:19.265428',
+    '2019-08-26 15:29:20', '2109', '2026-08-12 10:50:08.353588',
     '132562', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,
