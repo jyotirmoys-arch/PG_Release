@@ -3,7 +3,7 @@
 -- Name: #Goods Receive Challan#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-12 16:31:19
+-- Generated on: 2026-08-12 16:39:56
 -- =====================================================
 
 -- Insert into ex_content_dev
