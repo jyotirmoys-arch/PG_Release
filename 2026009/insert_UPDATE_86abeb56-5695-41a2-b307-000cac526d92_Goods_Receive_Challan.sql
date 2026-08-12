@@ -3,7 +3,7 @@
 -- Name: #Goods Receive Challan#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-12 16:39:56
+-- Generated on: 2026-08-12 18:16:01
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -1048,7 +1048,7 @@ VALUES (
   </cell>
   <cell>
     <id>1718602923</id>
-    <cell_text>={RQ_GOODS_RECEIVE_01.l2_detail_category1}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category2}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category3}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category4}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category5}&amp;''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category6}</cell_text>
+    <cell_text>={RQ_GOODS_RECEIVE_01.l2_detail_category1}&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category2}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category2})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category3}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category3})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category4}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category4})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category5}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category5})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category6}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category6})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>17</cell_row>
     <cell_col>1</cell_col>
@@ -1088,8 +1088,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>605531443</id>
@@ -1107,6 +1109,7 @@ VALUES (
     <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>970696276</id>
@@ -3615,7 +3618,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2019-08-26 15:29:20', '2109', '2026-08-12 10:47:07.226789',
+    '2019-08-26 15:29:20', '2109', '2026-08-12 12:43:56.894188',
     '132562', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,

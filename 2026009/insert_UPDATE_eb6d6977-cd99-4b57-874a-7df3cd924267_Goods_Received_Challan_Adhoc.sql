@@ -3,7 +3,7 @@
 -- Name: #Goods Received Challan Adhoc#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-12 16:39:56
+-- Generated on: 2026-08-12 18:16:01
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -1064,11 +1064,13 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>605531443</id>
-    <cell_text>RQ_GOODS_RECEIVE_01.l2_detail_receive_rsp</cell_text>
+    <cell_text>RQ_GOODS_RECEIVE_01.l2_detail_received_rate</cell_text>
     <cell_type>data</cell_type>
     <cell_row>19</cell_row>
     <cell_col>12</cell_col>
@@ -3792,7 +3794,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2018-03-26 14:40:37', '18881', '2026-08-12 10:58:38.877580',
+    '2018-03-26 14:40:37', '18881', '2026-08-12 12:43:38.286753',
     '132562', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,
