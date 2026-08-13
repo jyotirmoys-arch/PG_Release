@@ -3,7 +3,7 @@
 -- Name: #Goods Received Challan Adhoc#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-13 18:23:49
+-- Generated on: 2026-08-13 19:36:52
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -1912,7 +1912,7 @@ VALUES (
   </cell>
   <cell>
     <id>1881420303</id>
-    <cell_text>=aggsum([A28])</cell_text>
+    <cell_text>=aggsum([A29])</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>29</cell_row>
     <cell_col>0</cell_col>
@@ -3804,7 +3804,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2018-03-26 14:40:37', '18881', '2026-08-13 12:24:21.999579',
+    '2018-03-26 14:40:37', '18881', '2026-08-13 14:02:26.979052',
     '132562', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,
