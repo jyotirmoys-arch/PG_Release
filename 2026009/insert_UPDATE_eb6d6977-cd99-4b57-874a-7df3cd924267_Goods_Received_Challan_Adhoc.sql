@@ -3,7 +3,7 @@
 -- Name: #Goods Received Challan Adhoc#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-12 18:16:01
+-- Generated on: 2026-08-13 18:23:49
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -1064,7 +1064,6 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
     <format_type>Number</format_type>
-    <format_decimal_places>3</format_decimal_places>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
     <format_negative_color>#000000</format_negative_color>
   </cell>
@@ -1080,7 +1079,6 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
     <format_type>Number</format_type>
-    <format_decimal_places>3</format_decimal_places>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
     <format_negative_color>#000000</format_negative_color>
   </cell>
@@ -2617,6 +2615,10 @@ VALUES (
     <border_left_width>1</border_left_width>
     <border_top_color>#000000</border_top_color>
     <border_left_color>#000000</border_left_color>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=3</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>1542725282</id>
@@ -2703,6 +2705,10 @@ VALUES (
     <border_top_color>#000000</border_top_color>
     <border_bottom_color>#000000</border_bottom_color>
     <border_left_color>#000000</border_left_color>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=3</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>2030814036</id>
@@ -3016,6 +3022,10 @@ VALUES (
     <border_bottom_width>1</border_bottom_width>
     <border_top_color>#000000</border_top_color>
     <border_bottom_color>#000000</border_bottom_color>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=3</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>1263800062</id>
@@ -3794,7 +3804,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2018-03-26 14:40:37', '18881', '2026-08-12 12:43:38.286753',
+    '2018-03-26 14:40:37', '18881', '2026-08-13 12:24:21.999579',
     '132562', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,

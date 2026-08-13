@@ -3,7 +3,7 @@
 -- Name: #Goods Receive Challan - Item Wise Margin#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-12 18:16:01
+-- Generated on: 2026-08-13 18:23:49
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -705,6 +705,20 @@ VALUES (
     <background_color>#CDCDCD</background_color>
   </cell>
   <cell>
+    <id>1383511841</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>12</cell_row>
+    <cell_col>0</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
+      <action>SuppressRow</action>
+    </conditional>
+  </cell>
+  <cell>
     <id>1973733518</id>
     <cell_text>Landing Cost (Exc. of Tax)</cell_text>
     <cell_type>text</cell_type>
@@ -739,6 +753,20 @@ VALUES (
     <background_color>#CDCDCD</background_color>
   </cell>
   <cell>
+    <id>1342872434</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>13</cell_row>
+    <cell_col>0</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
+      <action>SuppressRow</action>
+    </conditional>
+  </cell>
+  <cell>
     <id>2088184822</id>
     <cell_text>Group/Article/Item</cell_text>
     <cell_type>text</cell_type>
@@ -756,6 +784,10 @@ VALUES (
     <border_bottom_color>#000000</border_bottom_color>
     <border_left_color>#000000</border_left_color>
     <background_color>#E2E2E2</background_color>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>1355262697</id>
@@ -1053,6 +1085,20 @@ VALUES (
     </conditional>
   </cell>
   <cell>
+    <id>1529847876</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>15</cell_row>
+    <cell_col>16</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
+      <action>SuppressRow</action>
+    </conditional>
+  </cell>
+  <cell>
     <id>1687196676</id>
     <cell_text>RQ_GOODS_RECEIVE_01.l2_detail_article_name</cell_text>
     <cell_type>data</cell_type>
@@ -1088,6 +1134,20 @@ VALUES (
     </conditional>
   </cell>
   <cell>
+    <id>1738169286</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>16</cell_row>
+    <cell_col>16</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
+      <action>SuppressRow</action>
+    </conditional>
+  </cell>
+  <cell>
     <id>1498514958</id>
     <cell_text>=If({RQ_GOODS_RECEIVE_01.l2_detail_barcode}='''', {RQ_GOODS_RECEIVE_01.l2_detail_icode}, {RQ_GOODS_RECEIVE_01.l2_detail_barcode})</cell_text>
     <cell_type>formula</cell_type>
@@ -1100,23 +1160,6 @@ VALUES (
     <format_type>Text</format_type>
     <conditional>
       <formula>If(CellValue()='''', True(), False())</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>52858584</id>
-    <cell_text>={RQ_GOODS_RECEIVE_01.l2_detail_category1}&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category2}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category2})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category3}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category3})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category4}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category4})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category5}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category5})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category6}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category6})</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>17</cell_row>
-    <cell_col>1</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>6</cell_colspan>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <format_type>Text</format_type>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
       <action>SuppressRow</action>
     </conditional>
   </cell>
@@ -1145,7 +1188,6 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
-    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
     <format_negative_color>#000000</format_negative_color>
@@ -1180,8 +1222,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
   </cell>
   <cell>
     <id>1840849922</id>
@@ -1348,6 +1392,23 @@ VALUES (
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
   </cell>
   <cell>
+    <id>1481316248</id>
+    <cell_text>={RQ_GOODS_RECEIVE_01.l2_detail_category1}&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category2}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category2})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category3}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category3})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category4}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category4})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category5}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category5})&amp;If({RQ_GOODS_RECEIVE_01.l2_detail_category6}='''', '''', ''-''&amp;{RQ_GOODS_RECEIVE_01.l2_detail_category6})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>17</cell_row>
+    <cell_col>1</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <cell_colspan>6</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Text</format_type>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
+      <action>SuppressRow</action>
+    </conditional>
+  </cell>
+  <cell>
     <id>775203111</id>
     <cell_text />
     <cell_type>text</cell_type>
@@ -1358,6 +1419,10 @@ VALUES (
     <font_size>9</font_size>
     <conditional>
       <formula>Or([B19]=''Batch : '',[B19]=''Serial : '')</formula>
+      <action>SuppressRow</action>
+    </conditional>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
       <action>SuppressRow</action>
     </conditional>
   </cell>
@@ -1405,6 +1470,10 @@ VALUES (
     <border_top_width>1</border_top_width>
     <border_top_color>#000000</border_top_color>
     <background_color>#E2E2E2</background_color>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>1305427022</id>
@@ -1718,6 +1787,20 @@ VALUES (
     <font_underline_style>Single</font_underline_style>
   </cell>
   <cell>
+    <id>1022266499</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>23</cell_row>
+    <cell_col>7</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=4</formula>
+      <action>SuppressRow</action>
+    </conditional>
+  </cell>
+  <cell>
     <id>459659289</id>
     <cell_text>PO No.</cell_text>
     <cell_type>text</cell_type>
@@ -1735,6 +1818,10 @@ VALUES (
     <border_bottom_color>#000000</border_bottom_color>
     <border_left_color>#000000</border_left_color>
     <background_color>#E2E2E2</background_color>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=4</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>1497440687</id>
@@ -1884,6 +1971,10 @@ VALUES (
     <font_size>9</font_size>
     <border_top_width>1</border_top_width>
     <border_top_color>#000000</border_top_color>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=4</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>969816267</id>
@@ -2213,6 +2304,10 @@ VALUES (
     <border_top_color>#000000</border_top_color>
     <border_left_color>#000000</border_left_color>
     <background_color>#E2E2E2</background_color>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=3</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>1542725282</id>
@@ -2287,6 +2382,10 @@ VALUES (
     <border_bottom_color>#000000</border_bottom_color>
     <border_left_color>#000000</border_left_color>
     <background_color>#E2E2E2</background_color>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=3</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>2030814036</id>
@@ -2459,8 +2558,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>1173116079</id>
@@ -2489,8 +2590,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>2120088556</id>
@@ -2517,8 +2620,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>1887948771</id>
@@ -2545,8 +2650,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>1722132742</id>
@@ -2573,8 +2680,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
   </cell>
   <cell>
     <id>1802779491</id>
@@ -2606,6 +2715,10 @@ VALUES (
     <border_bottom_width>1</border_bottom_width>
     <border_top_color>#000000</border_top_color>
     <border_bottom_color>#000000</border_bottom_color>
+    <conditional>
+      <formula>{RQ_GOODS_RECEIVE_01.seq}!=3</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>376104860</id>
@@ -2656,8 +2769,10 @@ VALUES (
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#000000</format_negative_color>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
     <border_top_color>#000000</border_top_color>
@@ -3398,7 +3513,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2019-08-26 15:29:20', '2109', '2026-08-12 12:44:29.657611',
+    '2019-08-26 15:29:20', '2109', '2026-08-13 12:31:30.138742',
     '132562', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,
