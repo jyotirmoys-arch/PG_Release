@@ -3,7 +3,7 @@
 -- Name: #Goods Receive Challan#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-13 18:23:49
+-- Generated on: 2026-08-14 13:05:30
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -868,10 +868,6 @@ VALUES (
     <border_bottom_color>#000000</border_bottom_color>
     <border_left_color>#000000</border_left_color>
     <background_color>#E2E2E2</background_color>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>1355262697</id>
@@ -1207,10 +1203,6 @@ VALUES (
     <border_top_width>1</border_top_width>
     <border_top_color>#000000</border_top_color>
     <background_color>#E2E2E2</background_color>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>1800685451</id>
@@ -1760,10 +1752,6 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>10</font_size>
     <font_bold_flag>True</font_bold_flag>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>187793203</id>
@@ -1778,20 +1766,6 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
   </cell>
   <cell>
-    <id>943113207</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>25</cell_row>
-    <cell_col>0</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
     <id>1697796968</id>
     <cell_text>RSP Value :</cell_text>
     <cell_type>text</cell_type>
@@ -1803,10 +1777,6 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=1</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>1117674186</id>
@@ -1896,20 +1866,6 @@ VALUES (
     </conditional>
   </cell>
   <cell>
-    <id>1762315524</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>27</cell_row>
-    <cell_col>4</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=4</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
     <id>1166415174</id>
     <cell_text>PO No.</cell_text>
     <cell_type>text</cell_type>
@@ -1952,10 +1908,6 @@ VALUES (
     <border_bottom_color>#000000</border_bottom_color>
     <border_left_color>#000000</border_left_color>
     <background_color>#E2E2E2</background_color>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=4</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>475591110</id>
@@ -2097,10 +2049,6 @@ VALUES (
     <font_size>9</font_size>
     <border_top_width>1</border_top_width>
     <border_top_color>#000000</border_top_color>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=4</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>685900929</id>
@@ -2379,10 +2327,6 @@ VALUES (
     <border_top_color>#000000</border_top_color>
     <border_left_color>#000000</border_left_color>
     <background_color>#E2E2E2</background_color>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=3</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>1542725282</id>
@@ -2478,10 +2422,6 @@ VALUES (
     <border_bottom_color>#000000</border_bottom_color>
     <border_left_color>#000000</border_left_color>
     <background_color>#E2E2E2</background_color>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=3</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>2030814036</id>
@@ -2837,10 +2777,6 @@ VALUES (
     <border_top_color>#000000</border_top_color>
     <border_bottom_color>#000000</border_bottom_color>
     <background_color>#E2E2E2</background_color>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=3</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>1877039350</id>
@@ -3676,7 +3612,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2019-08-26 15:29:20', '2109', '2026-08-13 11:10:38.959850',
+    '2019-08-26 15:29:20', '2109', '2026-08-14 07:01:04.536665',
     '132562', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,

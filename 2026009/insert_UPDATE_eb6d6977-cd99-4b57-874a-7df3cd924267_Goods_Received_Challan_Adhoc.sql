@@ -3,7 +3,7 @@
 -- Name: #Goods Received Challan Adhoc#
 -- Action: UPDATE
 -- Version: 2026009
--- Generated on: 2026-08-13 19:36:52
+-- Generated on: 2026-08-14 13:05:30
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -2615,10 +2615,6 @@ VALUES (
     <border_left_width>1</border_left_width>
     <border_top_color>#000000</border_top_color>
     <border_left_color>#000000</border_left_color>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=3</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>1542725282</id>
@@ -2705,10 +2701,6 @@ VALUES (
     <border_top_color>#000000</border_top_color>
     <border_bottom_color>#000000</border_bottom_color>
     <border_left_color>#000000</border_left_color>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=3</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>2030814036</id>
@@ -3022,10 +3014,6 @@ VALUES (
     <border_bottom_width>1</border_bottom_width>
     <border_top_color>#000000</border_top_color>
     <border_bottom_color>#000000</border_bottom_color>
-    <conditional>
-      <formula>{RQ_GOODS_RECEIVE_01.seq}!=3</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>1263800062</id>
@@ -3804,7 +3792,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2018-03-26 14:40:37', '18881', '2026-08-13 14:02:26.979052',
+    '2018-03-26 14:40:37', '18881', '2026-08-14 07:22:28.949702',
     '132562', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,
