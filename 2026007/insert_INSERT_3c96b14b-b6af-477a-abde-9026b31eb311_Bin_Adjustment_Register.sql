@@ -3,7 +3,7 @@
 -- Name: #Bin Adjustment Register#
 -- Action: INSERT
 -- Version: 2026007
--- Generated on: 2026-08-10 14:39:03
+-- Generated on: 2026-08-27 12:23:19
 -- =====================================================
 
 -- Insert into ex_content_dev

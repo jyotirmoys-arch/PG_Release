@@ -3,7 +3,7 @@
 -- Name: #Bin Stock Audit Plan Register#
 -- Action: INSERT
 -- Version: 2026007
--- Generated on: 2026-08-07 14:00:54
+-- Generated on: 2026-08-27 15:40:28
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -504,45 +504,6 @@ VALUES (
     <background_color>#F2F2F2</background_color>
   </cell>
   <cell>
-    <id>1126043589</id>
-    <cell_text>LV_BIN_STK_PLAN_DETAIL_01.bin_no</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>5</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#F2F2F2</background_color>
-  </cell>
-  <cell>
-    <id>359761104</id>
-    <cell_text>LV_BIN_STK_PLAN_DETAIL_01.bin_count_status</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>6</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#F2F2F2</background_color>
-  </cell>
-  <cell>
-    <id>849325375</id>
-    <cell_text>LV_BIN_STK_PLAN_DETAIL_01.bin_assigned_to</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>7</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#F2F2F2</background_color>
-  </cell>
-  <cell>
     <id>1958785486</id>
     <cell_text>=[I7]</cell_text>
     <cell_type>formula</cell_type>
@@ -654,6 +615,45 @@ VALUES (
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
     <cell_col>17</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <background_color>#F2F2F2</background_color>
+  </cell>
+  <cell>
+    <id>1612057195</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>4</cell_row>
+    <cell_col>7</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <background_color>#F2F2F2</background_color>
+  </cell>
+  <cell>
+    <id>1820844311</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>4</cell_row>
+    <cell_col>6</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <background_color>#F2F2F2</background_color>
+  </cell>
+  <cell>
+    <id>1179094635</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>4</cell_row>
+    <cell_col>5</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1261,7 +1261,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-08-07 07:17:51.921167', '2274', '2026-08-07 08:30:12.382853',
+    '2026-08-07 07:17:51.921167', '2274', '2026-08-27 10:04:00.018520',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 31,
     FALSE, 2, 768,
     NULL, 0, 0,
