@@ -3,7 +3,7 @@
 -- Name: #Audit Trail Modification Tracker#
 -- Action: INSERT
 -- Version: 2026008
--- Generated on: 2026-09-08 14:27:59
+-- Generated on: 2026-09-11 16:20:20
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -639,12 +639,6 @@ VALUES (
     <order_num>3</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
-  <sort>
-    <sort_name>AUDIT_TRAIL_MOD_TRACKER_01.transaction_date</sort_name>
-    <sort_title />
-    <order_num>4</order_num>
-    <ascending_flag>True</ascending_flag>
-  </sort>
   <filter>
     <filter_name>AUDIT_ACTION_01.action</filter_name>
     <order_num>0</order_num>
@@ -670,7 +664,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-05-05 12:10:58.580149', '132560', '2026-09-08 08:36:32.388094',
+    '2026-05-05 12:10:58.580149', '132560', '2026-09-11 10:45:04.706201',
     '132560', '75a16cac-c843-4b39-8259-a06b6f97fea3', 25,
     FALSE, 2, 768,
     NULL, 0, 0,
