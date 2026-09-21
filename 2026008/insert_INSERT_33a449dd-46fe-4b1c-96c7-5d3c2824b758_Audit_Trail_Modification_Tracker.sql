@@ -3,7 +3,7 @@
 -- Name: #Audit Trail Modification Tracker#
 -- Action: INSERT
 -- Version: 2026008
--- Generated on: 2026-09-18 19:21:35
+-- Generated on: 2026-09-21 19:08:02
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -333,6 +333,7 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Text</format_type>
     <conditional>
       <formula>{AUDIT_TRAIL_MOD_TRACKER_01.err_text}!=DbNull()</formula>
       <action>SuppressSection</action>
@@ -359,6 +360,7 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Text</format_type>
   </cell>
   <cell>
     <id>1191662028</id>
@@ -370,6 +372,7 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Text</format_type>
   </cell>
   <cell>
     <id>2015898224</id>
@@ -381,6 +384,7 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Text</format_type>
   </cell>
   <cell>
     <id>80130456</id>
@@ -392,6 +396,7 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Text</format_type>
   </cell>
   <cell>
     <id>809837222</id>
@@ -403,6 +408,7 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Text</format_type>
   </cell>
   <cell>
     <id>1899563636</id>
@@ -414,6 +420,7 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Text</format_type>
   </cell>
   <cell>
     <id>2062381194</id>
@@ -425,6 +432,7 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Text</format_type>
   </cell>
   <cell>
     <id>1558821988</id>
@@ -436,6 +444,7 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Text</format_type>
   </cell>
   <cell>
     <id>1331560344</id>
@@ -447,6 +456,7 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Text</format_type>
     <conditional>
       <formula>=LineNumberWithReset({AUDIT_TRAIL_MOD_TRACKER_01.transaction_date}&amp;{AUDIT_TRAIL_MOD_TRACKER_01.entry_no}&amp;{AUDIT_TRAIL_MOD_TRACKER_01.version_seq}&amp;{AUDIT_TRAIL_MOD_TRACKER_01.description}&amp;{AUDIT_TRAIL_MOD_TRACKER_01.action}&amp;{AUDIT_TRAIL_MOD_TRACKER_01.audit_column_name},''Sl'')&gt;1</formula>
       <action>SuppressRow</action>
@@ -674,7 +684,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-05-05 12:10:58.580149', '132560', '2026-09-18 13:28:24.404417',
+    '2026-05-05 12:10:58.580149', '132560', '2026-09-21 13:27:43.100935',
     '132560', '75a16cac-c843-4b39-8259-a06b6f97fea3', 25,
     FALSE, 2, 768,
     NULL, 0, 0,
