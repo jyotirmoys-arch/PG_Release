@@ -3,7 +3,7 @@
 -- Name: #Sales Return Invoice with RSP#
 -- Action: UPDATE
 -- Version: 2026008
--- Generated on: 2026-09-18 15:24:41
+-- Generated on: 2026-09-22 16:04:30
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -210,7 +210,7 @@ VALUES (
   </cell>
   <cell>
     <id>399402569</id>
-    <cell_text>RQ_SALRT_TRIN_DOC_01.l1_refsite_name</cell_text>
+    <cell_text>RQ_SALRT_TRIN_DOC_01.l1_owner_site_name</cell_text>
     <cell_type>data</cell_type>
     <cell_row>3</cell_row>
     <cell_col>3</cell_col>
@@ -238,7 +238,7 @@ VALUES (
   </cell>
   <cell>
     <id>1008878796</id>
-    <cell_text>RQ_SALRT_TRIN_DOC_01.l1_refsite_address</cell_text>
+    <cell_text>RQ_SALRT_TRIN_DOC_01.l1_owner_site_address</cell_text>
     <cell_type>data</cell_type>
     <cell_row>4</cell_row>
     <cell_col>3</cell_col>
@@ -250,7 +250,7 @@ VALUES (
   </cell>
   <cell>
     <id>557075970</id>
-    <cell_text>={RQ_SALRT_TRIN_DOC_01.l1_refsite_phone1}&amp;'' ''&amp;{RQ_SALRT_TRIN_DOC_01.l1_refsite_phone2}&amp;'' ''&amp;{RQ_SALRT_TRIN_DOC_01.l1_refsite_phone3}</cell_text>
+    <cell_text>={RQ_SALRT_TRIN_DOC_01.l1_owner_site_phone1}&amp;'' ''&amp;{RQ_SALRT_TRIN_DOC_01.l1_owner_site_phone2}&amp;'' ''&amp;{RQ_SALRT_TRIN_DOC_01.l1_owner_site_phone3}</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>5</cell_row>
     <cell_col>3</cell_col>
@@ -259,6 +259,18 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>10</font_size>
+  </cell>
+  <cell>
+    <id>1603003453</id>
+    <cell_text>={RQ_SALRT_TRIN_DOC_01.l1_owner_site_email1}&amp;If({RQ_SALRT_TRIN_DOC_01.l1_owner_site_email1}!='''', '', ''&amp;{RQ_SALRT_TRIN_DOC_01.l1_owner_site_email2}, {RQ_SALRT_TRIN_DOC_01.l1_owner_site_email2})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>3</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <cell_colspan>13</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
   </cell>
   <cell>
     <id>1648709493</id>
@@ -716,6 +728,17 @@ VALUES (
     <font_size>9</font_size>
   </cell>
   <cell>
+    <id>2017769538</id>
+    <cell_text>={RQ_SALRT_TRIN_DOC_01.l1_refsite_city}!='''', '' -''&amp;{RQ_SALRT_TRIN_DOC_01.l1_refsite_pincode}, {RQ_SALRT_TRIN_DOC_01.l1_refsite_pincode})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>16</cell_row>
+    <cell_col>5</cell_col>
+    <cell_colspan>7</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+  </cell>
+  <cell>
     <id>982138222</id>
     <cell_text>Contact No.</cell_text>
     <cell_type>text</cell_type>
@@ -768,6 +791,17 @@ VALUES (
     <cell_row>17</cell_row>
     <cell_col>18</cell_col>
     <cell_colspan>8</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+  </cell>
+  <cell>
+    <id>2028354114</id>
+    <cell_text>={RQ_SALRT_TRIN_DOC_01.l1_refsite_phone1}&amp;If({RQ_SALRT_TRIN_DOC_01.l1_refsite_phone1}!='''', '' , ''&amp;{RQ_SALRT_TRIN_DOC_01.l1_refsite_phone2}, {RQ_SALRT_TRIN_DOC_01.l1_refsite_phone2})&amp;If(Or({RQ_SALRT_TRIN_DOC_01.l1_refsite_phone1}!='''',{RQ_SALRT_TRIN_DOC_01.l1_refsite_phone2}!=''''), '' , ''&amp;{RQ_SALRT_TRIN_DOC_01.l1_refsite_phone3},{RQ_SALRT_TRIN_DOC_01.l1_refsite_phone3})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>17</cell_row>
+    <cell_col>5</cell_col>
+    <cell_colspan>7</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
@@ -828,6 +862,21 @@ VALUES (
     <font_size>9</font_size>
   </cell>
   <cell>
+    <id>1295978968</id>
+    <cell_text>RQ_SALRT_TRIN_DOC_01.l1_refsite_email1</cell_text>
+    <cell_type>data</cell_type>
+    <cell_row>18</cell_row>
+    <cell_col>5</cell_col>
+    <cell_colspan>7</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <conditional>
+      <formula>If({RQ_SALRT_TRIN_DOC_01.l1_cust_billing_email1}='''', ''True'', ''False'')</formula>
+      <action>SuppressRow</action>
+    </conditional>
+  </cell>
+  <cell>
     <id>1663137610</id>
     <cell_text>GSTIN</cell_text>
     <cell_type>text</cell_type>
@@ -873,6 +922,17 @@ VALUES (
     <font_size>9</font_size>
   </cell>
   <cell>
+    <id>2011534694</id>
+    <cell_text>RQ_SALRT_TRIN_DOC_01.l1_refsite_gstin_no</cell_text>
+    <cell_type>data</cell_type>
+    <cell_row>19</cell_row>
+    <cell_col>5</cell_col>
+    <cell_colspan>7</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+  </cell>
+  <cell>
     <id>446549543</id>
     <cell_text>GST State</cell_text>
     <cell_type>text</cell_type>
@@ -913,6 +973,17 @@ VALUES (
     <cell_row>20</cell_row>
     <cell_col>18</cell_col>
     <cell_colspan>8</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+  </cell>
+  <cell>
+    <id>1031653514</id>
+    <cell_text>={RQ_SALRT_TRIN_DOC_01.l1_refsite_gst_state_name}&amp;'' (''&amp;{RQ_SALRT_TRIN_DOC_01.l1_refsite_gst_state_code}&amp;'' )''</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>20</cell_row>
+    <cell_col>5</cell_col>
+    <cell_colspan>7</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
@@ -1300,8 +1371,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
   </cell>
   <cell>
     <id>1941949775</id>
@@ -1332,6 +1405,11 @@ VALUES (
     <format_type>Number</format_type>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
+    <conditional>
+      <formula>{RQ_SALRT_TRIN_DOC_01.seq}!=1</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>2074345322</id>
@@ -1354,6 +1432,27 @@ VALUES (
     <font_size>9</font_size>
     <conditional>
       <formula>[A26]=''''</formula>
+      <action>SuppressRow</action>
+    </conditional>
+  </cell>
+  <cell>
+    <id>777829129</id>
+    <cell_text>=If({RQ_SALRT_TRIN_DOC_01.l2_detail_item_management_mode}=''B'', ''Batch : ''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_batch_serial_string}, ''Serial : ''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_batch_serial_string})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>26</cell_row>
+    <cell_col>1</cell_col>
+    <cell_colspan>25</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_italic_flag>True</font_italic_flag>
+    <foreground_color>#9F9F9F</foreground_color>
+    <conditional>
+      <formula>{RQ_SALRT_TRIN_DOC_01.seq}!=1</formula>
+      <action>SuppressRow</action>
+    </conditional>
+    <conditional>
+      <formula>{RQ_SALRT_TRIN_DOC_01.l2_detail_item_management_mode}=''I''</formula>
       <action>SuppressRow</action>
     </conditional>
   </cell>
@@ -1544,8 +1643,10 @@ VALUES (
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
     <border_top_width>1</border_top_width>
     <border_top_color>#000000</border_top_color>
     <background_color>#E2E2E2</background_color>
@@ -2288,8 +2389,14 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
+    <border_top_width>1</border_top_width>
+    <border_bottom_width>1</border_bottom_width>
+    <border_top_color>#000000</border_top_color>
+    <border_bottom_color>#000000</border_bottom_color>
   </cell>
   <cell>
     <id>1101254920</id>
@@ -2302,6 +2409,7 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <format_type>Text</format_type>
   </cell>
   <cell>
     <id>1251119507</id>
@@ -2486,8 +2594,10 @@ VALUES (
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
     <border_top_color>#000000</border_top_color>
@@ -3307,33 +3417,51 @@ VALUES (
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>={RQ_SALRT_TRIN_DOC_01.l2_detail_section}&amp;'' - ''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_department}</sort_name>
+    <sort_name>RQ_SALRT_TRIN_DOC_01.seq</sort_name>
     <sort_title />
     <order_num>1</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>RQ_SALRT_TRIN_DOC_01.l2_detail_batch_serial_string</sort_name>
+    <sort_name>RQ_SALRT_TRIN_DOC_01.lvl</sort_name>
     <sort_title />
     <order_num>2</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>RQ_SALRT_TRIN_DOC_01.l3_charge_operation_level</sort_name>
+    <sort_name>={RQ_SALRT_TRIN_DOC_01.l2_detail_section}&amp;'' - ''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_department}</sort_name>
     <sort_title />
     <order_num>3</order_num>
-    <ascending_flag>False</ascending_flag>
+    <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>RQ_SALRT_TRIN_DOC_01.l3_charge_display_sequence</sort_name>
+    <sort_name>RQ_SALRT_TRIN_DOC_01.l2_detail_barcode</sort_name>
     <sort_title />
     <order_num>4</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>RQ_SALRT_TRIN_DOC_01.l5_refdoc_invoice_no</sort_name>
+    <sort_name>RQ_SALRT_TRIN_DOC_01.l2_detail_batch_serial_string</sort_name>
     <sort_title />
     <order_num>5</order_num>
+    <ascending_flag>True</ascending_flag>
+  </sort>
+  <sort>
+    <sort_name>RQ_SALRT_TRIN_DOC_01.l3_charge_operation_level</sort_name>
+    <sort_title />
+    <order_num>6</order_num>
+    <ascending_flag>False</ascending_flag>
+  </sort>
+  <sort>
+    <sort_name>RQ_SALRT_TRIN_DOC_01.l3_charge_display_sequence</sort_name>
+    <sort_title />
+    <order_num>7</order_num>
+    <ascending_flag>True</ascending_flag>
+  </sort>
+  <sort>
+    <sort_name>RQ_SALRT_TRIN_DOC_01.l5_refdoc_invoice_no</sort_name>
+    <sort_title />
+    <order_num>8</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <filter>
@@ -3343,7 +3471,7 @@ VALUES (
     <prompt_flag>False</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>True</group_with_next_flag>
-    <filter_ref_id>22318051</filter_ref_id>
+    <filter_ref_id>908981205</filter_ref_id>
     <filter_title />
     <values>
       <value>@DocumentId@</value>
@@ -3356,7 +3484,7 @@ VALUES (
     <prompt_flag>False</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>True</group_with_next_flag>
-    <filter_ref_id>1401800552</filter_ref_id>
+    <filter_ref_id>109785952</filter_ref_id>
     <filter_title />
     <values>
       <value>@DocumentDateFrom@</value>
@@ -3372,13 +3500,26 @@ VALUES (
     <prompt_flag>False</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1274729118</filter_ref_id>
+    <filter_ref_id>1287544621</filter_ref_id>
     <filter_title />
     <values>
       <value>@DocumentIdFrom@</value>
     </values>
     <values>
       <value>@DocumentIdTo@</value>
+    </values>
+  </filter>
+  <filter>
+    <filter_name>RQ_SALRT_TRIN_DOC_01.l1_saletype</filter_name>
+    <order_num>3</order_num>
+    <operator>=</operator>
+    <prompt_flag>False</prompt_flag>
+    <and_flag>True</and_flag>
+    <group_with_next_flag>False</group_with_next_flag>
+    <filter_ref_id>976487598</filter_ref_id>
+    <filter_title />
+    <values>
+      <value>SALES RETURN</value>
     </values>
   </filter>
   <topn>
@@ -3390,7 +3531,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2018-03-26 11:52:50', '18881', '2026-09-10 10:23:38.551904',
+    '2018-03-26 11:52:50', '18881', '2026-09-22 10:13:08.368973',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,

@@ -3,7 +3,7 @@
 -- Name: #Purchase Return#
 -- Action: UPDATE
 -- Version: 2026008
--- Generated on: 2026-09-18 15:24:40
+-- Generated on: 2026-09-22 14:24:39
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -77,7 +77,7 @@ VALUES (
   </cell>
   <cell>
     <id>275086635</id>
-    <cell_text>RQ_PURRET_DOC_01.l1_header_refsite_name</cell_text>
+    <cell_text>RQ_PURRET_DOC_01.l1_header_owner_site_name</cell_text>
     <cell_type>data</cell_type>
     <cell_row>0</cell_row>
     <cell_col>2</cell_col>
@@ -102,7 +102,7 @@ VALUES (
   </cell>
   <cell>
     <id>917267308</id>
-    <cell_text>={RQ_PURRET_DOC_01.l1_header_refsite_address}&amp;'', ''&amp;{RQ_PURRET_DOC_01.l1_header_refsite_city}&amp;'', ''&amp;{RQ_PURRET_DOC_01.l1_header_refsite_pincode}</cell_text>
+    <cell_text>={RQ_PURRET_DOC_01.l1_header_owner_site_address}&amp;'', ''&amp;{RQ_PURRET_DOC_01.l1_header_owner_site_city}&amp;'', ''&amp;{RQ_PURRET_DOC_01.l1_header_owner_site_pincode}</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>1</cell_row>
     <cell_col>2</cell_col>
@@ -132,7 +132,7 @@ VALUES (
   </cell>
   <cell>
     <id>1607464199</id>
-    <cell_text>=''Phone : ''&amp; {RQ_PURRET_DOC_01.l1_header_refsite_phone1}</cell_text>
+    <cell_text>=''Phone : ''&amp; {RQ_PURRET_DOC_01.l1_header_owner_site_phone1}</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>3</cell_row>
     <cell_col>2</cell_col>
@@ -143,7 +143,7 @@ VALUES (
   </cell>
   <cell>
     <id>2000543442</id>
-    <cell_text>=''Email Id : ''&amp;{RQ_PURRET_DOC_01.l1_header_owner_site_email2}</cell_text>
+    <cell_text>=''Email Id : ''&amp;{RQ_PURRET_DOC_01.l1_header_owner_site_email1}</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>4</cell_row>
     <cell_col>2</cell_col>
@@ -165,7 +165,7 @@ VALUES (
   </cell>
   <cell>
     <id>874140433</id>
-    <cell_text>=''GSTIN : ''&amp;{RQ_PURRET_DOC_01.l1_header_refsite_gstin_no}</cell_text>
+    <cell_text>=''GSTIN : ''&amp;{RQ_PURRET_DOC_01.l1_header_owner_gstin_no}</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>6</cell_row>
     <cell_col>2</cell_col>
@@ -176,7 +176,7 @@ VALUES (
   </cell>
   <cell>
     <id>2052497719</id>
-    <cell_text>=If({RQ_PURRET_DOC_01.l1_header_refsite_gstin_no}='''', '''', ''GST State : ''&amp;{RQ_PURRET_DOC_01.l1_header_refsite_gst_state_name}&amp;''(''&amp;{RQ_PURRET_DOC_01.l1_header_refsite_gst_state_code}&amp;'')'')</cell_text>
+    <cell_text>=If({RQ_PURRET_DOC_01.l1_header_owner_gstin_no}='''', '''', ''GST State : ''&amp;{RQ_PURRET_DOC_01.l1_header_owner_gstin_state_name}&amp;''(''&amp;{RQ_PURRET_DOC_01.l1_header_owner_gstin_state_code}&amp;'')'')</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>7</cell_row>
     <cell_col>2</cell_col>
@@ -187,7 +187,7 @@ VALUES (
   </cell>
   <cell>
     <id>756721258</id>
-    <cell_text>=''CIN : ''&amp;@ConnOUCINNo@</cell_text>
+    <cell_text>=''CIN : ''&amp;{RQ_PURRET_DOC_01.l1_header_orgunit_cin}</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>8</cell_row>
     <cell_col>2</cell_col>
@@ -702,8 +702,8 @@ VALUES (
   </cell>
   <cell>
     <id>990252171</id>
-    <cell_text>RQ_PURRET_DOC_01.l2_detail_item_name</cell_text>
-    <cell_type>data</cell_type>
+    <cell_text>={RQ_PURRET_DOC_01.l2_detail_barcode}&amp;''-''&amp;{RQ_PURRET_DOC_01.l2_detail_category1}&amp;''-''&amp;{RQ_PURRET_DOC_01.l2_detail_category2}&amp;''-''&amp;{RQ_PURRET_DOC_01.l2_detail_category3}&amp;''-''&amp;{RQ_PURRET_DOC_01.l2_detail_category4}&amp;''-''&amp;{RQ_PURRET_DOC_01.l2_detail_category5}&amp;''-''&amp;{RQ_PURRET_DOC_01.l2_detail_category6}</cell_text>
+    <cell_type>formula</cell_type>
     <cell_row>19</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -756,6 +756,7 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
   </cell>
@@ -786,10 +787,15 @@ VALUES (
     <font_size>8</font_size>
     <format_type>Number</format_type>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
+    <conditional>
+      <formula>{RQ_PURRET_DOC_01.seq}!=1</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>1343829814</id>
-    <cell_text>=If({item_management_mode}=''B'', ''Batch : ''&amp;{RQ_PURRET_DOC_01.l2_detail_batch_serial_string}, ''Serial : ''&amp;{RQ_PURRET_DOC_01.l2_detail_batch_serial_string})</cell_text>
+    <cell_text>=If({RQ_PURRET_DOC_01.l2_detail_item_management_mode}=''B'', ''Batch : ''&amp;{RQ_PURRET_DOC_01.l2_detail_batch_serial_string}, ''Serial : ''&amp;{RQ_PURRET_DOC_01.l2_detail_batch_serial_string})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>20</cell_row>
     <cell_col>1</cell_col>
@@ -929,6 +935,7 @@ VALUES (
     <font_size>8</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
     <border_top_width>1</border_top_width>
@@ -1339,6 +1346,10 @@ VALUES (
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
+    <conditional>
+      <formula>{RQ_PURRET_DOC_01.seq}!=4</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>1960546764</id>
@@ -1689,6 +1700,7 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
     <border_right_width>1</border_right_width>
@@ -1882,6 +1894,7 @@ VALUES (
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
     <border_top_width>1</border_top_width>
@@ -2449,9 +2462,27 @@ VALUES (
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>RQ_PURRET_DOC_01.l2_detail_batch_serial_string</sort_name>
+    <sort_name>RQ_PURRET_DOC_01.l2_detail_barcode</sort_name>
     <sort_title />
     <order_num>4</order_num>
+    <ascending_flag>True</ascending_flag>
+  </sort>
+  <sort>
+    <sort_name>RQ_PURRET_DOC_01.l2_detail_batch_serial_string</sort_name>
+    <sort_title />
+    <order_num>5</order_num>
+    <ascending_flag>True</ascending_flag>
+  </sort>
+  <sort>
+    <sort_name>RQ_PURRET_DOC_01.l3_charge_operation_level</sort_name>
+    <sort_title />
+    <order_num>6</order_num>
+    <ascending_flag>False</ascending_flag>
+  </sort>
+  <sort>
+    <sort_name>RQ_PURRET_DOC_01.l3_charge_display_sequence</sort_name>
+    <sort_title />
+    <order_num>7</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <filter>
@@ -2476,7 +2507,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2023-01-31 11:42:36', '1295', '2026-09-10 10:18:45.228970',
+    '2023-01-31 11:42:36', '1295', '2026-09-22 08:16:30.676884',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,

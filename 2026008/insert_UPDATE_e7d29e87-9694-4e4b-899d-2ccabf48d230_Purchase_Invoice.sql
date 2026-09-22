@@ -3,7 +3,7 @@
 -- Name: #Purchase Invoice#
 -- Action: UPDATE
 -- Version: 2026008
--- Generated on: 2026-09-18 15:24:40
+-- Generated on: 2026-09-22 14:24:39
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -100,8 +100,8 @@ VALUES (
   </cell>
   <cell>
     <id>573331885</id>
-    <cell_text>={RQ_PURINV_DOC_01.l1_header_refsite_name}</cell_text>
-    <cell_type>formula</cell_type>
+    <cell_text>RQ_PURINV_DOC_01.l1_header_owner_site_name</cell_text>
+    <cell_type>data</cell_type>
     <cell_row>2</cell_row>
     <cell_col>0</cell_col>
     <cell_colspan>48</cell_colspan>
@@ -112,7 +112,7 @@ VALUES (
   </cell>
   <cell>
     <id>1371997912</id>
-    <cell_text>={RQ_PURINV_DOC_01.l1_header_refsite_address}&amp;''&lt;br&gt;''&amp;{RQ_PURINV_DOC_01.l1_header_refsite_city}&amp;if({RQ_PURINV_DOC_01.l1_header_refsite_pincode}='''','''','' - ''&amp;{RQ_PURINV_DOC_01.l1_header_refsite_pincode})</cell_text>
+    <cell_text>={RQ_PURINV_DOC_01.l1_header_owner_site_address}&amp;''&lt;br&gt;''&amp;{RQ_PURINV_DOC_01.l1_header_owner_site_city}&amp;if({RQ_PURINV_DOC_01.l1_header_owner_site_pincode}='''','''','' - ''&amp;{RQ_PURINV_DOC_01.l1_header_owner_site_pincode})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>3</cell_row>
     <cell_col>0</cell_col>
@@ -122,17 +122,17 @@ VALUES (
     <font_size>10</font_size>
     <format_type>Text</format_type>
     <conditional>
-      <formula>And({RQ_PURINV_DOC_01.l1_header_refsite_address}=DbNull(),{RQ_PURINV_DOC_01.l1_header_refsite_city}=DbNull(),{RQ_PURINV_DOC_01.l1_header_refsite_pincode}=DbNull())</formula>
+      <formula>And({RQ_PURINV_DOC_01.l1_header_owner_site_address}=DbNull(),{RQ_PURINV_DOC_01.l1_header_owner_site_city}=DbNull(),{RQ_PURINV_DOC_01.l1_header_owner_site_pincode}=DbNull())</formula>
       <action>SuppressRow</action>
     </conditional>
   </cell>
   <cell>
     <id>1020117292</id>
-    <cell_text>={RQ_PURINV_DOC_01.l1_header_refsite_phone1}&amp;'' ''&amp;{RQ_PURINV_DOC_01.l1_header_refsite_phone2}&amp;'' ''&amp;{RQ_PURINV_DOC_01.l1_header_refsite_phone3}</cell_text>
+    <cell_text>={RQ_PURINV_DOC_01.l1_header_owner_site_phone1}&amp;'' ''&amp;{RQ_PURINV_DOC_01.l1_header_owner_site_phone2}&amp;'' ''&amp;{RQ_PURINV_DOC_01.l1_header_owner_site_phone3}</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>4</cell_row>
     <cell_col>0</cell_col>
-    <cell_colspan>10</cell_colspan>
+    <cell_colspan>33</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
@@ -143,326 +143,15 @@ VALUES (
     </conditional>
   </cell>
   <cell>
-    <id>1386198771</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>10</cell_col>
+    <id>1825005823</id>
+    <cell_text>={RQ_PURINV_DOC_01.l1_header_owner_site_email1}&amp;If({RQ_PURINV_DOC_01.l1_header_owner_site_email1}!='''', '', ''&amp;{RQ_PURINV_DOC_01.l1_header_owner_site_email2}, {RQ_PURINV_DOC_01.l1_header_owner_site_email2})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>5</cell_row>
+    <cell_col>0</cell_col>
+    <cell_colspan>33</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>922788103</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>11</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>747535761</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>12</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>1793306082</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>13</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>760575446</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>14</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>1613379150</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>15</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>2019379049</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>16</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>197130791</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>17</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>2017620246</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>18</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>1318656634</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>19</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>1805028025</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>20</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>255235668</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>21</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>689888667</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>22</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>738906131</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>23</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>893504864</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>24</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>1916802517</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>25</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>1733309759</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>26</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>471516945</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>27</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>1727139042</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>28</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>1514868370</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>29</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>600270398</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>30</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>1135763059</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>31</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>594512773</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>32</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>1918647379</id>
@@ -480,7 +169,7 @@ VALUES (
     </conditional>
   </cell>
   <cell>
-    <id>1484813046</id>
+    <id>728934442</id>
     <cell_text />
     <cell_type>text</cell_type>
     <cell_row>6</cell_row>
@@ -488,53 +177,7 @@ VALUES (
     <cell_colspan>5</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>10</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>1717721100</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>30</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
     <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>1969365343</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>31</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
-  </cell>
-  <cell>
-    <id>329098497</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>32</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <conditional>
-      <formula>CellValue()=DbNull()</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>1056583905</id>
@@ -639,7 +282,7 @@ VALUES (
   </cell>
   <cell>
     <id>2034816184</id>
-    <cell_text>={RQ_PURINV_DOC_01.l1_header_refsite_gstin_no}&amp; ''[''&amp;{RQ_PURINV_DOC_01.l1_header_refsite_gst_state_code}&amp;'' -''&amp;{RQ_PURINV_DOC_01.l1_header_refsite_gst_state_name}&amp;'']''</cell_text>
+    <cell_text>={RQ_PURINV_DOC_01.l1_header_owner_gstin_no}&amp; ''[''&amp;{RQ_PURINV_DOC_01.l1_header_owner_gstin_state_code}&amp;'' -''&amp;{RQ_PURINV_DOC_01.l1_header_owner_gstin_state_name}&amp;'']''</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>8</cell_row>
     <cell_col>8</cell_col>
@@ -1673,6 +1316,7 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
   </cell>
@@ -1689,6 +1333,7 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
   </cell>
@@ -1705,8 +1350,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
   </cell>
   <cell>
     <id>1941949775</id>
@@ -1737,6 +1384,11 @@ VALUES (
     <format_type>Number</format_type>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
+    <conditional>
+      <formula>{RQ_PURINV_DOC_01.seq}!=1</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>160253342</id>
@@ -1751,6 +1403,23 @@ VALUES (
     <format_type>Number</format_type>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+  </cell>
+  <cell>
+    <id>42900749</id>
+    <cell_text>=If({RQ_PURINV_DOC_01.l2_detail_item_management_mode}=''B'', ''Batch : ''&amp;{RQ_PURINV_DOC_01.l2_detail_batch_serial_string}, ''Serial : ''&amp;{RQ_PURINV_DOC_01.l2_detail_batch_serial_string})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>25</cell_row>
+    <cell_col>5</cell_col>
+    <cell_colspan>47</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_italic_flag>True</font_italic_flag>
+    <foreground_color>#9F9F9F</foreground_color>
+    <conditional>
+      <formula>Or([F26]=''Batch : '',[F26]=''Serial : '')</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>1153488230</id>
@@ -1894,8 +1563,10 @@ VALUES (
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
     <border_top_width>1</border_top_width>
     <border_top_color>#000000</border_top_color>
     <background_color>#E2E2E2</background_color>
@@ -2323,8 +1994,10 @@ VALUES (
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
   </cell>
   <cell>
     <id>761456664</id>
@@ -2350,8 +2023,10 @@ VALUES (
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
   </cell>
   <cell>
     <id>2058510586</id>
@@ -3287,8 +2962,14 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
+    <border_top_width>1</border_top_width>
+    <border_bottom_width>1</border_bottom_width>
+    <border_top_color>#000000</border_top_color>
+    <border_bottom_color>#000000</border_bottom_color>
   </cell>
   <cell>
     <id>1101254920</id>
@@ -3480,8 +3161,10 @@ VALUES (
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
     <border_top_color>#000000</border_top_color>
@@ -4484,33 +4167,39 @@ VALUES (
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>RQ_PURINV_DOC_01.l2_detail_batch_serial_string</sort_name>
+    <sort_name>RQ_PURINV_DOC_01.l2_detail_barcode</sort_name>
     <sort_title />
     <order_num>4</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>RQ_PURINV_DOC_01.l3_charge_operation_level</sort_name>
+    <sort_name>RQ_PURINV_DOC_01.l2_detail_batch_serial_string</sort_name>
     <sort_title />
     <order_num>5</order_num>
+    <ascending_flag>True</ascending_flag>
+  </sort>
+  <sort>
+    <sort_name>RQ_PURINV_DOC_01.l3_charge_operation_level</sort_name>
+    <sort_title />
+    <order_num>6</order_num>
     <ascending_flag>False</ascending_flag>
   </sort>
   <sort>
     <sort_name>RQ_PURINV_DOC_01.l3_charge_display_sequence</sort_name>
     <sort_title />
-    <order_num>6</order_num>
+    <order_num>7</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
     <sort_name>RQ_PURINV_DOC_01.l6_tds_tds_journal_no</sort_name>
     <sort_title />
-    <order_num>7</order_num>
+    <order_num>8</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
     <sort_name>RQ_PURINV_DOC_01.l4_hsn_hsn_code</sort_name>
     <sort_title />
-    <order_num>8</order_num>
+    <order_num>9</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <filter>
@@ -4580,7 +4269,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2018-04-13 15:17:51', '18881', '2026-09-10 10:13:38.361474',
+    '2018-04-13 15:17:51', '18881', '2026-09-22 08:16:55.089913',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,

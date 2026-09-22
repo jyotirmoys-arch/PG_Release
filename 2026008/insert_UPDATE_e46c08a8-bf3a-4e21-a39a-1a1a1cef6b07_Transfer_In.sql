@@ -3,7 +3,7 @@
 -- Name: #Transfer In#
 -- Action: UPDATE
 -- Version: 2026008
--- Generated on: 2026-09-18 15:24:41
+-- Generated on: 2026-09-22 14:24:38
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -89,7 +89,7 @@ VALUES (
   </cell>
   <cell>
     <id>1670453157</id>
-    <cell_text>RQ_SALRT_TRIN_DOC_01.l1_refsite_name</cell_text>
+    <cell_text>RQ_SALRT_TRIN_DOC_01.l1_owner_site_name</cell_text>
     <cell_type>data</cell_type>
     <cell_row>2</cell_row>
     <cell_col>0</cell_col>
@@ -125,8 +125,8 @@ VALUES (
   </cell>
   <cell>
     <id>598440482</id>
-    <cell_text>={RQ_SALRT_TRIN_DOC_01.l1_refsite_name}</cell_text>
-    <cell_type>formula</cell_type>
+    <cell_text>RQ_SALRT_TRIN_DOC_01.l1_owner_site_name</cell_text>
+    <cell_type>data</cell_type>
     <cell_row>3</cell_row>
     <cell_col>1</cell_col>
     <cell_colspan>7</cell_colspan>
@@ -137,8 +137,8 @@ VALUES (
   </cell>
   <cell>
     <id>780202550</id>
-    <cell_text>={RQ_SALRT_TRIN_DOC_01.l1_refsite_address}</cell_text>
-    <cell_type>formula</cell_type>
+    <cell_text>RQ_SALRT_TRIN_DOC_01.l1_owner_site_address</cell_text>
+    <cell_type>data</cell_type>
     <cell_row>4</cell_row>
     <cell_col>1</cell_col>
     <cell_colspan>7</cell_colspan>
@@ -170,7 +170,7 @@ VALUES (
   </cell>
   <cell>
     <id>332080331</id>
-    <cell_text>=If({RQ_SALRT_TRIN_DOC_01.l1_refsite_phone1}=DbNull(), '''', ''Phone : ''&amp;{RQ_SALRT_TRIN_DOC_01.l1_refsite_phone1})&amp;If({fax}=DbNull(), '''', ''Fax: ''&amp;{fax}&amp;'','')</cell_text>
+    <cell_text>=If({RQ_SALRT_TRIN_DOC_01.l1_owner_site_phone1}=DbNull(), '''', ''Phone : ''&amp;{RQ_SALRT_TRIN_DOC_01.l1_owner_site_phone1})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>5</cell_row>
     <cell_col>1</cell_col>
@@ -194,8 +194,8 @@ VALUES (
   </cell>
   <cell>
     <id>1711457767</id>
-    <cell_text>={RQ_SALRT_TRIN_DOC_01.l1_refsite_gstin_no}</cell_text>
-    <cell_type>formula</cell_type>
+    <cell_text>RQ_SALRT_TRIN_DOC_01.l1_owner_gstin_no</cell_text>
+    <cell_type>data</cell_type>
     <cell_row>5</cell_row>
     <cell_col>11</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
@@ -259,7 +259,7 @@ VALUES (
   </cell>
   <cell>
     <id>1651685752</id>
-    <cell_text>=If({RQ_SALRT_TRIN_DOC_01.l1_refsite_gstin_no}='''', '''', {RQ_SALRT_TRIN_DOC_01.l1_refsite_gst_state_name}&amp;''[''&amp;{RQ_SALRT_TRIN_DOC_01.l1_refsite_gst_state_code}&amp;'']'')</cell_text>
+    <cell_text>=If({RQ_SALRT_TRIN_DOC_01.l1_owner_gstin_no}='''', '''', {RQ_SALRT_TRIN_DOC_01.l1_owner_gstin_state_name}&amp;''[''&amp;{RQ_SALRT_TRIN_DOC_01.l1_owner_gstin_state_code}&amp;'']'')</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>6</cell_row>
     <cell_col>11</cell_col>
@@ -1021,7 +1021,7 @@ VALUES (
   </cell>
   <cell>
     <id>1061139814</id>
-    <cell_text>={RQ_SALRT_TRIN_DOC_01.l2_detail_division}&amp;''-''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_section}&amp;''-''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_department}&amp;''-''&amp;If({RQ_SALRT_TRIN_DOC_01.l2_detail_barcode}='''', {item_code}, {RQ_SALRT_TRIN_DOC_01.l2_detail_barcode})</cell_text>
+    <cell_text>={RQ_SALRT_TRIN_DOC_01.l2_detail_division}&amp;''-''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_section}&amp;''-''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_department}&amp;''-''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_barcode}</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>18</cell_row>
     <cell_col>1</cell_col>
@@ -1093,8 +1093,10 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
   </cell>
   <cell>
     <id>465207769</id>
@@ -1122,6 +1124,11 @@ VALUES (
     <format_type>Number</format_type>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
+    <conditional>
+      <formula>{RQ_SALRT_TRIN_DOC_01.seq}!=1</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>1906475330</id>
@@ -1143,7 +1150,7 @@ VALUES (
   </cell>
   <cell>
     <id>2038327760</id>
-    <cell_text>=If({item_management_mode}=''B'', ''Batch : ''&amp;{LV_TRIN_ITEMDETAIL_01.batch_serial_string}, ''Serial : ''&amp;{LV_TRIN_ITEMDETAIL_01.batch_serial_string})</cell_text>
+    <cell_text>=If({RQ_SALRT_TRIN_DOC_01.l2_detail_item_management_mode}=''B'', ''Batch : ''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_batch_serial_string}, ''Serial : ''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_batch_serial_string})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>19</cell_row>
     <cell_col>1</cell_col>
@@ -1154,7 +1161,11 @@ VALUES (
     <font_italic_flag>True</font_italic_flag>
     <foreground_color>#9F9F9F</foreground_color>
     <conditional>
-      <formula>{item_management_mode}=''I''</formula>
+      <formula>{RQ_SALRT_TRIN_DOC_01.l2_detail_item_management_mode}=''I''</formula>
+      <action>SuppressRow</action>
+    </conditional>
+    <conditional>
+      <formula>{RQ_SALRT_TRIN_DOC_01.seq}!=2</formula>
       <action>SuppressRow</action>
     </conditional>
   </cell>
@@ -1195,7 +1206,7 @@ VALUES (
   </cell>
   <cell>
     <id>296739784</id>
-    <cell_text>=AggSum({LV_TRIN_ITEMDETAIL_01.send_quantity})</cell_text>
+    <cell_text>=AggSum({RQ_SALRT_TRIN_DOC_01.l2_detail_send_quantity})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>20</cell_row>
     <cell_col>2</cell_col>
@@ -1250,7 +1261,7 @@ VALUES (
   </cell>
   <cell>
     <id>44121380</id>
-    <cell_text>=If(AggSum({LV_TRIN_ITEMDETAIL_01.short_excess_quantity})&gt;0,Abs(AggSum({LV_TRIN_ITEMDETAIL_01.short_excess_quantity})),Abs(AggSum({LV_TRIN_ITEMDETAIL_01.short_excess_quantity})))</cell_text>
+    <cell_text>=If(AggSum({RQ_SALRT_TRIN_DOC_01.l2_detail_short_excess_quantity})&gt;0,Abs(AggSum({RQ_SALRT_TRIN_DOC_01.l2_detail_short_excess_quantity})),Abs(AggSum({RQ_SALRT_TRIN_DOC_01.l2_detail_short_excess_quantity})))</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>20</cell_row>
     <cell_col>7</cell_col>
@@ -1321,8 +1332,10 @@ VALUES (
     <font_size>8</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
     <border_top_width>1</border_top_width>
     <border_top_color>#000000</border_top_color>
     <background_color>#E2E2E2</background_color>
@@ -1339,6 +1352,7 @@ VALUES (
     <font_size>8</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
     <border_top_width>1</border_top_width>
@@ -1357,6 +1371,7 @@ VALUES (
     <font_size>8</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
     <border_top_width>1</border_top_width>
@@ -1381,7 +1396,7 @@ VALUES (
   </cell>
   <cell>
     <id>1494485172</id>
-    <cell_text>=AggSum({LV_TRIN_ITEMDETAIL_01.item_effective_value})</cell_text>
+    <cell_text>=AggSum({RQ_SALRT_TRIN_DOC_01.l2_detail_item_effective_value})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>21</cell_row>
     <cell_col>2</cell_col>
@@ -1416,7 +1431,7 @@ VALUES (
   </cell>
   <cell>
     <id>1864557928</id>
-    <cell_text>=If(AggSum({LV_TRIN_ITEMDETAIL_01.short_excess_amount})&gt;0,Abs(AggSum({LV_TRIN_ITEMDETAIL_01.short_excess_amount})),Abs(AggSum({LV_TRIN_ITEMDETAIL_01.short_excess_amount})))</cell_text>
+    <cell_text>=If(AggSum({RQ_SALRT_TRIN_DOC_01.l2_detail_short_excess_amount})&gt;0,Abs(AggSum({RQ_SALRT_TRIN_DOC_01.l2_detail_short_excess_amount})),Abs(AggSum({RQ_SALRT_TRIN_DOC_01.l2_detail_short_excess_amount})))</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>21</cell_row>
     <cell_col>7</cell_col>
@@ -2080,6 +2095,7 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
     <border_top_width>1</border_top_width>
@@ -2241,10 +2257,15 @@ VALUES (
     <format_type>Number</format_type>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
     <border_top_width>1</border_top_width>
     <border_right_width>1</border_right_width>
     <border_top_color>#000000</border_top_color>
     <border_right_color>#000000</border_right_color>
+    <conditional>
+      <formula>{RQ_SALRT_TRIN_DOC_01.seq}!=3</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>1835171846</id>
@@ -2308,6 +2329,7 @@ VALUES (
     <font_size>9</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
+    <format_decimal_places>3</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
     <border_top_width>1</border_top_width>
@@ -2795,21 +2817,39 @@ VALUES (
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>={RQ_SALRT_TRIN_DOC_01.l2_detail_division}&amp;''-''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_section}&amp;''-''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_department}</sort_name>
+    <sort_name>RQ_SALRT_TRIN_DOC_01.seq</sort_name>
     <sort_title />
     <order_num>1</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>RQ_SALRT_TRIN_DOC_01.l3_charge_operation_level</sort_name>
+    <sort_name>RQ_SALRT_TRIN_DOC_01.lvl</sort_name>
     <sort_title />
     <order_num>2</order_num>
+    <ascending_flag>True</ascending_flag>
+  </sort>
+  <sort>
+    <sort_name>={RQ_SALRT_TRIN_DOC_01.l2_detail_division}&amp;''-''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_section}&amp;''-''&amp;{RQ_SALRT_TRIN_DOC_01.l2_detail_department}</sort_name>
+    <sort_title />
+    <order_num>3</order_num>
+    <ascending_flag>True</ascending_flag>
+  </sort>
+  <sort>
+    <sort_name>RQ_SALRT_TRIN_DOC_01.l2_detail_barcode</sort_name>
+    <sort_title />
+    <order_num>4</order_num>
+    <ascending_flag>True</ascending_flag>
+  </sort>
+  <sort>
+    <sort_name>RQ_SALRT_TRIN_DOC_01.l3_charge_operation_level</sort_name>
+    <sort_title />
+    <order_num>5</order_num>
     <ascending_flag>False</ascending_flag>
   </sort>
   <sort>
     <sort_name>RQ_SALRT_TRIN_DOC_01.l3_charge_display_sequence</sort_name>
     <sort_title />
-    <order_num>3</order_num>
+    <order_num>6</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <filter>
@@ -2819,10 +2859,23 @@ VALUES (
     <prompt_flag>False</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1854133884</filter_ref_id>
+    <filter_ref_id>850411072</filter_ref_id>
     <filter_title />
     <values>
       <value>@DocumentId@</value>
+    </values>
+  </filter>
+  <filter>
+    <filter_name>RQ_SALRT_TRIN_DOC_01.l1_saletype</filter_name>
+    <order_num>1</order_num>
+    <operator>=</operator>
+    <prompt_flag>False</prompt_flag>
+    <and_flag>True</and_flag>
+    <group_with_next_flag>False</group_with_next_flag>
+    <filter_ref_id>680545284</filter_ref_id>
+    <filter_title />
+    <values>
+      <value>TRANSFER IN</value>
     </values>
   </filter>
   <topn>
@@ -2834,7 +2887,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2020-01-14 22:16:33', '1300', '2026-09-10 10:34:21.133720',
+    '2020-01-14 22:16:33', '1300', '2026-09-22 08:51:43.151065',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,

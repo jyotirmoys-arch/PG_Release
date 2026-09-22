@@ -3,7 +3,7 @@
 -- Name: #Inter Location Transfer#
 -- Action: UPDATE
 -- Version: 2026008
--- Generated on: 2026-09-18 15:24:40
+-- Generated on: 2026-09-22 14:24:38
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -253,8 +253,8 @@ VALUES (
   </cell>
   <cell>
     <id>1050693414</id>
-    <cell_text>=@ConnOUCINNo@</cell_text>
-    <cell_type>formula</cell_type>
+    <cell_text>RQ_INTER_STOCK_TRANSFER_DOC_01.orgunit_cin</cell_text>
+    <cell_type>data</cell_type>
     <cell_row>7</cell_row>
     <cell_col>5</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -1369,6 +1369,22 @@ VALUES (
     </conditional>
   </cell>
   <cell>
+    <id>957092473</id>
+    <cell_text>=LineNumberWithReset({RQ_INTER_STOCK_TRANSFER_DOC_01.detail_section}&amp;{RQ_INTER_STOCK_TRANSFER_DOC_01.detail_department},''Assembly'')</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>21</cell_row>
+    <cell_col>12</cell_col>
+    <cell_colspan>7</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <foreground_color>#FFFFFF</foreground_color>
+    <conditional>
+      <formula>If(CellValue() &gt; 1,''true'',''false'')</formula>
+      <action>SuppressRow</action>
+    </conditional>
+  </cell>
+  <cell>
     <id>1910430159</id>
     <cell_text />
     <cell_type>text</cell_type>
@@ -1492,6 +1508,39 @@ VALUES (
     <format_type>Number</format_type>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+  </cell>
+  <cell>
+    <id>833389850</id>
+    <cell_text>={RQ_INTER_STOCK_TRANSFER_DOC_01.quantity}*{RQ_INTER_STOCK_TRANSFER_DOC_01.detail_rsp}</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>22</cell_row>
+    <cell_col>38</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_colspan>5</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <format_type>Number</format_type>
+    <format_separator_flag>False</format_separator_flag>
+    <format_negative_symbol_flag>True</format_negative_symbol_flag>
+    <format_negative_color>#FFFFFF</format_negative_color>
+  </cell>
+  <cell>
+    <id>1355766181</id>
+    <cell_text>=If({RQ_INTER_STOCK_TRANSFER_DOC_01.detail_item_management_mode}=''B'', ''Batch : ''&amp;{RQ_INTER_STOCK_TRANSFER_DOC_01.batch_serial_string}, ''Serial : ''&amp;{RQ_INTER_STOCK_TRANSFER_DOC_01.batch_serial_string})</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>23</cell_row>
+    <cell_col>3</cell_col>
+    <cell_colspan>40</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_italic_flag>True</font_italic_flag>
+    <foreground_color>#9F9F9F</foreground_color>
+    <conditional>
+      <formula>Or([D24]=''Batch : '',[D24]=''Serial : '')</formula>
+      <action>SuppressRow</action>
+    </conditional>
   </cell>
   <cell>
     <id>1153488230</id>
@@ -2635,13 +2684,13 @@ VALUES (
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>RQ_INTER_STOCK_TRANSFER_DOC_01.batch_serial_string</sort_name>
+    <sort_name>RQ_INTER_STOCK_TRANSFER_DOC_01.detail_barcode</sort_name>
     <sort_title />
     <order_num>3</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>RQ_INTER_STOCK_TRANSFER_DOC_01.detail_barcode</sort_name>
+    <sort_name>RQ_INTER_STOCK_TRANSFER_DOC_01.batch_serial_string</sort_name>
     <sort_title />
     <order_num>4</order_num>
     <ascending_flag>True</ascending_flag>
@@ -2668,7 +2717,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2021-02-09 16:47:03', '1300', '2026-09-11 09:04:04.025266',
+    '2021-02-09 16:47:03', '1300', '2026-09-22 08:14:35.508538',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,

@@ -3,7 +3,7 @@
 -- Name: #AR Voucher#
 -- Action: UPDATE
 -- Version: 2026008
--- Generated on: 2026-09-18 15:24:42
+-- Generated on: 2026-09-22 14:24:39
 -- =====================================================
 
 -- Insert into ex_content_dev
