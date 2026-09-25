@@ -3,7 +3,7 @@
 -- Name: #Approval Pending Register#
 -- Action: INSERT
 -- Version: 2026010
--- Generated on: 2026-09-24 13:36:25
+-- Generated on: 2026-09-25 16:05:34
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -1073,7 +1073,7 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1317439277</filter_ref_id>
+    <filter_ref_id>1678894952</filter_ref_id>
     <filter_title />
     <values>
       <value />
@@ -1086,20 +1086,20 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1330160209</filter_ref_id>
+    <filter_ref_id>991014980</filter_ref_id>
     <filter_title />
     <values>
       <value />
     </values>
   </filter>
   <filter>
-    <filter_name>LV_APPRV_DOC_INST_01.requested_on</filter_name>
+    <filter_name>LV_APPRV_DOC_INST_01.requested_date</filter_name>
     <order_num>2</order_num>
     <operator>bt</operator>
     <prompt_flag>False</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>2145263271</filter_ref_id>
+    <filter_ref_id>541729628</filter_ref_id>
     <filter_title />
     <values>
       <value>@DTFR@</value>
@@ -1115,7 +1115,7 @@ VALUES (
     <prompt_flag>False</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1799015797</filter_ref_id>
+    <filter_ref_id>1323290873</filter_ref_id>
     <filter_title />
     <values>
       <value>@ApprvTrnxType@</value>
@@ -1128,10 +1128,23 @@ VALUES (
     <prompt_flag>False</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1306171589</filter_ref_id>
+    <filter_ref_id>106814198</filter_ref_id>
     <filter_title />
     <values>
       <value>@SiteName@</value>
+    </values>
+  </filter>
+  <filter>
+    <filter_name>LV_APPRV_DOC_INST_01.status</filter_name>
+    <order_num>5</order_num>
+    <operator>=</operator>
+    <prompt_flag>False</prompt_flag>
+    <and_flag>True</and_flag>
+    <group_with_next_flag>False</group_with_next_flag>
+    <filter_ref_id>504170697</filter_ref_id>
+    <filter_title />
+    <values>
+      <value>Pending</value>
     </values>
   </filter>
   <topn>
@@ -1143,7 +1156,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-09-23 13:09:35.510857', '2275', '2026-09-24 06:54:54.358646',
+    '2026-09-23 13:09:35.510857', '2275', '2026-09-25 09:44:37.791626',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 25,
     FALSE, 2, 832,
     NULL, 16, 0,
