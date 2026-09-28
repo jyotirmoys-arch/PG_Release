@@ -3,7 +3,7 @@
 -- Name: #Approval Pending Register#
 -- Action: INSERT
 -- Version: 2026010
--- Generated on: 2026-09-25 16:05:34
+-- Generated on: 2026-09-28 10:59:24
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -331,7 +331,7 @@ VALUES (
   </cell>
   <cell>
     <id>904452348</id>
-    <cell_text>Actived On</cell_text>
+    <cell_text>Activated On</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
     <cell_col>12</cell_col>
@@ -1156,7 +1156,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-09-23 13:09:35.510857', '2275', '2026-09-25 09:44:37.791626',
+    '2026-09-23 13:09:35.510857', '2275', '2026-09-28 05:20:13.888232',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 25,
     FALSE, 2, 832,
     NULL, 16, 0,
