@@ -3,7 +3,7 @@
 -- Name: #Approval History Register#
 -- Action: INSERT
 -- Version: 2026010
--- Generated on: 2026-09-25 16:05:34
+-- Generated on: 2026-10-01 13:46:56
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -929,7 +929,7 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>102877134</filter_ref_id>
+    <filter_ref_id>1499475641</filter_ref_id>
     <filter_title />
     <values>
       <value />
@@ -942,7 +942,7 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>301541689</filter_ref_id>
+    <filter_ref_id>2059935985</filter_ref_id>
     <filter_title />
     <values>
       <value />
@@ -955,7 +955,7 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>759230081</filter_ref_id>
+    <filter_ref_id>1430460351</filter_ref_id>
     <filter_title />
     <values>
       <value />
@@ -968,7 +968,7 @@ VALUES (
     <prompt_flag>False</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1847195691</filter_ref_id>
+    <filter_ref_id>305423088</filter_ref_id>
     <filter_title />
     <values>
       <value>@DTFR@</value>
@@ -984,7 +984,7 @@ VALUES (
     <prompt_flag>False</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1807371857</filter_ref_id>
+    <filter_ref_id>1593998752</filter_ref_id>
     <filter_title />
     <values>
       <value>@SiteName@</value>
@@ -997,7 +997,7 @@ VALUES (
     <prompt_flag>False</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>831547426</filter_ref_id>
+    <filter_ref_id>1021488783</filter_ref_id>
     <filter_title />
     <values>
       <value>@ApprvTrnxType@</value>
@@ -1010,7 +1010,7 @@ VALUES (
     <prompt_flag>False</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>235667638</filter_ref_id>
+    <filter_ref_id>812602678</filter_ref_id>
     <filter_title />
     <values>
       <value>@IsCurrentLevel@</value>
@@ -1023,10 +1023,10 @@ VALUES (
     <prompt_flag>False</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1082567712</filter_ref_id>
+    <filter_ref_id>638820776</filter_ref_id>
     <filter_title />
     <values>
-      <value>@ApprvAction@</value>
+      <value>@ApprvStatus@</value>
     </values>
   </filter>
   <filter>
@@ -1036,7 +1036,7 @@ VALUES (
     <prompt_flag>False</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1623384015</filter_ref_id>
+    <filter_ref_id>216884248</filter_ref_id>
     <filter_title />
     <values>
       <value>@ApprvAction@</value>
@@ -1051,7 +1051,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-09-23 12:01:07.661043', '2275', '2026-09-25 09:47:23.536742',
+    '2026-09-23 12:01:07.661043', '2275', '2026-10-01 08:04:08.732995',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 25,
     FALSE, 2, 832,
     NULL, 16, 0,
