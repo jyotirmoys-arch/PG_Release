@@ -3,7 +3,7 @@
 -- Name: #Bin wise Item stock summary#
 -- Action: UPDATE
 -- Version: 2026011
--- Generated on: 2026-10-06 16:54:20
+-- Generated on: 2026-10-08 19:09:33
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -689,179 +689,11 @@ VALUES (
   </cell>
   <cell>
     <id>139343033</id>
-    <cell_text>=''Print Date : ''&amp;GlobalDateFormat(Now())</cell_text>
+    <cell_text>=''Print Date : ''&amp;GlobalDateTimeFormat(Now())</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>7</cell_row>
     <cell_col>0</cell_col>
     <cell_colspan>3</cell_colspan>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
-  </cell>
-  <cell>
-    <id>162575090</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>3</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
-  </cell>
-  <cell>
-    <id>81789338</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>4</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
-  </cell>
-  <cell>
-    <id>1758067860</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>5</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
-  </cell>
-  <cell>
-    <id>1291430706</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>6</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
-  </cell>
-  <cell>
-    <id>235769741</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>7</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
-  </cell>
-  <cell>
-    <id>1785066918</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>8</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
-  </cell>
-  <cell>
-    <id>164522039</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>9</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
-  </cell>
-  <cell>
-    <id>182375687</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>10</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
-  </cell>
-  <cell>
-    <id>24299937</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>11</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
-  </cell>
-  <cell>
-    <id>700699720</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>12</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
-  </cell>
-  <cell>
-    <id>203085076</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>13</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
-  </cell>
-  <cell>
-    <id>481321175</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>14</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
-  </cell>
-  <cell>
-    <id>2085915273</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>15</cell_col>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <border_top_width>1</border_top_width>
-    <border_top_color>#000000</border_top_color>
-  </cell>
-  <cell>
-    <id>2100415621</id>
-    <cell_text />
-    <cell_type>text</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>16</cell_col>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
@@ -881,6 +713,20 @@ VALUES (
     <font_size>9</font_size>
     <border_top_width>1</border_top_width>
     <border_top_color>#000000</border_top_color>
+  </cell>
+  <cell>
+    <id>687314655</id>
+    <cell_text>Serial info will not be displayed, as the reservation is at the Item Level.</cell_text>
+    <cell_type>text</cell_type>
+    <cell_row>7</cell_row>
+    <cell_col>3</cell_col>
+    <cell_horizontal_align>Center</cell_horizontal_align>
+    <cell_colspan>14</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>10</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <font_italic_flag>True</font_italic_flag>
   </cell>
   <row>
     <group_type>Page Header</group_type>
@@ -1182,7 +1028,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2017-09-15 15:14:32', '3653', '2026-10-06 11:00:29.010082',
+    '2017-09-15 15:14:32', '3653', '2026-10-08 13:35:51.532383',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 31,
     FALSE, 2, 768,
     NULL, 0, 0,
