@@ -3,7 +3,7 @@
 -- Name: #Purchase Indent#
 -- Action: INSERT
 -- Version: 2026013
--- Generated on: 2026-10-12 18:42:02
+-- Generated on: 2026-10-14 15:45:58
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -17,7 +17,7 @@ INSERT INTO ginview.ex_content_dev (
 )
 VALUES (
     'd3d74005-00a1-4c75-abc6-4f0c20f99568', 0, 0,
-    NULL, '#Purchase Indent#', 'This is a Purchase Indent Document Report, to be used for document printing purpose. Should be executed from Purchase Indent Transaction only, cannot be executed from Report Home separately.',
+    NULL, '#Purchase Indent#', 'This is a Purchase Indent Document Report, to be used for document printing purposes. Should be executed from Purchase Indent Transaction only.',
     '<report>
   <main>
     <id>d3d74005-00a1-4c75-abc6-4f0c20f99568</id>
@@ -37,7 +37,7 @@ VALUES (
     <page_size>A4</page_size>
     <page_orientation>Portrait</page_orientation>
     <include_setup_info>No</include_setup_info>
-    <description>This is a Purchase Indent Document Report, to be used for document printing purpose. Should be executed from Purchase Indent Transaction only, cannot be executed from Report Home separately.</description>
+    <description>This is a Purchase Indent Document Report, to be used for document printing purposes. Should be executed from Purchase Indent Transaction only.</description>
     <filter_description />
     <show_grid>False</show_grid>
     <pdf_template />
@@ -84,7 +84,7 @@ VALUES (
     <cell_row>0</cell_row>
     <cell_col>2</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>6</cell_colspan>
+    <cell_colspan>8</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>12</font_size>
@@ -95,11 +95,10 @@ VALUES (
     <cell_text>=If(@ReportTitle@!='''', @ReportTitle@, ''Purchase Indent'')</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>0</cell_row>
-    <cell_col>8</cell_col>
+    <cell_col>10</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_rowspan>2</cell_rowspan>
-    <cell_colspan>7</cell_colspan>
+    <cell_colspan>5</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>12</font_size>
@@ -113,7 +112,7 @@ VALUES (
     <cell_col>2</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <cell_rowspan>2</cell_rowspan>
-    <cell_colspan>6</cell_colspan>
+    <cell_colspan>8</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
@@ -121,12 +120,12 @@ VALUES (
   </cell>
   <cell>
     <id>1660345857</id>
-    <cell_text>=''Phone : ''&amp;{RQ_PURCHASE_INDENT_01.l1_header_owner_site_phone1}&amp;''   Email : ''&amp;{RQ_PURCHASE_INDENT_01.l1_header_owner_site_email1}</cell_text>
+    <cell_text>=''Phone : ''&amp;{RQ_PURCHASE_INDENT_01.l1_header_owner_site_phone1}&amp;NewLine()&amp;''Email : ''&amp;{RQ_PURCHASE_INDENT_01.l1_header_owner_site_email1}</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>3</cell_row>
     <cell_col>2</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>6</cell_colspan>
+    <cell_colspan>8</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
@@ -790,7 +789,6 @@ VALUES (
     <cell_type>text</cell_type>
     <cell_row>14</cell_row>
     <cell_col>0</cell_col>
-    <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1021,7 +1019,6 @@ VALUES (
     <cell_type>formula</cell_type>
     <cell_row>16</cell_row>
     <cell_col>0</cell_col>
-    <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1035,18 +1032,6 @@ VALUES (
       <formula>{RQ_PURCHASE_INDENT_01.lvl}!=''L2#DETAIL''</formula>
       <action>SuppressRow</action>
     </conditional>
-  </cell>
-  <cell>
-    <id>391785405</id>
-    <cell_text>=If({RQ_PURCHASE_INDENT_01.l2_detail_primary_image_code}!='''', LoadItemImage({RQ_PURCHASE_INDENT_01.l2_detail_primary_image_code},60,60), '''')</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>16</cell_row>
-    <cell_col>1</cell_col>
-    <cell_horizontal_align>Center</cell_horizontal_align>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>8</font_size>
   </cell>
   <cell>
     <id>309737894</id>
@@ -1164,6 +1149,16 @@ VALUES (
     <format_decimal_places>2</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
+  </cell>
+  <cell>
+    <id>1503895839</id>
+    <cell_text>=If({RQ_PURCHASE_INDENT_01.l2_detail_primary_image_code}!='''', LoadItemImage({RQ_PURCHASE_INDENT_01.l2_detail_primary_image_code},60,60), '''')</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>16</cell_row>
+    <cell_col>1</cell_col>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
   </cell>
   <cell>
     <id>183251872</id>
@@ -1525,7 +1520,7 @@ VALUES (
   </cell>
   <cell>
     <id>557822152</id>
-    <cell_text>=''Amount in Words : ''&amp;{RQ_PURCHASE_INDENT_01.l1_header_currency}&amp;'' ''&amp;AmountinWords({RQ_PURCHASE_INDENT_01.l1_header_net_amount})&amp;'' Only''</cell_text>
+    <cell_text>=''Amount in Words : ''&amp;AmountinWords({RQ_PURCHASE_INDENT_01.l1_header_net_amount})&amp;'' Only''</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>22</cell_row>
     <cell_col>0</cell_col>
@@ -2092,13 +2087,13 @@ VALUES (
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>RQ_PURCHASE_INDENT_01.l2_detail_serial_no</sort_name>
+    <sort_name>={RQ_PURCHASE_INDENT_01.l2_detail_section}&amp;''-''&amp;{RQ_PURCHASE_INDENT_01.l2_detail_department}</sort_name>
     <sort_title />
     <order_num>3</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>={RQ_PURCHASE_INDENT_01.l2_detail_section}&amp;''-''&amp;{RQ_PURCHASE_INDENT_01.l2_detail_department}</sort_name>
+    <sort_name>RQ_PURCHASE_INDENT_01.l2_detail_serial_no</sort_name>
     <sort_title />
     <order_num>4</order_num>
     <ascending_flag>True</ascending_flag>
@@ -2110,7 +2105,7 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1780776146</filter_ref_id>
+    <filter_ref_id>1811448872</filter_ref_id>
     <filter_title />
     <values>
       <value>@DocumentId@</value>
@@ -2125,7 +2120,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-10-12 09:44:30.611987', '2274', '2026-10-12 13:08:42.596711',
+    '2026-10-12 09:44:30.611987', '2274', '2026-10-14 10:11:21.045230',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,
