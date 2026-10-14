@@ -3,7 +3,7 @@
 -- Name: #Purchase Indent#
 -- Action: INSERT
 -- Version: 2026013
--- Generated on: 2026-10-14 15:45:58
+-- Generated on: 2026-10-14 19:57:22
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -779,7 +779,7 @@ VALUES (
     <font_size>8</font_size>
     <format_type>Text</format_type>
     <conditional>
-      <formula>If({RQ_PURCHASE_INDENT_01.l1_header_agent_name}='''', ''true'', ''false'')</formula>
+      <formula>{RQ_PURCHASE_INDENT_01.l1_header_agent_name}=''''</formula>
       <action>SuppressRow</action>
     </conditional>
   </cell>
@@ -946,7 +946,7 @@ VALUES (
   </cell>
   <cell>
     <id>1941078128</id>
-    <cell_text>Amount</cell_text>
+    <cell_text> Basic Amount</cell_text>
     <cell_type>text</cell_type>
     <cell_row>14</cell_row>
     <cell_col>14</cell_col>
@@ -1152,7 +1152,7 @@ VALUES (
   </cell>
   <cell>
     <id>1503895839</id>
-    <cell_text>=If({RQ_PURCHASE_INDENT_01.l2_detail_primary_image_code}!='''', LoadItemImage({RQ_PURCHASE_INDENT_01.l2_detail_primary_image_code},60,60), '''')</cell_text>
+    <cell_text>=If(IsNull({RQ_PURCHASE_INDENT_01.l2_detail_file_image}), DbNull(), ExtractImage({RQ_PURCHASE_INDENT_01.l2_detail_file_image}))</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>16</cell_row>
     <cell_col>1</cell_col>
@@ -1228,7 +1228,7 @@ VALUES (
     <cell_row>17</cell_row>
     <cell_col>11</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>3</cell_colspan>
+    <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
@@ -1244,9 +1244,10 @@ VALUES (
     <cell_text>=AggSum({RQ_PURCHASE_INDENT_01.l2_detail_gross_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>17</cell_row>
-    <cell_col>14</cell_col>
+    <cell_col>13</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
+    <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
@@ -1363,9 +1364,10 @@ VALUES (
     <cell_text>={RQ_PURCHASE_INDENT_01.l1_header_net_amount}</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>21</cell_row>
-    <cell_col>14</cell_col>
+    <cell_col>13</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
+    <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
@@ -1402,7 +1404,7 @@ VALUES (
     <cell_row>21</cell_row>
     <cell_col>8</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>6</cell_colspan>
+    <cell_colspan>5</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
@@ -2051,22 +2053,22 @@ VALUES (
     <column_width>118</column_width>
   </column>
   <column>
-    <column_width>141</column_width>
+    <column_width>144</column_width>
   </column>
   <column>
-    <column_width>77</column_width>
+    <column_width>136</column_width>
   </column>
   <column>
-    <column_width>72</column_width>
+    <column_width>59</column_width>
   </column>
   <column>
-    <column_width>100</column_width>
+    <column_width>133</column_width>
   </column>
   <column>
-    <column_width>100</column_width>
+    <column_width>143</column_width>
   </column>
   <column>
-    <column_width>100</column_width>
+    <column_width>110</column_width>
   </column>
   <sort>
     <sort_name>RQ_PURCHASE_INDENT_01.l1_header_purindmain_code</sort_name>
@@ -2105,7 +2107,7 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1811448872</filter_ref_id>
+    <filter_ref_id>501788522</filter_ref_id>
     <filter_title />
     <values>
       <value>@DocumentId@</value>
@@ -2120,7 +2122,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-10-12 09:44:30.611987', '2274', '2026-10-14 10:11:21.045230',
+    '2026-10-12 09:44:30.611987', '2274', '2026-10-14 14:15:51.083736',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,
