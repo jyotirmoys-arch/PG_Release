@@ -3,7 +3,7 @@
 -- Name: #Purchase Indent#
 -- Action: INSERT
 -- Version: 2026013
--- Generated on: 2026-10-22 12:46:36
+-- Generated on: 2026-10-22 17:09:08
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -799,7 +799,7 @@ VALUES (
   </cell>
   <cell>
     <id>399437443</id>
-    <cell_text>={RQ_PURCHASE_INDENT_01.l1_header_agent_name}&amp;''(''&amp;{RQ_PURCHASE_INDENT_01.l1_header_agent_rate}&amp;'')''</cell_text>
+    <cell_text>={RQ_PURCHASE_INDENT_01.l1_header_agent_name}&amp;''(''&amp;Round({RQ_PURCHASE_INDENT_01.l1_header_agent_rate}, 2)&amp;'')''</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>13</cell_row>
     <cell_col>12</cell_col>
@@ -2156,15 +2156,9 @@ VALUES (
     <ascending_flag>True</ascending_flag>
   </sort>
   <sort>
-    <sort_name>RQ_PURCHASE_INDENT_01.l2_detail_serial_no</sort_name>
-    <sort_title />
-    <order_num>4</order_num>
-    <ascending_flag>True</ascending_flag>
-  </sort>
-  <sort>
     <sort_name>RQ_PURCHASE_INDENT_01.l3_charge_charge_seq</sort_name>
     <sort_title />
-    <order_num>5</order_num>
+    <order_num>4</order_num>
     <ascending_flag>True</ascending_flag>
   </sort>
   <filter>
@@ -2174,10 +2168,10 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>1512104709</filter_ref_id>
+    <filter_ref_id>367651872</filter_ref_id>
     <filter_title />
     <values>
-      <value />
+      <value>@DocumentId@</value>
     </values>
   </filter>
   <topn>
@@ -2189,7 +2183,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-10-12 09:44:30.611987', '2274', '2026-10-22 07:05:20.910350',
+    '2026-10-12 09:44:30.611987', '2274', '2026-10-22 11:22:29.792193',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,
