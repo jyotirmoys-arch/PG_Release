@@ -3,7 +3,7 @@
 -- Name: #Purchase Indent Register#
 -- Action: INSERT
 -- Version: 2026013
--- Generated on: 2026-10-22 12:46:36
+-- Generated on: 2026-10-22 14:35:42
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -495,7 +495,7 @@ Delivery Due</cell_text>
   </cell>
   <cell>
     <id>754919476</id>
-    <cell_text>Basic Amount</cell_text>
+    <cell_text>Gross Amount</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
     <cell_col>18</cell_col>
@@ -1797,7 +1797,7 @@ Delivery Due</cell_text>
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-10-12 12:14:57.116896', '2275', '2026-10-22 06:52:58.719880',
+    '2026-10-12 12:14:57.116896', '2275', '2026-10-22 08:58:52.373674',
     '2275', '75a16cac-c843-4b39-8259-a06b6f97fea3', 31,
     FALSE, 2, 768,
     NULL, 0, 1,
