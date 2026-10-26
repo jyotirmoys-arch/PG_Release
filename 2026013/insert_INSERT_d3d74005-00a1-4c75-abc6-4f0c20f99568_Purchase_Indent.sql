@@ -3,7 +3,7 @@
 -- Name: #Purchase Indent#
 -- Action: INSERT
 -- Version: 2026013
--- Generated on: 2026-10-22 17:09:08
+-- Generated on: 2026-10-26 16:50:14
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -145,7 +145,7 @@ VALUES (
   </cell>
   <cell>
     <id>971611234</id>
-    <cell_text>Indent No. :</cell_text>
+    <cell_text />
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
     <cell_col>8</cell_col>
@@ -159,13 +159,26 @@ VALUES (
   </cell>
   <cell>
     <id>1242549184</id>
-    <cell_text>={RQ_PURCHASE_INDENT_01.l1_header_indent_no}</cell_text>
-    <cell_type>formula</cell_type>
+    <cell_text>RQ_PURCHASE_INDENT_01.l1_header_indent_no</cell_text>
+    <cell_type>data</cell_type>
+    <cell_row>4</cell_row>
+    <cell_col>13</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <cell_colspan>3</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>8</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <format_type>Text</format_type>
+  </cell>
+  <cell>
+    <id>1467044939</id>
+    <cell_text>Indent No. :</cell_text>
+    <cell_type>text</cell_type>
     <cell_row>4</cell_row>
     <cell_col>11</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>5</cell_colspan>
+    <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
@@ -202,7 +215,7 @@ VALUES (
   </cell>
   <cell>
     <id>1877657270</id>
-    <cell_text>Date :</cell_text>
+    <cell_text />
     <cell_type>text</cell_type>
     <cell_row>5</cell_row>
     <cell_col>8</cell_col>
@@ -218,13 +231,27 @@ VALUES (
   </cell>
   <cell>
     <id>1596317609</id>
+    <cell_text>Date :</cell_text>
+    <cell_type>text</cell_type>
+    <cell_row>5</cell_row>
+    <cell_col>11</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <cell_colspan>2</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>8</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <border_bottom_width>1</border_bottom_width>
+    <border_bottom_color>#000000</border_bottom_color>
+  </cell>
+  <cell>
+    <id>337513670</id>
     <cell_text>=GlobalDateFormat({RQ_PURCHASE_INDENT_01.l1_header_indent_date})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>5</cell_row>
-    <cell_col>11</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_col>13</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>5</cell_colspan>
+    <cell_colspan>3</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
@@ -314,7 +341,7 @@ VALUES (
   </cell>
   <cell>
     <id>826002487</id>
-    <cell_text>Vendor Address</cell_text>
+    <cell_text>Address</cell_text>
     <cell_type>text</cell_type>
     <cell_row>7</cell_row>
     <cell_col>0</cell_col>
@@ -384,7 +411,7 @@ VALUES (
     <cell_row>7</cell_row>
     <cell_col>3</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_rowspan>2</cell_rowspan>
+    <cell_rowspan>3</cell_rowspan>
     <cell_colspan>5</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -433,47 +460,6 @@ VALUES (
     <format_type>Text</format_type>
   </cell>
   <cell>
-    <id>796226704</id>
-    <cell_text>Contact No.</cell_text>
-    <cell_type>text</cell_type>
-    <cell_row>9</cell_row>
-    <cell_col>0</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>2</cell_colspan>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>8</font_size>
-    <font_bold_flag>True</font_bold_flag>
-  </cell>
-  <cell>
-    <id>1550287072</id>
-    <cell_text>:</cell_text>
-    <cell_type>text</cell_type>
-    <cell_row>9</cell_row>
-    <cell_col>2</cell_col>
-    <cell_horizontal_align>Center</cell_horizontal_align>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>8</font_size>
-    <font_bold_flag>True</font_bold_flag>
-  </cell>
-  <cell>
-    <id>794180440</id>
-    <cell_text>=If({RQ_PURCHASE_INDENT_01.l1_header_cust_billing_mobile}!='''', {RQ_PURCHASE_INDENT_01.l1_header_cust_billing_mobile}, {RQ_PURCHASE_INDENT_01.l1_header_cust_billing_office_phone1})</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>9</cell_row>
-    <cell_col>3</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>5</cell_colspan>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>8</font_size>
-    <format_type>Text</format_type>
-    <border_right_width>1</border_right_width>
-    <border_right_color>#000000</border_right_color>
-  </cell>
-  <cell>
     <id>221641580</id>
     <cell_text>PO No.</cell_text>
     <cell_type>text</cell_type>
@@ -513,45 +499,15 @@ VALUES (
     <format_type>Text</format_type>
   </cell>
   <cell>
-    <id>442190977</id>
-    <cell_text>Email ID.</cell_text>
+    <id>2027462790</id>
+    <cell_text />
     <cell_type>text</cell_type>
-    <cell_row>10</cell_row>
+    <cell_row>9</cell_row>
     <cell_col>0</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
     <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
-    <font_bold_flag>True</font_bold_flag>
-  </cell>
-  <cell>
-    <id>241307687</id>
-    <cell_text>:</cell_text>
-    <cell_type>text</cell_type>
-    <cell_row>10</cell_row>
-    <cell_col>2</cell_col>
-    <cell_horizontal_align>Center</cell_horizontal_align>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>8</font_size>
-    <font_bold_flag>True</font_bold_flag>
-  </cell>
-  <cell>
-    <id>1657462631</id>
-    <cell_text>=If({RQ_PURCHASE_INDENT_01.l1_header_cust_billing_email1}!='''', {RQ_PURCHASE_INDENT_01.l1_header_cust_billing_email1}, {RQ_PURCHASE_INDENT_01.l1_header_cust_billing_email2})</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>10</cell_row>
-    <cell_col>3</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>5</cell_colspan>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>8</font_size>
-    <format_type>Text</format_type>
-    <border_right_width>1</border_right_width>
-    <border_right_color>#000000</border_right_color>
+    <font_size>9</font_size>
   </cell>
   <cell>
     <id>341155944</id>
@@ -593,10 +549,10 @@ VALUES (
     <format_type>Text</format_type>
   </cell>
   <cell>
-    <id>1228798044</id>
-    <cell_text>GSTIN</cell_text>
+    <id>796226704</id>
+    <cell_text>Contact No.</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>11</cell_row>
+    <cell_row>10</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <cell_colspan>2</cell_colspan>
@@ -606,10 +562,10 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
   </cell>
   <cell>
-    <id>806399084</id>
+    <id>1550287072</id>
     <cell_text>:</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>11</cell_row>
+    <cell_row>10</cell_row>
     <cell_col>2</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -619,10 +575,10 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
   </cell>
   <cell>
-    <id>267297625</id>
-    <cell_text>={RQ_PURCHASE_INDENT_01.l1_header_cust_gstin_no}</cell_text>
+    <id>794180440</id>
+    <cell_text>=If({RQ_PURCHASE_INDENT_01.l1_header_cust_billing_mobile}!='''', {RQ_PURCHASE_INDENT_01.l1_header_cust_billing_mobile}, {RQ_PURCHASE_INDENT_01.l1_header_cust_billing_office_phone1})</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>11</cell_row>
+    <cell_row>10</cell_row>
     <cell_col>3</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <cell_colspan>5</cell_colspan>
@@ -673,10 +629,10 @@ VALUES (
     <format_type>Text</format_type>
   </cell>
   <cell>
-    <id>1181388758</id>
-    <cell_text>GST State</cell_text>
+    <id>442190977</id>
+    <cell_text>Email ID.</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>12</cell_row>
+    <cell_row>11</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <cell_colspan>2</cell_colspan>
@@ -686,10 +642,10 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
   </cell>
   <cell>
-    <id>1790948331</id>
+    <id>241307687</id>
     <cell_text>:</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>12</cell_row>
+    <cell_row>11</cell_row>
     <cell_col>2</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
@@ -699,10 +655,10 @@ VALUES (
     <font_bold_flag>True</font_bold_flag>
   </cell>
   <cell>
-    <id>1024205839</id>
-    <cell_text>=If({RQ_PURCHASE_INDENT_01.l1_header_cust_gst_state_name}!='''', {RQ_PURCHASE_INDENT_01.l1_header_cust_gst_state_name}&amp;'' (''&amp;{RQ_PURCHASE_INDENT_01.l1_header_cust_gst_state_code}&amp;'')'', '''')</cell_text>
+    <id>1657462631</id>
+    <cell_text>=If({RQ_PURCHASE_INDENT_01.l1_header_cust_billing_email1}!='''', {RQ_PURCHASE_INDENT_01.l1_header_cust_billing_email1}, {RQ_PURCHASE_INDENT_01.l1_header_cust_billing_email2})</cell_text>
     <cell_type>formula</cell_type>
-    <cell_row>12</cell_row>
+    <cell_row>11</cell_row>
     <cell_col>3</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <cell_colspan>5</cell_colspan>
@@ -753,22 +709,49 @@ VALUES (
     <format_type>Text</format_type>
   </cell>
   <cell>
-    <id>1743753942</id>
-    <cell_text />
+    <id>1228798044</id>
+    <cell_text>GSTIN</cell_text>
     <cell_type>text</cell_type>
-    <cell_row>13</cell_row>
+    <cell_row>12</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>8</cell_colspan>
+    <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
+    <font_bold_flag>True</font_bold_flag>
+  </cell>
+  <cell>
+    <id>806399084</id>
+    <cell_text>:</cell_text>
+    <cell_type>text</cell_type>
+    <cell_row>12</cell_row>
+    <cell_col>2</cell_col>
+    <cell_horizontal_align>Center</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>8</font_size>
+    <font_bold_flag>True</font_bold_flag>
+  </cell>
+  <cell>
+    <id>267297625</id>
+    <cell_text>={RQ_PURCHASE_INDENT_01.l1_header_cust_gstin_no}</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>12</cell_row>
+    <cell_col>3</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <cell_colspan>5</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>8</font_size>
+    <format_type>Text</format_type>
     <border_right_width>1</border_right_width>
     <border_right_color>#000000</border_right_color>
   </cell>
   <cell>
     <id>331056795</id>
-    <cell_text>=''Agent Name (Rate)''</cell_text>
+    <cell_text>=If(IsNull({RQ_PURCHASE_INDENT_01.l1_header_agent_name}),'''',''Agent Name (Rate)'')</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>13</cell_row>
     <cell_col>8</cell_col>
@@ -779,15 +762,11 @@ VALUES (
     <font_size>8</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Text</format_type>
-    <conditional>
-      <formula>{RQ_PURCHASE_INDENT_01.l1_header_agent_name}=''''</formula>
-      <action>SuppressRow</action>
-    </conditional>
   </cell>
   <cell>
     <id>240133578</id>
-    <cell_text>:</cell_text>
-    <cell_type>text</cell_type>
+    <cell_text>=If(IsNull({RQ_PURCHASE_INDENT_01.l1_header_agent_name}), '''', '':'')</cell_text>
+    <cell_type>formula</cell_type>
     <cell_row>13</cell_row>
     <cell_col>11</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
@@ -799,7 +778,7 @@ VALUES (
   </cell>
   <cell>
     <id>399437443</id>
-    <cell_text>={RQ_PURCHASE_INDENT_01.l1_header_agent_name}&amp;''(''&amp;Round({RQ_PURCHASE_INDENT_01.l1_header_agent_rate}, 2)&amp;'')''</cell_text>
+    <cell_text>=If(IsNull({RQ_PURCHASE_INDENT_01.l1_header_agent_name}), '''', {RQ_PURCHASE_INDENT_01.l1_header_agent_name}&amp;''(''&amp;Round({RQ_PURCHASE_INDENT_01.l1_header_agent_rate}, 2)&amp;'')'')</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>13</cell_row>
     <cell_col>12</cell_col>
@@ -809,6 +788,47 @@ VALUES (
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
     <format_type>Text</format_type>
+  </cell>
+  <cell>
+    <id>1024205839</id>
+    <cell_text>=If({RQ_PURCHASE_INDENT_01.l1_header_cust_gst_state_name}!='''', {RQ_PURCHASE_INDENT_01.l1_header_cust_gst_state_name}&amp;'' (''&amp;{RQ_PURCHASE_INDENT_01.l1_header_cust_gst_state_code}&amp;'')'', '''')</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>13</cell_row>
+    <cell_col>3</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <cell_colspan>5</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>8</font_size>
+    <format_type>Text</format_type>
+    <border_right_width>1</border_right_width>
+    <border_right_color>#000000</border_right_color>
+  </cell>
+  <cell>
+    <id>1181388758</id>
+    <cell_text>GST State</cell_text>
+    <cell_type>text</cell_type>
+    <cell_row>13</cell_row>
+    <cell_col>0</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <cell_colspan>2</cell_colspan>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>8</font_size>
+    <font_bold_flag>True</font_bold_flag>
+  </cell>
+  <cell>
+    <id>1790948331</id>
+    <cell_text>:</cell_text>
+    <cell_type>text</cell_type>
+    <cell_row>13</cell_row>
+    <cell_col>2</cell_col>
+    <cell_horizontal_align>Center</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>8</font_size>
+    <font_bold_flag>True</font_bold_flag>
   </cell>
   <cell>
     <id>918861881</id>
@@ -852,7 +872,7 @@ VALUES (
     <cell_row>14</cell_row>
     <cell_col>2</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>4</cell_colspan>
+    <cell_colspan>5</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
@@ -865,7 +885,7 @@ VALUES (
   </cell>
   <cell>
     <id>788610792</id>
-    <cell_text>Basic Amount</cell_text>
+    <cell_text>Basic Amt.</cell_text>
     <cell_type>text</cell_type>
     <cell_row>14</cell_row>
     <cell_col>12</cell_col>
@@ -901,31 +921,12 @@ VALUES (
   </cell>
   <cell>
     <id>1941078128</id>
-    <cell_text>Gross Amount</cell_text>
+    <cell_text>Gross Amt.</cell_text>
     <cell_type>text</cell_type>
     <cell_row>14</cell_row>
     <cell_col>15</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>8</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <border_top_width>1</border_top_width>
-    <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
-    <background_color>#E2E2E2</background_color>
-  </cell>
-  <cell>
-    <id>238476969</id>
-    <cell_text>Item Combination</cell_text>
-    <cell_type>text</cell_type>
-    <cell_row>14</cell_row>
-    <cell_col>6</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
@@ -1026,6 +1027,24 @@ VALUES (
     <background_color>#E2E2E2</background_color>
   </cell>
   <cell>
+    <id>238476969</id>
+    <cell_text>Item Combination</cell_text>
+    <cell_type>text</cell_type>
+    <cell_row>14</cell_row>
+    <cell_col>7</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>8</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <border_top_width>1</border_top_width>
+    <border_bottom_width>1</border_bottom_width>
+    <border_top_color>#000000</border_top_color>
+    <border_bottom_color>#000000</border_bottom_color>
+    <background_color>#E2E2E2</background_color>
+  </cell>
+  <cell>
     <id>428230466</id>
     <cell_text>=LineNumberWithReset({RQ_PURCHASE_INDENT_01.l1_header_purindmain_code}&amp;{RQ_PURCHASE_INDENT_01.l2_detail_section}&amp;{RQ_PURCHASE_INDENT_01.l2_detail_department})</cell_text>
     <cell_type>formula</cell_type>
@@ -1063,9 +1082,9 @@ VALUES (
     <cell_text>={RQ_PURCHASE_INDENT_01.l2_detail_section}&amp;'' - ''&amp;{RQ_PURCHASE_INDENT_01.l2_detail_department}</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>15</cell_row>
-    <cell_col>1</cell_col>
+    <cell_col>2</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>6</cell_colspan>
+    <cell_colspan>5</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>8</font_size>
@@ -1085,7 +1104,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <format_type>Number</format_type>
     <format_decimal_places>0</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
@@ -1106,7 +1125,7 @@ VALUES (
     <cell_colspan>5</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <format_type>Text</format_type>
   </cell>
   <cell>
@@ -1119,7 +1138,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <format_type>Number</format_type>
     <format_decimal_places>2</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
@@ -1136,7 +1155,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <format_type>Number</format_type>
     <format_decimal_places>2</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
@@ -1152,7 +1171,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>9</font_size>
+    <font_size>7</font_size>
   </cell>
   <cell>
     <id>1481813469</id>
@@ -1164,7 +1183,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <format_type>Number</format_type>
     <format_decimal_places>0</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
@@ -1181,7 +1200,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <format_type>Number</format_type>
     <format_separator_flag>False</format_separator_flag>
     <format_negative_symbol_flag>True</format_negative_symbol_flag>
@@ -1197,7 +1216,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <format_type>Text</format_type>
   </cell>
   <cell>
@@ -1210,7 +1229,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <format_type>Number</format_type>
     <format_decimal_places>2</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
@@ -1226,7 +1245,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <format_type>Text</format_type>
   </cell>
   <cell>
@@ -1239,7 +1258,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <format_type>Number</format_type>
     <format_decimal_places>2</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
@@ -1256,7 +1275,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <format_type>Text</format_type>
   </cell>
   <cell>
@@ -1269,7 +1288,7 @@ VALUES (
     <cell_colspan>7</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
@@ -1287,7 +1306,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
     <format_decimal_places>2</format_decimal_places>
@@ -1310,7 +1329,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
     <format_decimal_places>0</format_decimal_places>
@@ -1333,7 +1352,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
     <format_separator_flag>False</format_separator_flag>
@@ -1354,7 +1373,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
@@ -1371,7 +1390,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
@@ -1389,7 +1408,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
     <format_decimal_places>2</format_decimal_places>
@@ -1412,7 +1431,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
     <format_decimal_places>2</format_decimal_places>
@@ -1435,7 +1454,7 @@ VALUES (
     <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
     <format_decimal_places>2</format_decimal_places>
@@ -1458,7 +1477,7 @@ VALUES (
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <format_type>Number</format_type>
     <format_decimal_places>2</format_decimal_places>
     <format_separator_flag>False</format_separator_flag>
@@ -1475,7 +1494,7 @@ VALUES (
     <cell_colspan>7</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
   </cell>
   <cell>
     <id>733430246</id>
@@ -1505,7 +1524,7 @@ VALUES (
     <cell_colspan>8</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>9</font_size>
+    <font_size>7</font_size>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
     <border_top_color>#000000</border_top_color>
@@ -1523,7 +1542,7 @@ VALUES (
     <cell_colspan>2</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <font_bold_flag>True</font_bold_flag>
     <format_type>Number</format_type>
     <format_decimal_places>2</format_decimal_places>
@@ -1546,7 +1565,7 @@ VALUES (
     <cell_colspan>5</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
-    <font_size>8</font_size>
+    <font_size>7</font_size>
     <font_bold_flag>True</font_bold_flag>
     <border_top_width>1</border_top_width>
     <border_bottom_width>1</border_bottom_width>
@@ -2084,7 +2103,13 @@ VALUES (
     <group_type>Page Footer</group_type>
   </row>
   <column>
+    <column_width>56</column_width>
+  </column>
+  <column>
     <column_width>100</column_width>
+  </column>
+  <column>
+    <column_width>30</column_width>
   </column>
   <column>
     <column_width>100</column_width>
@@ -2099,37 +2124,31 @@ VALUES (
     <column_width>100</column_width>
   </column>
   <column>
-    <column_width>100</column_width>
+    <column_width>128</column_width>
+  </column>
+  <column>
+    <column_width>83</column_width>
+  </column>
+  <column>
+    <column_width>93</column_width>
   </column>
   <column>
     <column_width>100</column_width>
   </column>
   <column>
-    <column_width>100</column_width>
+    <column_width>78</column_width>
+  </column>
+  <column>
+    <column_width>104</column_width>
+  </column>
+  <column>
+    <column_width>89</column_width>
   </column>
   <column>
     <column_width>100</column_width>
   </column>
   <column>
-    <column_width>100</column_width>
-  </column>
-  <column>
-    <column_width>100</column_width>
-  </column>
-  <column>
-    <column_width>100</column_width>
-  </column>
-  <column>
-    <column_width>100</column_width>
-  </column>
-  <column>
-    <column_width>100</column_width>
-  </column>
-  <column>
-    <column_width>100</column_width>
-  </column>
-  <column>
-    <column_width>100</column_width>
+    <column_width>110</column_width>
   </column>
   <sort>
     <sort_name>RQ_PURCHASE_INDENT_01.l1_header_purindmain_code</sort_name>
@@ -2168,10 +2187,10 @@ VALUES (
     <prompt_flag>True</prompt_flag>
     <and_flag>True</and_flag>
     <group_with_next_flag>False</group_with_next_flag>
-    <filter_ref_id>367651872</filter_ref_id>
+    <filter_ref_id>1765410434</filter_ref_id>
     <filter_title />
     <values>
-      <value>@DocumentId@</value>
+      <value />
     </values>
   </filter>
   <topn>
@@ -2183,7 +2202,7 @@ VALUES (
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-10-12 09:44:30.611987', '2274', '2026-10-22 11:22:29.792193',
+    '2026-10-12 09:44:30.611987', '2274', '2026-10-26 10:32:05.122378',
     '2274', '75a16cac-c843-4b39-8259-a06b6f97fea3', 3,
     FALSE, 2, 768,
     NULL, 0, 0,
