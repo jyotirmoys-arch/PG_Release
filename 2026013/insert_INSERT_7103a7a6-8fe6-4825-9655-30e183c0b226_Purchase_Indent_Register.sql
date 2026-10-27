@@ -3,7 +3,7 @@
 -- Name: #Purchase Indent Register#
 -- Action: INSERT
 -- Version: 2026013
--- Generated on: 2026-10-22 14:35:42
+-- Generated on: 2026-10-27 18:56:44
 -- =====================================================
 
 -- Insert into ex_content_dev
@@ -96,7 +96,7 @@ VALUES (
     <cell_col>0</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>21</cell_colspan>
+    <cell_colspan>20</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>14</font_size>
@@ -110,7 +110,7 @@ VALUES (
     <cell_col>0</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>21</cell_colspan>
+    <cell_colspan>20</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>13</font_size>
@@ -124,7 +124,7 @@ VALUES (
     <cell_col>0</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>21</cell_colspan>
+    <cell_colspan>20</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
@@ -137,7 +137,7 @@ VALUES (
     <cell_col>0</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>21</cell_colspan>
+    <cell_colspan>20</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
@@ -264,29 +264,12 @@ Entry Source</cell_text>
     <background_color>#DFDFDF</background_color>
   </cell>
   <cell>
-    <id>1784156695</id>
-    <cell_text>Sr</cell_text>
-    <cell_type>text</cell_type>
-    <cell_row>4</cell_row>
-    <cell_col>7</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <border_top_width>1</border_top_width>
-    <border_bottom_width>1</border_bottom_width>
-    <border_top_color>#000000</border_top_color>
-    <border_bottom_color>#000000</border_bottom_color>
-    <background_color>#DFDFDF</background_color>
-  </cell>
-  <cell>
     <id>391972530</id>
     <cell_text>
 Section</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
-    <cell_col>8</cell_col>
+    <cell_col>7</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -303,7 +286,7 @@ Section</cell_text>
     <cell_text>Department</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
-    <cell_col>9</cell_col>
+    <cell_col>8</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -320,7 +303,7 @@ Section</cell_text>
     <cell_text>Article</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
-    <cell_col>10</cell_col>
+    <cell_col>9</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -338,7 +321,7 @@ Section</cell_text>
 Delivery Due</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
-    <cell_col>12</cell_col>
+    <cell_col>11</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -355,7 +338,7 @@ Delivery Due</cell_text>
     <cell_text>UOM</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
-    <cell_col>13</cell_col>
+    <cell_col>12</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -373,7 +356,7 @@ Delivery Due</cell_text>
     <cell_text>Qty</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
-    <cell_col>14</cell_col>
+    <cell_col>13</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -391,7 +374,7 @@ Delivery Due</cell_text>
     <cell_text>Rate</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
-    <cell_col>15</cell_col>
+    <cell_col>14</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -409,7 +392,7 @@ Delivery Due</cell_text>
     <cell_text>Basic Amount</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
-    <cell_col>16</cell_col>
+    <cell_col>15</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -427,7 +410,7 @@ Delivery Due</cell_text>
     <cell_text>Discount</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
-    <cell_col>17</cell_col>
+    <cell_col>16</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -445,7 +428,7 @@ Delivery Due</cell_text>
     <cell_text>Tax Amount</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
-    <cell_col>19</cell_col>
+    <cell_col>18</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -463,7 +446,7 @@ Delivery Due</cell_text>
     <cell_text>Net Amount</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
-    <cell_col>20</cell_col>
+    <cell_col>19</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -481,7 +464,7 @@ Delivery Due</cell_text>
     <cell_text>Category Values [Qty]</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
-    <cell_col>11</cell_col>
+    <cell_col>10</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -498,7 +481,7 @@ Delivery Due</cell_text>
     <cell_text>Gross Amount</cell_text>
     <cell_type>text</cell_type>
     <cell_row>4</cell_row>
-    <cell_col>18</cell_col>
+    <cell_col>17</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -518,7 +501,7 @@ Delivery Due</cell_text>
     <cell_row>5</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>14</cell_colspan>
+    <cell_colspan>13</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>11</font_size>
@@ -527,10 +510,10 @@ Delivery Due</cell_text>
   </cell>
   <cell>
     <id>354258580</id>
-    <cell_text>=[O10]</cell_text>
+    <cell_text>=[N10]</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>5</cell_row>
-    <cell_col>14</cell_col>
+    <cell_col>13</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -541,6 +524,20 @@ Delivery Due</cell_text>
   </cell>
   <cell>
     <id>489606773</id>
+    <cell_text>=[P10]</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>5</cell_row>
+    <cell_col>15</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <background_color>#EFEFEF</background_color>
+  </cell>
+  <cell>
+    <id>968256906</id>
     <cell_text>=[Q10]</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>5</cell_row>
@@ -554,11 +551,11 @@ Delivery Due</cell_text>
     <background_color>#EFEFEF</background_color>
   </cell>
   <cell>
-    <id>968256906</id>
-    <cell_text>=[R10]</cell_text>
+    <id>1703595792</id>
+    <cell_text>=[S10]</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>5</cell_row>
-    <cell_col>17</cell_col>
+    <cell_col>18</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -568,7 +565,7 @@ Delivery Due</cell_text>
     <background_color>#EFEFEF</background_color>
   </cell>
   <cell>
-    <id>1703595792</id>
+    <id>293146802</id>
     <cell_text>=[T10]</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>5</cell_row>
@@ -582,25 +579,11 @@ Delivery Due</cell_text>
     <background_color>#EFEFEF</background_color>
   </cell>
   <cell>
-    <id>293146802</id>
-    <cell_text>=[U10]</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>5</cell_row>
-    <cell_col>20</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#EFEFEF</background_color>
-  </cell>
-  <cell>
     <id>1463071102</id>
     <cell_text />
     <cell_type>text</cell_type>
     <cell_row>5</cell_row>
-    <cell_col>15</cell_col>
+    <cell_col>14</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -610,10 +593,10 @@ Delivery Due</cell_text>
   </cell>
   <cell>
     <id>1474805729</id>
-    <cell_text>=[S10]</cell_text>
+    <cell_text>=[R10]</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>5</cell_row>
-    <cell_col>18</cell_col>
+    <cell_col>17</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -629,7 +612,7 @@ Delivery Due</cell_text>
     <cell_row>6</cell_row>
     <cell_col>6</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>8</cell_colspan>
+    <cell_colspan>7</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
@@ -718,62 +701,6 @@ Delivery Due</cell_text>
   </cell>
   <cell>
     <id>2001045097</id>
-    <cell_text>=[U9]</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>20</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#F3F3F3</background_color>
-  </cell>
-  <cell>
-    <id>106038024</id>
-    <cell_text>=[O9]</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>14</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#F3F3F3</background_color>
-  </cell>
-  <cell>
-    <id>1167519105</id>
-    <cell_text>=[Q9]</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>16</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#F3F3F3</background_color>
-  </cell>
-  <cell>
-    <id>1007548346</id>
-    <cell_text>=[R9]</cell_text>
-    <cell_type>formula</cell_type>
-    <cell_row>6</cell_row>
-    <cell_col>17</cell_col>
-    <cell_horizontal_align>Right</cell_horizontal_align>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <font_bold_flag>True</font_bold_flag>
-    <background_color>#F3F3F3</background_color>
-  </cell>
-  <cell>
-    <id>902754189</id>
     <cell_text>=[T9]</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>6</cell_row>
@@ -787,11 +714,12 @@ Delivery Due</cell_text>
     <background_color>#F3F3F3</background_color>
   </cell>
   <cell>
-    <id>1417732428</id>
-    <cell_text />
-    <cell_type>text</cell_type>
+    <id>106038024</id>
+    <cell_text>=[N9]</cell_text>
+    <cell_type>formula</cell_type>
     <cell_row>6</cell_row>
-    <cell_col>15</cell_col>
+    <cell_col>13</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -800,7 +728,35 @@ Delivery Due</cell_text>
     <background_color>#F3F3F3</background_color>
   </cell>
   <cell>
-    <id>1771905378</id>
+    <id>1167519105</id>
+    <cell_text>=[P9]</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>15</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <background_color>#F3F3F3</background_color>
+  </cell>
+  <cell>
+    <id>1007548346</id>
+    <cell_text>=[Q9]</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>16</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <background_color>#F3F3F3</background_color>
+  </cell>
+  <cell>
+    <id>902754189</id>
     <cell_text>=[S9]</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>6</cell_row>
@@ -814,11 +770,38 @@ Delivery Due</cell_text>
     <background_color>#F3F3F3</background_color>
   </cell>
   <cell>
+    <id>1417732428</id>
+    <cell_text />
+    <cell_type>text</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>14</cell_col>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <background_color>#F3F3F3</background_color>
+  </cell>
+  <cell>
+    <id>1771905378</id>
+    <cell_text>=[R9]</cell_text>
+    <cell_type>formula</cell_type>
+    <cell_row>6</cell_row>
+    <cell_col>17</cell_col>
+    <cell_horizontal_align>Right</cell_horizontal_align>
+    <cell_vertical_align>Top</cell_vertical_align>
+    <wrap_text_flag>True</wrap_text_flag>
+    <font_name>Calibri</font_name>
+    <font_size>9</font_size>
+    <font_bold_flag>True</font_bold_flag>
+    <background_color>#F3F3F3</background_color>
+  </cell>
+  <cell>
     <id>10328543</id>
     <cell_text>LV_PURIND_ITEM_01.net_amount</cell_text>
     <cell_type>data</cell_type>
     <cell_row>7</cell_row>
-    <cell_col>20</cell_col>
+    <cell_col>19</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -830,7 +813,7 @@ Delivery Due</cell_text>
     <cell_text>LV_PURIND_ITEM_01.quantity</cell_text>
     <cell_type>data</cell_type>
     <cell_row>7</cell_row>
-    <cell_col>14</cell_col>
+    <cell_col>13</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -842,7 +825,7 @@ Delivery Due</cell_text>
     <cell_text>LV_PURIND_ITEM_01.rate</cell_text>
     <cell_type>data</cell_type>
     <cell_row>7</cell_row>
-    <cell_col>15</cell_col>
+    <cell_col>14</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -854,7 +837,7 @@ Delivery Due</cell_text>
     <cell_text>LV_PURIND_ITEM_01.basic_amount</cell_text>
     <cell_type>data</cell_type>
     <cell_row>7</cell_row>
-    <cell_col>16</cell_col>
+    <cell_col>15</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -866,7 +849,7 @@ Delivery Due</cell_text>
     <cell_text>LV_PURIND_ITEM_01.discount_amount</cell_text>
     <cell_type>data</cell_type>
     <cell_row>7</cell_row>
-    <cell_col>17</cell_col>
+    <cell_col>16</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -878,7 +861,7 @@ Delivery Due</cell_text>
     <cell_text>LV_PURIND_ITEM_01.est_tax_amount</cell_text>
     <cell_type>data</cell_type>
     <cell_row>7</cell_row>
-    <cell_col>19</cell_col>
+    <cell_col>18</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -971,23 +954,11 @@ Delivery Due</cell_text>
     <foreground_color>#9F9F9F</foreground_color>
   </cell>
   <cell>
-    <id>1001414803</id>
-    <cell_text>LV_PURIND_ITEM_01.serial_no</cell_text>
-    <cell_type>data</cell_type>
-    <cell_row>7</cell_row>
-    <cell_col>7</cell_col>
-    <cell_vertical_align>Top</cell_vertical_align>
-    <wrap_text_flag>True</wrap_text_flag>
-    <font_name>Calibri</font_name>
-    <font_size>9</font_size>
-    <format_type>Text</format_type>
-  </cell>
-  <cell>
     <id>569008284</id>
     <cell_text>LV_PRODUCT_HIERARCHY_01.section</cell_text>
     <cell_type>data</cell_type>
     <cell_row>7</cell_row>
-    <cell_col>8</cell_col>
+    <cell_col>7</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -998,7 +969,7 @@ Delivery Due</cell_text>
     <cell_text>LV_PRODUCT_HIERARCHY_01.department</cell_text>
     <cell_type>data</cell_type>
     <cell_row>7</cell_row>
-    <cell_col>9</cell_col>
+    <cell_col>8</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1009,7 +980,7 @@ Delivery Due</cell_text>
     <cell_text>LV_ARTICLE_01.name</cell_text>
     <cell_type>data</cell_type>
     <cell_row>7</cell_row>
-    <cell_col>10</cell_col>
+    <cell_col>9</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1020,7 +991,7 @@ Delivery Due</cell_text>
     <cell_text>LV_PURIND_ITEM_01.category_values</cell_text>
     <cell_type>data</cell_type>
     <cell_row>7</cell_row>
-    <cell_col>11</cell_col>
+    <cell_col>10</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1031,7 +1002,7 @@ Delivery Due</cell_text>
     <cell_text>LV_PURIND_ITEM_01.delivery_due_date</cell_text>
     <cell_type>data</cell_type>
     <cell_row>7</cell_row>
-    <cell_col>12</cell_col>
+    <cell_col>11</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1042,7 +1013,7 @@ Delivery Due</cell_text>
     <cell_text>LV_PURIND_ITEM_01.uom</cell_text>
     <cell_type>data</cell_type>
     <cell_row>7</cell_row>
-    <cell_col>13</cell_col>
+    <cell_col>12</cell_col>
     <cell_horizontal_align>Center</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1054,7 +1025,7 @@ Delivery Due</cell_text>
     <cell_text>LV_PURIND_ITEM_01.gross_amount</cell_text>
     <cell_type>data</cell_type>
     <cell_row>7</cell_row>
-    <cell_col>18</cell_col>
+    <cell_col>17</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1066,7 +1037,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.quantity})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>8</cell_row>
-    <cell_col>14</cell_col>
+    <cell_col>13</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1079,7 +1050,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.basic_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>8</cell_row>
-    <cell_col>16</cell_col>
+    <cell_col>15</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1092,7 +1063,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.discount_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>8</cell_row>
-    <cell_col>17</cell_col>
+    <cell_col>16</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1105,7 +1076,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.est_tax_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>8</cell_row>
-    <cell_col>19</cell_col>
+    <cell_col>18</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1118,7 +1089,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.net_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>8</cell_row>
-    <cell_col>20</cell_col>
+    <cell_col>19</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1208,7 +1179,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.gross_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>8</cell_row>
-    <cell_col>18</cell_col>
+    <cell_col>17</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1221,7 +1192,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.quantity})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>9</cell_row>
-    <cell_col>14</cell_col>
+    <cell_col>13</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1235,7 +1206,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.basic_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>9</cell_row>
-    <cell_col>16</cell_col>
+    <cell_col>15</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1249,7 +1220,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.discount_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>9</cell_row>
-    <cell_col>17</cell_col>
+    <cell_col>16</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1263,7 +1234,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.est_tax_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>9</cell_row>
-    <cell_col>19</cell_col>
+    <cell_col>18</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1277,7 +1248,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.net_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>9</cell_row>
-    <cell_col>20</cell_col>
+    <cell_col>19</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1293,7 +1264,7 @@ Delivery Due</cell_text>
     <cell_row>9</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>14</cell_colspan>
+    <cell_colspan>13</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
@@ -1303,7 +1274,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.gross_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>9</cell_row>
-    <cell_col>18</cell_col>
+    <cell_col>17</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1319,7 +1290,7 @@ Delivery Due</cell_text>
     <cell_row>10</cell_row>
     <cell_col>0</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
-    <cell_colspan>14</cell_colspan>
+    <cell_colspan>13</cell_colspan>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
     <font_size>9</font_size>
@@ -1335,7 +1306,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.net_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>10</cell_row>
-    <cell_col>20</cell_col>
+    <cell_col>19</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1353,7 +1324,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.quantity})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>10</cell_row>
-    <cell_col>14</cell_col>
+    <cell_col>13</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1371,7 +1342,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.basic_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>10</cell_row>
-    <cell_col>16</cell_col>
+    <cell_col>15</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1389,7 +1360,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.discount_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>10</cell_row>
-    <cell_col>17</cell_col>
+    <cell_col>16</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1407,7 +1378,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.est_tax_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>10</cell_row>
-    <cell_col>19</cell_col>
+    <cell_col>18</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1425,7 +1396,7 @@ Delivery Due</cell_text>
     <cell_text />
     <cell_type>text</cell_type>
     <cell_row>10</cell_row>
-    <cell_col>15</cell_col>
+    <cell_col>14</cell_col>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
     <font_name>Calibri</font_name>
@@ -1442,7 +1413,7 @@ Delivery Due</cell_text>
     <cell_text>=AggSum({LV_PURIND_ITEM_01.gross_amount})</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>10</cell_row>
-    <cell_col>18</cell_col>
+    <cell_col>17</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <wrap_text_flag>True</wrap_text_flag>
@@ -1473,7 +1444,7 @@ Delivery Due</cell_text>
     <cell_text>=''Page No. : ''&amp;PageNumber()</cell_text>
     <cell_type>formula</cell_type>
     <cell_row>11</cell_row>
-    <cell_col>14</cell_col>
+    <cell_col>13</cell_col>
     <cell_horizontal_align>Right</cell_horizontal_align>
     <cell_vertical_align>Top</cell_vertical_align>
     <cell_colspan>7</cell_colspan>
@@ -1544,9 +1515,6 @@ Delivery Due</cell_text>
   </column>
   <column>
     <column_width>100</column_width>
-  </column>
-  <column>
-    <column_width>52</column_width>
   </column>
   <column>
     <column_width>118</column_width>
@@ -1797,7 +1765,7 @@ Delivery Due</cell_text>
   </topn>
   <dynamicfilters />
 </report>', NULL, FALSE,
-    '2026-10-12 12:14:57.116896', '2275', '2026-10-22 08:58:52.373674',
+    '2026-10-12 12:14:57.116896', '2275', '2026-10-27 13:24:25.853495',
     '2275', '75a16cac-c843-4b39-8259-a06b6f97fea3', 31,
     FALSE, 2, 768,
     NULL, 0, 1,
